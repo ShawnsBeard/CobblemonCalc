@@ -5349,5 +5349,11 @@ var SETDEX_SV = {
   },
   "Oranguru": {
     "VGC 2025 Reg G Showdown Usage": {"level":50,"ability":"Inner Focus","item":"Mental Herb","nature":"Relaxed","teraType":"Fairy","evs":{"hp":252,"df":252,"sd":4},"moves":["Instruct","Trick Room","Psychic","Protect"]}
-  }
+  },
+  "Brewloom": {
+	  "Life Orb Tidy Up Sweeper": {"level":100,"ability":"Magician","item":"Life Orb","nature":"Jolly","teraType":"Grass","evs":{"at":252,"sp":252,"sd":4},"moves":["Play Rough","Earthquake","Rock Slide","Tidy Up"]}
+	},
+	"Brawleon": {
+		"Z-Celebrate Sweeper": {"level":100,"ability":"Moxie","item":"Normalium Z","nature":"Jolly","teraType":"Normal","evs":{"hp":4,"at":252,"sp":252},"moves":["Celebrate","Close Combat","Iron Head","Knock Off"]}
+	}
 };

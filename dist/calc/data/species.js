@@ -9021,6 +9021,24 @@ var SV_PATCH = {
         abilities: { 0: 'Pixilate' },
         nfe: true
     },
+    'Aegislash-Delta-Shield': {
+        types: ['Steel', 'Fire'],
+        bs: { hp: 85, at: 45, df: 125, sa: 45, sd: 125, sp: 75 },
+        weightkg: 0,
+        abilities: { 0: 'Run Away' }
+    },
+    'Aegislash-Delta-Sword': {
+        types: ['Steel', 'Fire'],
+        bs: { hp: 85, at: 125, df: 45, sa: 125, sd: 45, sp: 75 },
+        weightkg: 0,
+        abilities: { 0: '' }
+    },
+    'Ambipom-Delta': {
+        types: ['Normal', 'Ghost'],
+        bs: { hp: 65, at: 115, df: 68, sa: 56, sd: 75, sp: 103 },
+        weightkg: 18.6,
+        abilities: { 0: 'Technician' }
+    },
     'Ambipom-Ultra': {
         types: ['Fire', 'Fairy'],
         bs: { hp: 75, at: 108, df: 66, sa: 58, sd: 60, sp: 115 },
@@ -9034,6 +9052,12 @@ var SV_PATCH = {
         gender: 'N',
         abilities: { 0: 'Protosynthesis' }
     },
+    Ancieon: {
+        types: ['Ground'],
+        bs: { hp: 110, at: 130, df: 65, sa: 60, sd: 65, sp: 95 },
+        weightkg: 25,
+        abilities: { 0: 'Pressure' }
+    },
     Annihilape: {
         types: ['Fighting', 'Ghost'],
         bs: { hp: 110, at: 115, df: 80, sa: 50, sd: 90, sp: 90 },
@@ -9045,6 +9069,12 @@ var SV_PATCH = {
         bs: { hp: 78, at: 69, df: 90, sa: 125, sd: 109, sp: 39 },
         weightkg: 48.2,
         abilities: { 0: 'Seed Sower' }
+    },
+    'Arcanine-Delta': {
+        types: ['Water'],
+        bs: { hp: 85, at: 115, df: 80, sa: 95, sd: 80, sp: 100 },
+        weightkg: 158,
+        abilities: { 0: 'Intimidate' }
     },
     Archaludon: {
         types: ['Steel', 'Dragon'],
@@ -9137,6 +9167,18 @@ var SV_PATCH = {
         abilities: { 0: 'Wind Rider' },
         nfe: true
     },
+    Brawleon: {
+        types: ['Fighting'],
+        bs: { hp: 60, at: 130, df: 110, sa: 65, sd: 65, sp: 95 },
+        weightkg: 24.5,
+        abilities: { 0: 'Limber' }
+    },
+    Brewloom: {
+        types: ['Ground', 'Fairy'],
+        bs: { hp: 60, at: 125, df: 65, sa: 60, sd: 65, sp: 85 },
+        weightkg: 35.5,
+        abilities: { 0: 'Magician' }
+    },
     'Brute Bonnet': {
         types: ['Grass', 'Dark'],
         bs: { hp: 111, at: 127, df: 99, sa: 79, sd: 99, sp: 55 },
@@ -9177,6 +9219,12 @@ var SV_PATCH = {
         abilities: { 0: 'Flash Fire' },
         nfe: true
     },
+    'Charizard-Delta': {
+        types: ['Dragon'],
+        bs: { hp: 72, at: 125, df: 107, sa: 77, sd: 88, sp: 65 },
+        weightkg: 179.5,
+        abilities: { 0: 'Run Away' }
+    },
     'Chi-Yu': {
         types: ['Dark', 'Fire'],
         bs: { hp: 55, at: 80, df: 80, sa: 135, sd: 120, sp: 100 },
@@ -9190,6 +9238,12 @@ var SV_PATCH = {
         weightkg: 152.2,
         gender: 'N',
         abilities: { 0: 'Sword of Ruin' }
+    },
+    'Chimecho-Delta': {
+        types: ['Dark', 'Psychic'],
+        bs: { hp: 75, at: 50, df: 70, sa: 105, sd: 80, sp: 75 },
+        weightkg: 1,
+        abilities: { 0: 'Levitate' }
     },
     Chuggalong: {
         types: ['Dragon', 'Poison'],
@@ -9210,6 +9264,19 @@ var SV_PATCH = {
         weightkg: 223,
         abilities: { 0: 'Poison Point' }
     },
+    'Cloyster-Delta': {
+        types: ['Ice', 'Poison'],
+        bs: { hp: 50, at: 115, df: 165, sa: 65, sd: 55, sp: 75 },
+        weightkg: 122,
+        abilities: { 0: 'Shell Armor' }
+    },
+    'Corsola-Delta': {
+        types: ['Grass'],
+        bs: { hp: 90, at: 45, df: 65, sa: 85, sd: 85, sp: 40 },
+        weightkg: 4,
+        abilities: { 0: 'Natural Cure' },
+        nfe: true
+    },
     Cosmachi: {
         types: ['Psychic'],
         bs: { hp: 136, at: 100, df: 68, sa: 104, sd: 100, sp: 96 },
@@ -9229,6 +9296,12 @@ var SV_PATCH = {
         weightkg: 30.7,
         abilities: { 0: 'Blaze' },
         nfe: true
+    },
+    Curesola: {
+        types: ['Grass', 'Fairy'],
+        bs: { hp: 130, at: 55, df: 85, sa: 100, sd: 95, sp: 45 },
+        weightkg: 7,
+        abilities: { 0: 'Natural Cure' }
     },
     Cyclizar: {
         types: ['Dragon', 'Normal'],
@@ -9262,6 +9335,18 @@ var SV_PATCH = {
         weightkg: 220,
         abilities: { 0: 'Unaware' }
     },
+    Draceon: {
+        types: ['Dragon'],
+        bs: { hp: 110, at: 130, df: 65, sa: 65, sd: 60, sp: 95 },
+        weightkg: 30,
+        abilities: { 0: 'Mold Breaker' }
+    },
+    Dragetsu: {
+        types: ['Dragon'],
+        bs: { hp: 93, at: 70, df: 88, sa: 123, sd: 127, sp: 99 },
+        weightkg: 20,
+        abilities: { 0: 'Shed Skin' }
+    },
     Drifblimp: {
         types: ['Ghost', 'Flying'],
         bs: { hp: 200, at: 58, df: 62, sa: 100, sd: 70, sp: 60 },
@@ -9294,12 +9379,36 @@ var SV_PATCH = {
         weightkg: 13,
         abilities: { 0: 'Neutralizing Gas' }
     },
+    Ectarachnid: {
+        types: ['Bug', 'Ghost'],
+        bs: { hp: 90, at: 120, df: 100, sa: 70, sd: 80, sp: 65 },
+        weightkg: 40.5,
+        abilities: { 0: 'Swarm' }
+    },
+    Eeveeon: {
+        types: ['Normal'],
+        bs: { hp: 75, at: 100, df: 75, sa: 100, sd: 75, sp: 100 },
+        weightkg: 25,
+        abilities: { 0: 'Adaptability' }
+    },
     Electisaur: {
         types: ['Grass', 'Electric'],
         bs: { hp: 92, at: 108, df: 88, sa: 112, sd: 80, sp: 80 },
         weightkg: 116,
         gender: 'N',
         abilities: { 0: 'Motor Drive' }
+    },
+    'Emolga-Delta': {
+        types: ['Dark', 'Flying'],
+        bs: { hp: 55, at: 75, df: 60, sa: 75, sd: 60, sp: 103 },
+        weightkg: 5,
+        abilities: { 0: 'Immunity' }
+    },
+    Energeist: {
+        types: ['Electric', 'Ghost'],
+        bs: { hp: 65, at: 65, df: 86, sa: 114, sd: 85, sp: 93 },
+        weightkg: 0.8,
+        abilities: { 0: 'Insomnia' }
     },
     Eruptois: {
         types: ['Fire', 'Water'],
@@ -9373,6 +9482,12 @@ var SV_PATCH = {
         gender: 'N',
         abilities: { 0: 'Protosynthesis' }
     },
+    'Flygon-Delta': {
+        types: ['Bug', 'Dragon'],
+        bs: { hp: 80, at: 65, df: 90, sa: 110, sd: 75, sp: 100 },
+        weightkg: 76.5,
+        abilities: { 0: 'Run Away' }
+    },
     'Flygon-Mega': {
         types: ['Ground', 'Dragon'],
         bs: { hp: 80, at: 115, df: 80, sa: 115, sd: 80, sp: 150 },
@@ -9404,6 +9519,12 @@ var SV_PATCH = {
         bs: { hp: 90, at: 52, df: 95, sa: 38, sd: 65, sp: 75 },
         weightkg: 30,
         abilities: { 0: 'Soundproof' }
+    },
+    'Garchomp-Delta': {
+        types: ['Dragon', 'Ice'],
+        bs: { hp: 94, at: 95, df: 95, sa: 110, sd: 100, sp: 106 },
+        weightkg: 87,
+        abilities: { 0: 'Slush Rush' }
     },
     Garganacl: {
         types: ['Rock'],
@@ -9495,9 +9616,21 @@ var SV_PATCH = {
     },
     Goolossal: {
         types: ['Dragon', 'Fairy'],
-        bs: { hp: 95, at: 60, df: 60, sa: 101, sd: 60, sp: 105 },
+        bs: { hp: 180, at: 115, df: 86, sa: 115, sd: 64, sp: 40 },
         weightkg: 208.5,
         abilities: { 0: 'Sap Sipper' }
+    },
+    'Gorebyss-Delta': {
+        types: ['Dragon', 'Fairy'],
+        bs: { hp: 55, at: 93, df: 95, sa: 112, sd: 70, sp: 60 },
+        weightkg: 26.6,
+        abilities: { 0: 'Hydration' }
+    },
+    Gorochu: {
+        types: ['Electric'],
+        bs: { hp: 60, at: 120, df: 90, sa: 90, sd: 130, sp: 110 },
+        weightkg: 59,
+        abilities: { 0: 'Transistor' }
     },
     'Gouging Fire': {
         types: ['Fire', 'Dragon'],
@@ -9526,12 +9659,30 @@ var SV_PATCH = {
         abilities: { 0: 'Pickup' },
         nfe: true
     },
+    'Greninja-Delta': {
+        types: ['Water', 'Rock'],
+        bs: { hp: 72, at: 125, df: 75, sa: 83, sd: 66, sp: 109 },
+        weightkg: 45,
+        abilities: { 0: 'Torrent' }
+    },
     'Grimmsnarl-Delta': {
         types: ['Ice', 'Fighting'],
         bs: { hp: 95, at: 130, df: 65, sa: 65, sd: 85, sp: 70 },
         weightkg: 75,
         gender: 'N',
         abilities: { 0: 'Frisk' }
+    },
+    Guardeon: {
+        types: ['Steel'],
+        bs: { hp: 110, at: 65, df: 130, sa: 65, sd: 95, sp: 60 },
+        weightkg: 85,
+        abilities: { 0: 'Clear Body' }
+    },
+    'Haxorus-Delta': {
+        types: ['Dragon', 'Fire'],
+        bs: { hp: 76, at: 124, df: 105, sa: 63, sd: 73, sp: 99 },
+        weightkg: 140.5,
+        abilities: { 0: 'Insomnia' }
     },
     Hemogoblin: {
         types: ['Fairy', 'Fire'],
@@ -9713,12 +9864,30 @@ var SV_PATCH = {
         weightkg: 79,
         abilities: { 0: 'Anger Shell' }
     },
+    'Klingklang-Delta': {
+        types: ['Steel', 'Ice'],
+        bs: { hp: 80, at: 60, df: 98, sa: 114, sd: 80, sp: 88 },
+        weightkg: 121,
+        abilities: { 0: 'Ice Body' }
+    },
+    Klocktowl: {
+        types: ['Dark', 'Flying'],
+        bs: { hp: 145, at: 50, df: 70, sa: 110, sd: 102, sp: 65 },
+        weightkg: 70,
+        abilities: { 0: 'Insomnia' }
+    },
     Koraidon: {
         types: ['Fighting', 'Dragon'],
         bs: { hp: 100, at: 135, df: 115, sa: 85, sd: 100, sp: 135 },
         weightkg: 303,
         gender: 'N',
         abilities: { 0: 'Orichalcum Pulse' }
+    },
+    Labsire: {
+        types: ['Psychic', 'Poison'],
+        bs: { hp: 90, at: 45, df: 75, sa: 60, sd: 135, sp: 25 },
+        weightkg: 15,
+        abilities: { 0: 'Sticky Hold' }
     },
     Lechonk: {
         types: ['Normal'],
@@ -9741,11 +9910,35 @@ var SV_PATCH = {
         gender: 'N',
         abilities: { 0: 'Run Away' }
     },
+    'Lopunny-Delta': {
+        types: ['Dark', 'Fairy'],
+        bs: { hp: 75, at: 85, df: 76, sa: 60, sd: 92, sp: 92 },
+        weightkg: 33.5,
+        abilities: { 0: 'Cute Charm' }
+    },
+    'Lopunny-Delta-Mega': {
+        types: ['Dark', 'Fighting'],
+        bs: { hp: 75, at: 115, df: 81, sa: 90, sd: 112, sp: 107 },
+        weightkg: 33.5,
+        abilities: { 0: 'Run Away' }
+    },
     Lokix: {
         types: ['Bug', 'Dark'],
         bs: { hp: 71, at: 102, df: 78, sa: 52, sd: 55, sp: 92 },
         weightkg: 17.5,
         abilities: { 0: 'Swarm' }
+    },
+    Lucaurus: {
+        types: ['Dark', 'Steel'],
+        bs: { hp: 70, at: 105, df: 94, sa: 61, sd: 85, sp: 110 },
+        weightkg: 49,
+        abilities: { 0: 'Strong Jaw' }
+    },
+    'Luxray-Delta': {
+        types: ['Electric', 'Fighting'],
+        bs: { hp: 70, at: 132, df: 99, sa: 65, sd: 62, sp: 95 },
+        weightkg: 56.5,
+        abilities: { 0: 'Opportunist' }
     },
     Mabosstiff: {
         types: ['Dark'],
@@ -9753,12 +9946,24 @@ var SV_PATCH = {
         weightkg: 61,
         abilities: { 0: 'Intimidate' }
     },
+    Maestrot: {
+        types: ['Normal', 'Flying'],
+        bs: { hp: 85, at: 70, df: 80, sa: 105, sd: 84, sp: 86 },
+        weightkg: 4.5,
+        abilities: { 0: 'Keen Eye' }
+    },
     Magoodra: {
         types: ['Dragon', 'Fire'],
         bs: { hp: 68, at: 112, df: 142, sa: 102, sd: 64, sp: 72 },
         weightkg: 288,
         gender: 'N',
         abilities: { 0: 'Magma Armor' }
+    },
+    Magirigus: {
+        types: ['Psychic', 'Ghost'],
+        bs: { hp: 58, at: 95, df: 105, sa: 50, sd: 145, sp: 30 },
+        weightkg: 95,
+        abilities: { 0: 'Run Away' }
     },
     'Malevorus-Incarnate': {
         types: ['Dark', 'Flying'],
@@ -9780,6 +9985,12 @@ var SV_PATCH = {
         weightkg: 1.4,
         gender: 'N',
         abilities: { 0: 'Run Away' }
+    },
+    Manteon: {
+        types: ['Bug'],
+        bs: { hp: 65, at: 110, df: 130, sa: 60, sd: 95, sp: 65 },
+        weightkg: 25,
+        abilities: { 0: 'Analytic' }
     },
     Maschiff: {
         types: ['Dark'],
@@ -9836,6 +10047,12 @@ var SV_PATCH = {
         weightkg: 0.3,
         gender: 'N',
         abilities: { 0: 'Toxic Chain' }
+    },
+    'Metagross-Delta': {
+        types: ['Rock', 'Grass'],
+        bs: { hp: 80, at: 125, df: 145, sa: 75, sd: 110, sp: 65 },
+        weightkg: 345.5,
+        abilities: { 0: 'Bulletproof' }
     },
     'Mewrai-Equinox': {
         types: ['Psychic', 'Dark'],
@@ -9899,12 +10116,37 @@ var SV_PATCH = {
         abilities: { 0: 'Purifying Salt' },
         nfe: true
     },
+    Necromauser: {
+        types: ['Ghost', 'Poison'],
+        bs: { hp: 150, at: 110, df: 60, sa: 40, sd: 60, sp: 50 },
+        weightkg: 4.5,
+        abilities: { 0: 'Run Away' }
+    },
+    Niveon: {
+        types: ['Flying'],
+        bs: { hp: 60, at: 95, df: 65, sa: 110, sd: 65, sp: 130 },
+        weightkg: 22.5,
+        abilities: { 0: 'Cloud Nine' }
+    },
+    'Noctowl-Delta': {
+        types: ['Dark', 'Flying'],
+        bs: { hp: 90, at: 62, df: 60, sa: 90, sd: 70, sp: 80 },
+        weightkg: 38,
+        abilities: { 0: 'Insomnia' },
+        nfe: true
+    },
     Nymble: {
         types: ['Bug'],
         bs: { hp: 33, at: 46, df: 40, sa: 21, sd: 25, sp: 45 },
         weightkg: 1,
         abilities: { 0: 'Swarm' },
         nfe: true
+    },
+    Obsideon: {
+        types: ['Rock'],
+        bs: { hp: 95, at: 110, df: 130, sa: 65, sd: 65, sp: 60 },
+        weightkg: 65.4,
+        abilities: { 0: 'Rock Head' }
     },
     Ogerpon: {
         types: ['Grass'],
@@ -9993,6 +10235,12 @@ var SV_PATCH = {
         weightkg: 92,
         abilities: { 0: 'Toxic Chain' }
     },
+    Operettot: {
+        types: ['Normal', 'Flying'],
+        bs: { hp: 85, at: 80, df: 90, sa: 100, sd: 80, sp: 75 },
+        weightkg: 5,
+        abilities: { 0: 'Keen Eye' }
+    },
     Orthworm: {
         types: ['Steel'],
         bs: { hp: 70, at: 85, df: 145, sa: 60, sd: 55, sp: 65 },
@@ -10012,6 +10260,13 @@ var SV_PATCH = {
         weightkg: 97.4,
         abilities: { 0: 'Zero to Hero' },
         baseSpecies: 'Palafin'
+    },
+    'Palossand-Delta': {
+        types: ['Ghost', 'Fairy'],
+        bs: { hp: 85, at: 50, df: 95, sa: 100, sd: 120, sp: 30 },
+        weightkg: 250,
+        abilities: { 0: 'Aroma Veil' },
+        baseSpecies: 'Palossand'
     },
     Pawmi: {
         types: ['Electric'],
@@ -10039,6 +10294,24 @@ var SV_PATCH = {
         weightkg: 0.3,
         gender: 'N',
         abilities: { 0: 'Poison Puppeteer' }
+    },
+    Perrception: {
+        types: ['Normal', 'Psychic'],
+        bs: { hp: 60, at: 40, df: 60, sa: 140, sd: 70, sp: 70 },
+        weightkg: 10,
+        abilities: { 0: 'Steadfast' }
+    },
+    Perrgatory: {
+        types: ['Normal', 'Ghost'],
+        bs: { hp: 70, at: 40, df: 50, sa: 100, sd: 80, sp: 100 },
+        weightkg: 26,
+        abilities: { 0: 'Levitate' }
+    },
+    Polfeegeist: {
+        types: ['Water', 'Ghost'],
+        bs: { hp: 65, at: 65, df: 132, sa: 91, sd: 85, sp: 70 },
+        weightkg: 5.6,
+        abilities: { 0: 'Insomnia' }
     },
     Poltchageist: {
         types: ['Grass', 'Ghost'],
@@ -10071,6 +10344,12 @@ var SV_PATCH = {
         abilities: { 0: 'Torrent' },
         nfe: true
     },
+    Quaxolotl: {
+        types: ['Water', 'Fairy'],
+        bs: { hp: 100, at: 65, df: 65, sa: 55, sd: 85, sp: 60 },
+        weightkg: 50,
+        abilities: { 0: 'Water Absorb' }
+    },
     Quaxwell: {
         types: ['Water'],
         bs: { hp: 70, at: 85, df: 65, sa: 65, sd: 60, sp: 65 },
@@ -10097,6 +10376,12 @@ var SV_PATCH = {
         weightkg: 480,
         gender: 'N',
         abilities: { 0: 'Protosynthesis' }
+    },
+    'Raticate-Delta': {
+        types: ['Grass', 'Electric'],
+        bs: { hp: 85, at: 42, df: 66, sa: 70, sd: 88, sp: 62 },
+        weightkg: 18.5,
+        abilities: { 0: 'Thick Fat' }
     },
     Rellor: {
         types: ['Bug'],
@@ -10130,6 +10415,12 @@ var SV_PATCH = {
         bs: { hp: 60, at: 105, df: 120, sa: 60, sd: 70, sp: 100 },
         weightkg: 18.5,
         abilities: { 0: 'Sharpness' }
+    },
+    'Sableye-Delta': {
+        types: ['Ghost', 'Rock'],
+        bs: { hp: 80, at: 20, df: 60, sa: 40, sd: 75, sp: 105 },
+        weightkg: 11,
+        abilities: { 0: 'No Guard' }
     },
     'Sandy Shocks': {
         types: ['Electric', 'Ground'],
@@ -10192,6 +10483,19 @@ var SV_PATCH = {
         abilities: { 0: 'Unburden' },
         nfe: true
     },
+    Shrookle: {
+        types: ['Bug', 'Poison'],
+        bs: { hp: 60, at: 55, df: 150, sa: 90, sd: 150, sp: 35 },
+        weightkg: 18,
+        abilities: { 0: 'Harvest' }
+    },
+    'Shuckle-Delta': {
+        types: ['Bug', 'Poison'],
+        bs: { hp: 20, at: 10, df: 230, sa: 10, sd: 230, sp: 5 },
+        weightkg: 15.5,
+        abilities: { 0: 'Harvest' },
+        nfe: true
+    },
     'Sinistcha': {
         types: ['Grass', 'Ghost'],
         bs: { hp: 71, at: 60, df: 106, sa: 121, sd: 80, sp: 70 },
@@ -10213,6 +10517,12 @@ var SV_PATCH = {
         bs: { hp: 104, at: 75, df: 100, sa: 110, sd: 75, sp: 66 },
         weightkg: 326.5,
         abilities: { 0: 'Blaze' }
+    },
+    Slaughtermaus: {
+        types: ['Dark', 'Poison'],
+        bs: { hp: 65, at: 110, df: 65, sa: 50, sd: 65, sp: 115 },
+        weightkg: 0.45,
+        abilities: { 0: 'Run Away' }
     },
     'Slither Wing': {
         types: ['Bug', 'Fighting'],
@@ -10240,11 +10550,35 @@ var SV_PATCH = {
         weightkg: 460,
         abilities: { 0: 'Thick Fat' }
     },
+    Spectreon: {
+        types: ['Ghost'],
+        bs: { hp: 95, at: 60, df: 65, sa: 110, sd: 65, sp: 130 },
+        weightkg: 0.1,
+        abilities: { 0: 'Speed Boost' }
+    },
     Spidops: {
         types: ['Bug'],
         bs: { hp: 60, at: 79, df: 92, sa: 52, sd: 86, sp: 35 },
         weightkg: 16.5,
         abilities: { 0: 'Insomnia' }
+    },
+    'Spiritomb-Unbound': {
+        types: ['Ghost', 'Dark'],
+        bs: { hp: 50, at: 132, df: 108, sa: 132, sd: 108, sp: 35 },
+        weightkg: 108,
+        abilities: { 0: 'Run Away' }
+    },
+    'Steelix-Delta': {
+        types: ['Ground', 'Psychic'],
+        bs: { hp: 85, at: 55, df: 65, sa: 75, sd: 200, sp: 30 },
+        weightkg: 350,
+        abilities: { 0: 'Regenerator' }
+    },
+    'Steelix-Delta-Mega': {
+        types: ['Ground', 'Psychic'],
+        bs: { hp: 85, at: 75, df: 65, sa: 135, sd: 230, sp: 20 },
+        weightkg: 350,
+        abilities: { 0: 'Run Away' }
     },
     Sprigatito: {
         types: ['Grass'],
@@ -10301,6 +10635,27 @@ var SV_PATCH = {
         gender: 'N',
         abilities: { 0: 'Run Away' },
         nfe: true
+    },
+    'Tandemaus-Delta': {
+        types: ['Poison'],
+        bs: { hp: 50, at: 50, df: 45, sa: 40, sd: 45, sp: 75 },
+        weightkg: 1.8,
+        gender: 'N',
+        abilities: { 0: 'Rattled' },
+        nfe: true
+    },
+    'Tangled Time': {
+        types: ['Dragon', 'Psychic'],
+        bs: { hp: 100, at: 100, df: 75, sa: 120, sd: 75, sp: 120 },
+        weightkg: 10,
+        gender: 'N',
+        abilities: { 0: 'Run Away' }
+    },
+    'Tapu-Kehe': {
+        types: ['Poison', 'Fairy'],
+        bs: { hp: 70, at: 85, df: 130, sa: 95, sd: 115, sp: 75 },
+        weightkg: 25.6,
+        abilities: { 0: 'Telepathy' }
     },
     Tarountula: {
         types: ['Bug'],
@@ -10383,6 +10738,12 @@ var SV_PATCH = {
         weightkg: 112.8,
         abilities: { 0: 'Mold Breaker' }
     },
+    'Tinkaton-Delta': {
+        types: ['Fairy', 'Water'],
+        bs: { hp: 85, at: 90, df: 95, sa: 65, sd: 77, sp: 94 },
+        weightkg: 218.5,
+        abilities: { 0: 'Suction Cups' }
+    },
     'Tinkaton-Gamma': {
         types: ['Fairy', 'Flying'],
         bs: { hp: 85, at: 45, df: 67, sa: 110, sd: 105, sp: 94 },
@@ -10420,6 +10781,12 @@ var SV_PATCH = {
         bs: { hp: 70, at: 60, df: 150, sa: 95, sd: 75, sp: 20 },
         weightkg: 80.4,
         abilities: { 0: 'Flame Body' }
+    },
+    Turnizone: {
+        types: ['Grass', 'Ground'],
+        bs: { hp: 95, at: 70, df: 100, sa: 105, sd: 115, sp: 50 },
+        weightkg: 120,
+        abilities: { 0: 'Water Absorb' }
     },
     'Typhlosion-Delta': {
         types: ['Electric'],
@@ -10470,6 +10837,12 @@ var SV_PATCH = {
         weightkg: 90,
         abilities: { 0: 'Mold Breaker' }
     },
+    Veneon: {
+        types: ['Poison'],
+        bs: { hp: 65, at: 60, df: 130, sa: 95, sd: 110, sp: 65 },
+        weightkg: 20.5,
+        abilities: { 0: 'Liquid Ooze' }
+    },
     'Volcarona-Delta': {
         types: ['Bug', 'Psychic'],
         bs: { hp: 85, at: 60, df: 65, sa: 135, sd: 105, sp: 100 },
@@ -10504,6 +10877,21 @@ var SV_PATCH = {
         gender: 'N',
         abilities: { 0: 'Tablets of Ruin' }
     },
+    'Wooper-Delta': {
+        types: ['Water', 'Fairy'],
+        bs: { hp: 45, at: 20, df: 35, sa: 55, sd: 45, sp: 10 },
+        weightkg: 8.5,
+        abilities: { 0: 'Water Absorb' },
+        nfe: true
+    },
+    'Wooper-Omega': {
+        types: ['Psychic', 'Poison'],
+        bs: { hp: 55, at: 45, df: 45, sa: 25, sd: 25, sp: 15 },
+        weightkg: 6,
+        abilities: { 0: 'Sticky Hold' },
+        baseSpecies: 'Wooper',
+        nfe: true
+    },
     'Wooper-Paldea': {
         types: ['Poison', 'Ground'],
         bs: { hp: 55, at: 45, df: 45, sa: 25, sd: 25, sp: 15 },
@@ -10517,6 +10905,12 @@ var SV_PATCH = {
         bs: { hp: 35, at: 100, df: 50, sa: 50, sd: 70, sp: 120 },
         weightkg: 5.4,
         abilities: { 0: 'Gooey' }
+    },
+    Yanmellia: {
+        types: ['Grass', 'Flying'],
+        bs: { hp: 98, at: 71, df: 61, sa: 80, sd: 100, sp: 105 },
+        weightkg: 45.5,
+        abilities: { 0: 'Aerilate' }
     },
     Zapeon: {
         types: ['Electric', 'Fighting'],
