@@ -146,6 +146,9 @@ function getFinalSpeed(gen, pokemon, field, side) {
     else if (pokemon.hasAbility('Quick Feet') && pokemon.status) {
         speedMods.push(6144);
     }
+    else if (pokemon.hasAbility('Vorpal') && pokemon.status) {
+        speedMods.push(6144);
+    }
     else if (pokemon.hasAbility('Slow Start') && pokemon.abilityOn) {
         speedMods.push(2048);
     }
@@ -177,6 +180,9 @@ function getMoveEffectiveness(gen, move, type, isGhostRevealed, isGravity, isRin
         return 1;
     }
     else if (move.named('Freeze-Dry') && type === 'Water') {
+        return 2;
+    }
+    else if (move.named('Dual Divide') && type === 'Steel') {
         return 2;
     }
     else {

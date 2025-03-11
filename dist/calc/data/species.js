@@ -9492,7 +9492,7 @@ var SV_PATCH = {
         types: ['Ground', 'Dragon'],
         bs: { hp: 80, at: 115, df: 80, sa: 115, sd: 80, sp: 150 },
         weightkg: 50,
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Desert Spirit' }
     },
     'Flygon-Ultra': {
         types: ['Steel', 'Dragon'],
@@ -10265,8 +10265,7 @@ var SV_PATCH = {
         types: ['Ghost', 'Fairy'],
         bs: { hp: 85, at: 50, df: 95, sa: 100, sd: 120, sp: 30 },
         weightkg: 250,
-        abilities: { 0: 'Aroma Veil' },
-        baseSpecies: 'Palossand'
+        abilities: { 0: 'Aroma Veil' }
     },
     Pawmi: {
         types: ['Electric'],
@@ -10522,7 +10521,7 @@ var SV_PATCH = {
         types: ['Dark', 'Poison'],
         bs: { hp: 65, at: 110, df: 65, sa: 50, sd: 65, sp: 115 },
         weightkg: 0.45,
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Vorpal' }
     },
     'Slither Wing': {
         types: ['Bug', 'Fighting'],

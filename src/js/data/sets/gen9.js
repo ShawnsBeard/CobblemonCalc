@@ -5355,5 +5355,187 @@ var SETDEX_SV = {
 	},
 	"Brawleon": {
 		"Z-Celebrate Sweeper": {"level":100,"ability":"Moxie","item":"Normalium Z","nature":"Jolly","teraType":"Normal","evs":{"hp":4,"at":252,"sp":252},"moves":["Celebrate","Close Combat","Iron Head","Knock Off"]}
-	}
+	},
+	"Tinkaton-Omega": {
+		"Choice-Scarf Physical": {"level":100,"ability":"Sharpness","item":"Choice Scarf","nature":"Jolly","teraType":"Fire","evs":{"df":4,"at":252,"sp":252},"moves":["Dual Divide","X-Scissor","U-turn","Knock Off"]}
+	},
+	"Slaughtermaus": {
+		"Jolly 4 Attacks": {"level":100,"ability":"Vorpal","item":"Flame Orb","nature":"Jolly","teraType":"Normal","evs":{"df":4,"at":252,"sp":252},"moves":["Facade","Poison Jab","Low Kick","Fake Out"]}
+	},
+	"Magoodra": {
+		"Physically Defensive Pivot": {
+			"level": 100,
+			"ability": "Magma Armor",
+			"item": "Heavy-Duty Boots",
+			"nature": "Bold",
+			"teraType": "Dragon",
+			"evs": {"df": 252, "hp": 248, "sp": 8},
+			"moves": ["Lava Plume", "Draco Meteor", "Knock Off", "Blaze Out"]
+		}
+	},
+	"Secret Armor": {
+		"Booster Speed Bulk Up": {
+			"level": 100,
+			"ability": "Protosynthesis",
+			"item": "Booster Energy",
+			"nature": "Jolly",
+			"teraType": "Fighting",
+			"ivs": {"df": 15},
+			"evs": {"hp": 252, "sp": 252, "sd": 4},
+			"moves": ["Drain Punch", "Iron Head", "Thunder Punch", "Bulk Up"]
+		}
+	},
+	"Clefgar": {
+		"Poison Heal Hex": {
+			"level": 100,
+			"ability": "Poison Heal",
+			"item": "Toxic Orb",
+			"nature": "Timid",
+			"teraType": "Ghost",
+			"evs": {"hp": 252, "sp": 252, "sd": 4},
+			"moves": ["Hex", "Moonblast", "Will-O-Wisp", "Moonlight"]
+		}
+	},
+	"Gengar-Ultra": {
+		"Choice Scarf": {
+			"level": 100,
+			"ability": "Levitate",
+			"item": "Choice Scarf",
+			"nature": "Timid",
+			"teraType": "Ghost",
+			"evs": {"sa": 252, "sp": 252, "sd": 4},
+			"moves": ["Foam Frenzy", "Shadow Ball", "Dazzling Gleam", "Trick"]
+		}
+	},
+	"Steelix-Delta": {
+		"Specially Defensive Pivot": {
+			"level": 100,
+			"ability": "Regenerator",
+			"item": "Heavy-Duty Boots",
+			"nature": "Sassy",
+			"teraType": "Ground",
+			"ivs": {"sp": 0},
+			"evs": {"hp": 252, "def": 240, "sd": 16},
+			"moves": ["Scorching Sands", "Psychic Noise", "Stealth Rock", "Teleport"]
+		}
+	},
+	"Rogue Prince": {
+		"Booster Double Dance": {
+			"level": 100,
+			"ability": "Protosynthesis",
+			"item": "Booster Energy",
+			"nature": "Bold",
+			"teraType": "Water",
+			"evs": {"hp": 248, "def": 200, "sd": 60},
+			"moves": ["Take Heart", "Agility", "Surf", "Psyshock"]
+		},
+		"Assault Vest Pivot": {
+			"level": 100,
+			"ability": "Protosynthesis",
+			"item": "Assault Vest",
+			"nature": "Modest",
+			"teraType": "Water",
+			"evs": {"hp": 228, "spa": 252, "sd": 28},
+			"moves": ["Scald", "Future Sight", "Flip Turn", "Ice Beam"]
+		}
+	},
+	"Golurk-Delta": {
+		"Trick Room Sweeper": {"ability":"Contrary","item":"Leftovers","nature":"Brave","ivs": {"sp":0},"evs":{"hp":252,"df":4,"at":252},"moves":["Trick Room","Poltergeist","Superpower","Planet Demolition"]},
+		"Covenant Above Half HP": {"ability":"Slow Start","item":"Leftovers","nature":"Adamant","evs":{"sp":252,"hp":4,"at":252},"moves":["Rock Polish","Poltergeist","Stone Edge","Earthquake"]},
+		"Covenant Below Half HP": {"ability":"Huge Power","item":"Leftovers","nature":"Adamant","evs":{"sp":252,"hp":4,"at":252},"moves":["Rock Polish","Poltergeist","Stone Edge","Earthquake"]}
+	},
+	"Yanmellia": {
+		"Specs Boomburst": {
+			"level": 100,
+			"ability": "Aerilate",
+			"item": "Choice Specs",
+			"nature": "Timid",
+			"teraType": "Flying",
+			"evs": {"sa": 252, "sp": 252, "sd": 4},
+			"moves": ["Boomburst", "Trick", "Giga Drain", "Sludge Bomb"]
+		}
+	},
+	"Bansherene": {
+		"Nasty Plot Salac": {
+			"level": 100,
+			"ability": "Aftermath",
+			"item": "Salac Berry",
+			"nature": "Timid",
+			"teraType": "Flying",
+			"evs": {"sa": 252, "sp": 252, "sd": 4},
+			"moves": ["Shadow Ball", "Alluring Voice", "Endeavor", "Nasty Plot"]
+		}
+	},
+	"Gogoat-Delta": {
+		"Guts Abuser": {"ability":"Guts","item":"Flame Orb","nature":"Jolly","evs":{"sp":252,"df":4,"at":252},"moves":["Trailblaze","Facade","Milk Drink","Close Combat"]}
+	},
+	"Serperior-Ultra": {
+		"Contrary Sweeper": {"ability":"Contrary","item":"Waterium Z","nature":"Timid","evs":{"sp":252,"df":4,"sa":252},"moves":["Draco Meteor","Hydro Pump","Substitute","Glare"]}
+	},
+	"Glimmora-Ultra": {
+		"Rain Sweeper": {"ability":"Swift Swim","item":"Life Orb","nature":"Timid","evs":{"sa":252,"df":4,"sp":252},"moves":["Volt Switch","Thunder","Dazzling Gleam","Surf"]}
+	},
+	"Typhlosion-Delta": {
+		"Rain Setter": {"ability":"Drizzle","item":"Life Orb","nature":"Timid","evs":{"sa":252,"df":4,"sp":252},"moves":["Volt Switch","Thunder","Weather Ball","Hurricane"]}
+	},
+	"Zapeon ": {
+		"Sub Psychium Z": {
+			"level": 100,
+			"ability": "Defiant",
+			"item": "Psychium Z",
+			"nature": "Jolly",
+			"teraType": "Fighting",
+			"evs": {"at": 252, "sp": 252, "sd": 4},
+			"moves": ["Close Combat", "Amber Assault", "Zen Headbutt", "Substitute"]
+		},
+		"Choice Band": {
+			"level": 100,
+			"ability": "Defiant",
+			"item": "Psychium Z",
+			"nature": "Jolly",
+			"teraType": "Fighting",
+			"evs": {"at": 252, "sp": 252, "sd": 4},
+			"moves": ["Close Combat", "Amber Assault", "Knock Off", "U-Turn"]
+		}
+	},
+	"Necromauser": {
+		"Reverse Sweeper": {"ability":"Supreme Overlord","item":"Black Sludge","nature":"Adamant","evs":{"at":252,"df":4,"hp":252},"moves":["Shadow Sneak","Putrid Grasp","Low Kick","Swords Dance"]}
+	},
+	"Flygon-Mega": {
+		"Physical Sand Sweeper": {"ability":"Desert Spirit","item":"Audinite","nature":"Jolly","evs":{"sp":252,"at":252,"sd":4},"moves":["Dragon Dance","Earthquake","Dragon Claw","Stone Edge"]},
+		"Special": {"ability":"Desert Spirit","item":"Audinite","nature":"Timid","evs":{"sp":252,"df":4,"sa":252},"moves":["Earth Power","Boomburst","Draco Meteor","U-Turn"]}
+	},
+	"Flygon-Ultra": {
+		"Specially Defensive": {
+			"level": 100,
+			"ability": "Thick Fat",
+			"item": "Leftovers",
+			"nature": "Careful",
+			"teraType": "Dragon",
+			"evs": {"hp": 252, "sd": 252, "df": 4},
+			"moves": ["Steel Skewer", "Dragon Tail", "Thunder Wave", "Roost"]
+		}
+	},
+	"Uxie-Delta": {
+		"Physically Defensive": {
+			"level": 100,
+			"ability": "Thick Fat",
+			"item": "Black Sludge",
+			"nature": "Impish",
+			"teraType": "Dark",
+			"evs": {"hp": 252, "df": 252, "sd": 4},
+			"moves": ["Foul Play", "Knock Off", "Stealth Rock", "Slack Off"]
+		}
+	},
+	"Staraptor-Delta": {
+		"LO Swords Dance": {
+			"level": 100,
+			"ability": "Magic Guard",
+			"item": "Life Orb",
+			"nature": "Jolly",
+			"teraType": "Fire",
+			"evs": {"atk": 252, "sp": 252, "df": 4},
+			"moves": ["Flare Blitz", "Brave Bird", "Close Combat", "Swords Dance"]
+		}
+	},
 };

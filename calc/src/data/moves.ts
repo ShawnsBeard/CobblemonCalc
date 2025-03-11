@@ -4203,6 +4203,14 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     secondaries: true,
     isSound: true,
   },
+  'Amber Assault': {
+    bp: 90,
+    type: 'Electric',
+    category: 'Physical',
+    zp: 175,
+    maxPower: 130,
+    secondaries: true,
+  },
   'Aqua Step': {
     bp: 80,
     type: 'Water',
@@ -4237,6 +4245,14 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     maxPower: 80,
     secondaries: true,
   },
+  'Barbaric Incision': {
+    bp: 70,
+    type: 'Dark',
+    category: 'Physical',
+    zp: 140,
+    maxPower: 120,
+    makesContact: true,
+  },
   'Bitter Blade': {
     bp: 90,
     type: 'Fire',
@@ -4254,6 +4270,11 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     zp: 140,
     maxPower: 130,
     secondaries: true,
+  },
+  'Blaze Out': {
+    bp: 0,
+    type: 'Fire',
+    category: 'Status',
   },
   'Blazing Torque': {
     bp: 80,
@@ -4359,6 +4380,16 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     secondaries: true,
   },
   'Dragon Cheer': {bp: 0, type: 'Dragon'},
+  'Dual Divide': {
+    bp: 40,
+    type: 'Fairy',
+    category: 'Physical',
+    zp: 100,
+    maxPower: 100,
+    multihit: 2,
+    isSlicing: true,
+    secondaries: true,
+  },
   'Electro Drift': {
     bp: 100,
     type: 'Electric',
@@ -4606,6 +4637,15 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     isPulse: true,
     // Sheer Force boost implemented in gen789.ts
   },
+  'Planet Demolition': {
+    bp: 120,
+    type: 'Rock',
+    category: 'Physical',
+    zp: 190,
+    maxPower: 95,
+    self: {boosts: {atk: -1, def: -1}},
+    isBullet: true,
+  },
   'Psychic Noise': {
     bp: 75,
     type: 'Psychic',
@@ -4657,6 +4697,14 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     maxPower: 120,
     makesContact: true,
     secondaries: true,
+  },
+  'Putrid Grasp': {
+    bp: 90,
+    type: 'Poison',
+    category: 'Physical',
+    zp: 175,
+    maxPower: 130,
+    drain: [1, 2],
   },
   'Rage Fist': {
     bp: 50,
@@ -4755,6 +4803,13 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     secondaries: true,
     isWind: true,
     target: 'allAdjacentFoes',
+  },
+  'Steel Skewer': {
+    bp: 80,
+    type: 'Steel',
+    category: 'Physical',
+    zp: 160,
+    maxPower: 130,
   },
   'Stone Axe': {
     bp: 65,

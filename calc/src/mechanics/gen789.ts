@@ -139,6 +139,10 @@ export function calculateSMSSSV(
     move.flags.contact = 1;
   }
 
+  if (attacker.ability === 'Desert Spirit' && field.hasWeather('Sand')) {
+    move.flags.sound = 1;
+  }
+
   const breaksProtect = move.breaksProtect || move.isZ || attacker.isDynamaxed ||
   (attacker.hasAbility('Unseen Fist') && move.flags.contact);
 
@@ -493,7 +497,10 @@ export function calculateSMSSSV(
     desc.defenderAbility = defender.ability;
     return result;
   }
-
+  if (defender.hasAbility('Desert Spirit') && move.flags.sound) {
+    desc.defenderAbility = defender.ability;
+    typeEffectiveness = 0.5;
+  }
   if (move.hasType('Ground') && !move.named('Thousand Arrows') &&
       !field.isGravity && defender.hasItem('Air Balloon')) {
     desc.defenderItem = defender.item;
@@ -634,7 +641,9 @@ export function calculateSMSSSV(
     attacker.hasStatus('brn') &&
     move.category === 'Physical' &&
     !attacker.hasAbility('Guts') &&
-    !move.named('Facade');
+    !move.named('Facade') &&
+    !attacker.hasAbility('Vorpal') &&
+    !move.named('Barbaric Incision');
   desc.isBurned = applyBurn;
   const finalMods = calculateFinalModsSMSSSV(
     gen,
@@ -1071,6 +1080,7 @@ export function calculateBPModsSMSSSV(
   }
 
   if ((move.named('Facade') && attacker.hasStatus('brn', 'par', 'psn', 'tox')) ||
+    (move.named('Barbaric Incision') && attacker.hasStatus('brn', 'par', 'psn', 'tox')) ||
     (move.named('Brine') && defender.curHP() <= defender.maxHP() / 2) ||
     (move.named('Venoshock') && defender.hasStatus('psn', 'tox')) ||
     (move.named('Lash Out') && (countBoosts(gen, attacker.boosts) < 0))
@@ -1197,7 +1207,8 @@ export function calculateBPModsSMSSSV(
     (attacker.hasAbility('Analytic') &&
       (turnOrder !== 'first' || field.defenderSide.isSwitching === 'out')) ||
     (attacker.hasAbility('Tough Claws') && move.flags.contact) ||
-    (attacker.hasAbility('Punk Rock') && move.flags.sound)
+    (attacker.hasAbility('Punk Rock') && move.flags.sound) ||
+    (attacker.hasAbility('Desert Spirit') && move.flags.sound)
   ) {
     bpMods.push(5325);
     desc.attackerAbility = attacker.ability;

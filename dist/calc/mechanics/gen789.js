@@ -72,6 +72,9 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         (0, util_2.getShellSideArmCategory)(attacker, defender) === 'Physical') {
         move.flags.contact = 1;
     }
+    if (attacker.ability === 'Desert Spirit' && field.hasWeather('Sand')) {
+        move.flags.sound = 1;
+    }
     var breaksProtect = move.breaksProtect || move.isZ || attacker.isDynamaxed ||
         (attacker.hasAbility('Unseen Fist') && move.flags.contact);
     if (field.defenderSide.isProtected && !breaksProtect) {
@@ -343,6 +346,10 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         desc.defenderAbility = defender.ability;
         return result;
     }
+    if (defender.hasAbility('Desert Spirit') && move.flags.sound) {
+        desc.defenderAbility = defender.ability;
+        typeEffectiveness = 0.5;
+    }
     if (move.hasType('Ground') && !move.named('Thousand Arrows') &&
         !field.isGravity && defender.hasItem('Air Balloon')) {
         desc.defenderItem = defender.item;
@@ -433,7 +440,9 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     var applyBurn = attacker.hasStatus('brn') &&
         move.category === 'Physical' &&
         !attacker.hasAbility('Guts') &&
-        !move.named('Facade');
+        !move.named('Facade') &&
+        !attacker.hasAbility('Vorpal') &&
+        !move.named('Barbaric Incision');
     desc.isBurned = applyBurn;
     var finalMods = calculateFinalModsSMSSSV(gen, attacker, defender, move, field, desc, isCritical, typeEffectiveness);
     var protect = false;
@@ -750,6 +759,7 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         resistedKnockOffDamage = true;
     }
     if ((move.named('Facade') && attacker.hasStatus('brn', 'par', 'psn', 'tox')) ||
+        (move.named('Barbaric Incision') && attacker.hasStatus('brn', 'par', 'psn', 'tox')) ||
         (move.named('Brine') && defender.curHP() <= defender.maxHP() / 2) ||
         (move.named('Venoshock') && defender.hasStatus('psn', 'tox')) ||
         (move.named('Lash Out') && ((0, util_2.countBoosts)(gen, attacker.boosts) < 0))) {
@@ -848,7 +858,8 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         (attacker.hasAbility('Analytic') &&
             (turnOrder !== 'first' || field.defenderSide.isSwitching === 'out')) ||
         (attacker.hasAbility('Tough Claws') && move.flags.contact) ||
-        (attacker.hasAbility('Punk Rock') && move.flags.sound)) {
+        (attacker.hasAbility('Punk Rock') && move.flags.sound) ||
+        (attacker.hasAbility('Desert Spirit') && move.flags.sound)) {
         bpMods.push(5325);
         desc.attackerAbility = attacker.ability;
     }
