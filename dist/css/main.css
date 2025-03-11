@@ -130,6 +130,8 @@ a img {
 /* general page styling */
 html, body {
     font: 10pt Verdana, sans-serif;
+	 background-image: url('https://img3.pillowfort.social/posts/94e46280ade5_Lopputty2.gif');
+	 background-size: cover;
     background-color: white;
     color: black;
     margin: 0;
@@ -152,7 +154,7 @@ div.wrapper > div > span {
 }
 fieldset {
     float: left;
-    background-color: #F1F4F9;
+    background-color: transparent;
     border: 1px solid #AAAAAA;
 }
 legend {
