@@ -5491,7 +5491,7 @@ var SETDEX_SV = {
 		"Choice Band": {
 			"level": 100,
 			"ability": "Defiant",
-			"item": "Psychium Z",
+			"item": "Choice Band",
 			"nature": "Jolly",
 			"teraType": "Fighting",
 			"evs": {"at": 252, "sp": 252, "sd": 4},
@@ -5519,7 +5519,7 @@ var SETDEX_SV = {
 	"Uxie-Delta": {
 		"Physically Defensive": {
 			"level": 100,
-			"ability": "Thick Fat",
+			"ability": "Levitate",
 			"item": "Black Sludge",
 			"nature": "Impish",
 			"teraType": "Dark",
