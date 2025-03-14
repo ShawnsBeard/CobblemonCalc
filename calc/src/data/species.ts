@@ -9205,7 +9205,13 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Dragon'],
     bs: {hp: 72, at: 125, df: 107, sa: 77, sd: 88, sp: 65},
     weightkg: 179.5,
-    abilities: {0: 'Run Away'},
+    abilities: {0: 'Draconic'},
+  },
+  'Charizard-Delta-Mega': {
+    types: ['Dragon', 'Rock'],
+    bs: {hp: 72, at: 155, df: 132, sa: 97, sd: 108, sp: 70},
+    weightkg: 210.5,
+    abilities: {0: 'Sheer Force'},
   },
   'Chi-Yu': {
     types: ['Dark', 'Fire'],
@@ -9715,7 +9721,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Electric', 'Fighting'],
     bs: {hp: 73, at: 112, df: 75, sa: 97, sd: 75, sp: 102},
     weightkg: 65,
-    abilities: {0: 'Long Reach'},
+    abilities: {0: 'Surge'},
   },
   'Infernape-Delta-Mega': {
     types: ['Electric', 'Fighting'],
@@ -9896,13 +9902,13 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Dark', 'Fairy'],
     bs: {hp: 75, at: 85, df: 76, sa: 60, sd: 92, sp: 92},
     weightkg: 33.5,
-    abilities: {0: 'Cute Charm'},
+    abilities: {0: 'Fatalize'},
   },
   'Lopunny-Delta-Mega': {
     types: ['Dark', 'Fighting'],
     bs: {hp: 75, at: 115, df: 81, sa: 90, sd: 112, sp: 107},
     weightkg: 33.5,
-    abilities: {0: 'Run Away'},
+    abilities: {0: 'Fatalize'},
   },
   Lokix: {
     types: ['Bug', 'Dark'],
@@ -10831,7 +10837,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Bug', 'Psychic'],
     bs: {hp: 85, at: 60, df: 65, sa: 135, sd: 105, sp: 100},
     weightkg: 46,
-    abilities: {0: 'Swarm'},
+    abilities: {0: 'Crescent Form'},
   },
   'Walking Wake': {
     types: ['Water', 'Dragon'],

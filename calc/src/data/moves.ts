@@ -41,6 +41,7 @@ export interface MoveData {
   readonly isPulse?: boolean;
   readonly isSlicing?: boolean;
   readonly isWind?: boolean;
+  readonly isBeam?: boolean;
 }
 
 const RBY: {[name: string]: MoveData} = {
@@ -48,7 +49,7 @@ const RBY: {[name: string]: MoveData} = {
   Absorb: {bp: 20, type: 'Grass', drain: [1, 2]},
   Acid: {bp: 40, type: 'Poison'},
   Amnesia: {bp: 0, category: 'Status', type: 'Psychic'},
-  'Aurora Beam': {bp: 65, type: 'Ice'},
+  'Aurora Beam': {bp: 65, type: 'Ice', isBeam: true},
   Barrage: {bp: 15, type: 'Normal', multihit: [2, 5]},
   Bide: {bp: 0, type: '???'},
   Bind: {bp: 15, type: 'Normal'},
@@ -88,7 +89,7 @@ const RBY: {[name: string]: MoveData} = {
   Haze: {bp: 0, category: 'Status', type: 'Ice'},
   'High Jump Kick': {bp: 85, type: 'Fighting', hasCrashDamage: true},
   'Horn Drill': {bp: 0, type: 'Normal'},
-  'Hyper Beam': {bp: 150, type: 'Normal'},
+  'Hyper Beam': {bp: 150, type: 'Normal', isBeam: true},
   'Jump Kick': {bp: 70, type: 'Fighting', hasCrashDamage: true},
   'Karate Chop': {bp: 50, type: 'Normal'},
   'Leech Seed': {bp: 0, category: 'Status', type: 'Grass'},
@@ -120,7 +121,7 @@ const RBY: {[name: string]: MoveData} = {
   Slash: {bp: 70, type: 'Normal'},
   Sludge: {bp: 65, type: 'Poison'},
   'Soft-Boiled': {bp: 0, category: 'Status', type: 'Normal'},
-  'Solar Beam': {bp: 120, type: 'Grass'},
+  'Solar Beam': {bp: 120, type: 'Grass', isBeam: true},
   'Sonic Boom': {bp: 1, type: 'Normal'},
   'Spike Cannon': {bp: 20, type: 'Normal', multihit: [2, 5]},
   Stomp: {bp: 65, type: 'Normal'},
@@ -162,7 +163,7 @@ const RBY: {[name: string]: MoveData} = {
   'Body Slam': {bp: 85, type: 'Normal'},
   Flamethrower: {bp: 95, type: 'Fire'},
   'Hydro Pump': {bp: 120, type: 'Water'},
-  'Ice Beam': {bp: 95, type: 'Ice'},
+  'Ice Beam': {bp: 95, type: 'Ice', isBeam: true},
   Lick: {bp: 20, type: 'Ghost'},
   Screech: {bp: 0, category: 'Status', type: 'Normal'},
   Sing: {bp: 0, category: 'Status', type: 'Normal'},
@@ -199,7 +200,7 @@ const RBY: {[name: string]: MoveData} = {
   'Pay Day': {bp: 40, type: 'Normal'},
   Peck: {bp: 35, type: 'Flying'},
   Pound: {bp: 40, type: 'Normal'},
-  Psybeam: {bp: 65, type: 'Psychic'},
+  Psybeam: {bp: 65, type: 'Psychic', isBeam: true},
   'Quick Attack': {bp: 40, type: 'Normal', priority: 1},
   Scratch: {bp: 40, type: 'Normal'},
   'Shadow Strike': {bp: 80, type: 'Ghost'},
@@ -531,11 +532,11 @@ const ADV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Ice Ball': {bp: 30, type: 'Ice', makesContact: true},
   'Sheer Cold': {bp: 0, type: 'Ice'},
   Howl: {bp: 0, category: 'Status', type: 'Normal'},
-  'Luster Purge': {bp: 70, type: 'Psychic'},
+  'Luster Purge': {bp: 70, type: 'Psychic', isBeam: true},
   'Mist Ball': {bp: 70, type: 'Psychic'},
   'Psycho Boost': {bp: 140, type: 'Psychic', self: {boosts: {spa: -2}}},
   Refresh: {bp: 0, category: 'Status', type: 'Normal'},
-  'Signal Beam': {bp: 75, type: 'Bug'},
+  'Signal Beam': {bp: 75, type: 'Bug', isBeam: true},
   'Silver Wind': {bp: 60, type: 'Bug'},
   'Aerial Ace': {bp: 60, type: 'Flying', makesContact: true},
   'Blast Burn': {bp: 150, type: 'Fire'},
@@ -561,7 +562,7 @@ const ADV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Shadow Punch': {bp: 60, type: 'Ghost', makesContact: true},
   'Shock Wave': {bp: 60, type: 'Electric'},
   Superpower: {bp: 120, type: 'Fighting', self: {boosts: {atk: -1, def: -1}}, makesContact: true},
-  'Water Pulse': {bp: 60, type: 'Water'},
+  'Water Pulse': {bp: 60, type: 'Water', isBeam: true},
   'Water Spout': {bp: 150, type: 'Water', target: 'allAdjacentFoes'},
   Yawn: {bp: 0, category: 'Status', type: 'Normal'},
 };
@@ -955,10 +956,10 @@ const DPP_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     category: 'Special',
   },
   'Air Slash': {bp: 75, type: 'Flying', category: 'Special'},
-  'Aura Sphere': {bp: 90, type: 'Fighting', category: 'Special'},
+  'Aura Sphere': {bp: 90, type: 'Fighting', category: 'Special', isBeam: true},
   'Bug Buzz': {bp: 90, type: 'Bug', isSound: true, category: 'Special'},
   'Draco Meteor': {bp: 140, type: 'Dragon', self: {boosts: {spa: -2}}, category: 'Special'},
-  'Dragon Pulse': {bp: 90, type: 'Dragon', category: 'Special'},
+  'Dragon Pulse': {bp: 90, type: 'Dragon', category: 'Special', isBeam: true},
   'Dragon Rush': {
     bp: 100,
     type: 'Dragon',
@@ -995,7 +996,7 @@ const DPP_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Heart Swap': {bp: 0, type: 'Psychic'},
   Judgment: {bp: 100, type: 'Normal', category: 'Special'},
   'Magnet Bomb': {bp: 60, type: 'Steel', category: 'Physical'},
-  'Mirror Shot': {bp: 65, type: 'Steel', category: 'Special'},
+  'Mirror Shot': {bp: 65, type: 'Steel', category: 'Special', isBeam: true},
   'Mud Bomb': {bp: 65, type: 'Ground', category: 'Special'},
   'Ominous Wind': {bp: 60, type: 'Ghost', category: 'Special'},
   Punishment: {
@@ -1042,7 +1043,7 @@ const DPP_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     isPunch: true,
     category: 'Physical',
   },
-  'Charge Beam': {bp: 50, type: 'Electric', category: 'Special'},
+  'Charge Beam': {bp: 50, type: 'Electric', category: 'Special', isBeam: true},
   'Close Combat': {
     bp: 120,
     type: 'Fighting',
@@ -1055,7 +1056,7 @@ const DPP_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     makesContact: true,
     category: 'Physical',
   },
-  'Dark Pulse': {bp: 80, type: 'Dark', category: 'Special'},
+  'Dark Pulse': {bp: 80, type: 'Dark', category: 'Special', isBeam: true},
   'Defend Order': {bp: 0, type: 'Bug'},
   Discharge: {
     bp: 80,
@@ -1064,7 +1065,7 @@ const DPP_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     category: 'Special',
   },
   'Earth Power': {bp: 90, type: 'Ground', category: 'Special'},
-  'Flash Cannon': {bp: 80, type: 'Steel', category: 'Special'},
+  'Flash Cannon': {bp: 80, type: 'Steel', category: 'Special', isBeam: true},
   'Focus Blast': {bp: 120, type: 'Fighting', category: 'Special'},
   'Force Palm': {
     bp: 60,
@@ -1851,7 +1852,7 @@ const XY_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Grassy Terrain': {bp: 0, type: 'Grass'},
   'Ion Deluge': {bp: 0, type: 'Electric', priority: 1},
   'Land\'s Wrath': {bp: 90, type: 'Ground', target: 'allAdjacentFoes', category: 'Physical'},
-  'Light of Ruin': {bp: 140, type: 'Fairy', recoil: [1, 2], category: 'Special'},
+  'Light of Ruin': {bp: 140, type: 'Fairy', recoil: [1, 2], category: 'Special', isBeam: true},
   'Oblivion Wing': {
     bp: 80,
     type: 'Flying',
@@ -1864,6 +1865,7 @@ const XY_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     target: 'allAdjacentFoes',
     category: 'Special',
     isPulse: true,
+    isBeam: true,
   },
   'Precipice Blades': {
     bp: 120,
@@ -1891,7 +1893,13 @@ const XY_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   Celebrate: {bp: 0, type: 'Normal'},
   Confide: {bp: 0, type: 'Normal', isSound: true},
   'Crafty Shield': {bp: 0, type: 'Fairy', priority: 3},
-  'Dazzling Gleam': {bp: 80, type: 'Fairy', target: 'allAdjacentFoes', category: 'Special'},
+  'Dazzling Gleam': {
+    bp: 80,
+    type: 'Fairy',
+    target: 'allAdjacentFoes',
+    category: 'Special',
+    isBeam: true,
+  },
   'Disarming Voice': {
     bp: 40,
     type: 'Fairy',
@@ -1934,6 +1942,7 @@ const XY_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     type: 'Fairy',
     category: 'Special',
     secondaries: true,
+    isBeam: true,
   },
   'Noble Roar': {bp: 0, type: 'Normal', isSound: true},
   Nuzzle: {
@@ -2503,6 +2512,7 @@ const SM_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     type: 'Psychic',
     category: 'Special',
     isZ: true,
+    isBeam: true,
   },
   'Malicious Moonsault': {
     bp: 180,
@@ -2572,6 +2582,7 @@ const SM_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     makesContact: true,
     category: 'Physical',
     zp: 190,
+    isBeam: true,
   },
   'Soul-Stealing 7-Star Strike': {
     bp: 195,
@@ -2704,12 +2715,13 @@ const SM_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     secondaries: true,
     zp: 160,
   },
-  'Moongeist Beam': {bp: 100, type: 'Ghost', category: 'Special', zp: 180},
+  'Moongeist Beam': {bp: 100, type: 'Ghost', category: 'Special', zp: 180, isBeam: true},
   'Photon Geyser': {
     bp: 100,
     type: 'Psychic',
     category: 'Special',
     zp: 180,
+    isBeam: true,
   },
   'Pika Papow': {bp: 0, type: 'Electric', category: 'Special', zp: 100},
   'Plasma Fists': {
@@ -2734,7 +2746,7 @@ const SM_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     category: 'Physical',
     zp: 160,
   },
-  'Prismatic Laser': {bp: 160, type: 'Psychic', category: 'Special', zp: 200},
+  'Prismatic Laser': {bp: 160, type: 'Psychic', category: 'Special', zp: 200, isBeam: true},
   'Psychic Fangs': {
     bp: 85,
     type: 'Psychic',
@@ -2987,6 +2999,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     category: 'Special',
     zp: 200,
     maxPower: 150,
+    isBeam: true,
   },
   'Expanding Force': {
     bp: 80,
@@ -3456,6 +3469,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     category: 'Special',
     zp: 190,
     maxPower: 140,
+    isBeam: true,
   },
   'Misty Explosion': {
     bp: 100,
@@ -3564,6 +3578,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     category: 'Special',
     zp: 200,
     maxPower: 140,
+    isBeam: true,
   },
   'Steel Roller': {
     bp: 130,
@@ -3599,6 +3614,7 @@ const SS_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     isPulse: true,
     zp: 160,
     maxPower: 130,
+    isBeam: true,
   },
   'Triple Axel': {
     bp: 20,
@@ -4332,6 +4348,7 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     category: 'Special',
     zp: 200,
     maxPower: 150,
+    isBeam: true,
   },
   'Collision Course': {
     bp: 100,
@@ -4544,6 +4561,7 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     zp: 160,
     maxPower: 130,
     secondaries: true,
+    isBeam: true,
   },
   'Lunar Blessing': {
     bp: 0,
@@ -4930,6 +4948,7 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     zp: 100,
     maxPower: 90,
     multihit: 2,
+    isBeam: true,
   },
   'Upper Hand': {
     bp: 65,
@@ -5046,6 +5065,7 @@ class Move implements I.Move {
     'maxPower',
     'isSlicing',
     'isWind',
+    'isBeam',
   ]);
 
   constructor(name: string, data: MoveData, gen: number) {
@@ -5063,6 +5083,7 @@ class Move implements I.Move {
     if (data.isPulse) this.flags.pulse = 1;
     if (data.isSlicing) this.flags.slicing = 1;
     if (data.isWind) this.flags.wind = 1;
+    if (data.isBeam) this.flags.beam = 1;
 
     assignWithout(this, data, Move.FLAGS);
 

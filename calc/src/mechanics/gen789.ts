@@ -336,6 +336,7 @@ export function calculateSMSSSV(
   let isGalvanize = false;
   let isLiquidVoice = false;
   let isNormalize = false;
+  let isFatalize = false;
   const noTypeChange = move.named(
     'Revelation Dance',
     'Judgment',
@@ -362,8 +363,10 @@ export function calculateSMSSSV(
       type = 'Ice';
     } else if ((isNormalize = attacker.hasAbility('Normalize'))) { // Boosts any type
       type = 'Normal';
+    } else if ((isFatalize = attacker.hasAbility('Fatalize') && normal)) {
+      type = 'Dark';
     }
-    if (isGalvanize || isPixilate || isRefrigerate || isAerilate || isNormalize) {
+    if (isGalvanize || isPixilate || isRefrigerate || isAerilate || isNormalize || isFatalize) {
       desc.attackerAbility = attacker.ability;
       hasAteAbilityTypeChange = true;
     } else if (isLiquidVoice) {
@@ -496,10 +499,6 @@ export function calculateSMSSSV(
   ) {
     desc.defenderAbility = defender.ability;
     return result;
-  }
-  if (defender.hasAbility('Desert Spirit') && move.flags.sound) {
-    desc.defenderAbility = defender.ability;
-    typeEffectiveness = 0.5;
   }
   if (move.hasType('Ground') && !move.named('Thousand Arrows') &&
       !field.isGravity && defender.hasItem('Air Balloon')) {
@@ -709,7 +708,8 @@ export function calculateSMSSSV(
       // Check if lost -ate ability. Typing stays the same, only boost is lost
       // Cannot be regained during multihit move and no Normal moves with stat drawbacks
       hasAteAbilityTypeChange = hasAteAbilityTypeChange &&
-        attacker.hasAbility('Aerilate', 'Galvanize', 'Pixilate', 'Refrigerate', 'Normalize');
+        attacker.hasAbility('Aerilate', 'Galvanize', 'Pixilate',
+          'Refrigerate', 'Normalize', 'Fatalize');
 
       if (move.timesUsed! > 1) {
         // Adaptability does not change between hits of a multihit, only between turns
@@ -1208,7 +1208,9 @@ export function calculateBPModsSMSSSV(
       (turnOrder !== 'first' || field.defenderSide.isSwitching === 'out')) ||
     (attacker.hasAbility('Tough Claws') && move.flags.contact) ||
     (attacker.hasAbility('Punk Rock') && move.flags.sound) ||
-    (attacker.hasAbility('Desert Spirit') && move.flags.sound)
+    (attacker.hasAbility('Desert Spirit') && move.flags.sound) ||
+    (attacker.hasAbility('Spectre Onslaught') && !move.named('Night Shade')) ||
+    (attacker.hasAbility('Crescent Form') && move.flags.beam)
   ) {
     bpMods.push(5325);
     desc.attackerAbility = attacker.ability;
@@ -1389,6 +1391,8 @@ export function calculateAtModsSMSSSV(
       ((attacker.hasAbility('Overgrow') && move.hasType('Grass')) ||
        (attacker.hasAbility('Blaze') && move.hasType('Fire')) ||
        (attacker.hasAbility('Torrent') && move.hasType('Water')) ||
+        (attacker.hasAbility('Surge') && move.hasType('Electric')) ||
+        (attacker.hasAbility('Draconic') && move.hasType('Dragon')) ||
        (attacker.hasAbility('Swarm') && move.hasType('Bug')))) ||
     (move.category === 'Special' && attacker.abilityOn && attacker.hasAbility('Plus', 'Minus'))
   ) {
@@ -1400,7 +1404,8 @@ export function calculateAtModsSMSSSV(
   } else if (
     (attacker.hasAbility('Steelworker') && move.hasType('Steel')) ||
     (attacker.hasAbility('Dragon\'s Maw') && move.hasType('Dragon')) ||
-    (attacker.hasAbility('Rocky Payload') && move.hasType('Rock'))
+    (attacker.hasAbility('Rocky Payload') && move.hasType('Rock')) ||
+    (attacker.hasAbility('Stoneheart') && move.hasType('Rock'))
   ) {
     atMods.push(6144);
     desc.attackerAbility = attacker.ability;
@@ -1751,7 +1756,9 @@ export function calculateFinalModsSMSSSV(
     desc.defenderAbility = defender.ability;
   } else if (
     (defender.hasAbility('Punk Rock') && move.flags.sound) ||
-    (defender.hasAbility('Ice Scales') && move.category === 'Special')
+    (defender.hasAbility('Ice Scales') && move.category === 'Special') ||
+    (defender.hasAbility('Crescent Form') && move.flags.beam) ||
+    (defender.hasAbility('Desert Spirit') && move.flags.sound)
   ) {
     finalMods.push(2048);
     desc.defenderAbility = defender.ability;

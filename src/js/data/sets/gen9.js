@@ -5415,7 +5415,7 @@ var SETDEX_SV = {
 			"nature": "Sassy",
 			"teraType": "Ground",
 			"ivs": {"sp": 0},
-			"evs": {"hp": 252, "def": 240, "sd": 16},
+			"evs": {"hp": 252, "df": 240, "sd": 16},
 			"moves": ["Scorching Sands", "Psychic Noise", "Stealth Rock", "Teleport"]
 		}
 	},
@@ -5495,7 +5495,7 @@ var SETDEX_SV = {
 			"nature": "Jolly",
 			"teraType": "Fighting",
 			"evs": {"at": 252, "sp": 252, "sd": 4},
-			"moves": ["Close Combat", "Amber Assault", "Knock Off", "U-Turn"]
+			"moves": ["Close Combat", "Amber Assault", "Knock Off", "U-turn"]
 		}
 	},
 	"Necromauser": {
@@ -5503,7 +5503,7 @@ var SETDEX_SV = {
 	},
 	"Flygon-Mega": {
 		"Physical Sand Sweeper": {"ability":"Desert Spirit","item":"Audinite","nature":"Jolly","evs":{"sp":252,"at":252,"sd":4},"moves":["Dragon Dance","Earthquake","Dragon Claw","Stone Edge"]},
-		"Special": {"ability":"Desert Spirit","item":"Audinite","nature":"Timid","evs":{"sp":252,"df":4,"sa":252},"moves":["Earth Power","Boomburst","Draco Meteor","U-Turn"]}
+		"Special": {"ability":"Desert Spirit","item":"Audinite","nature":"Timid","evs":{"sp":252,"df":4,"sa":252},"moves":["Earth Power","Boomburst","Draco Meteor","U-turn"]}
 	},
 	"Flygon-Ultra": {
 		"Specially Defensive": {
@@ -5534,8 +5534,41 @@ var SETDEX_SV = {
 			"item": "Life Orb",
 			"nature": "Jolly",
 			"teraType": "Fire",
-			"evs": {"atk": 252, "sp": 252, "df": 4},
+			"evs": {"at": 252, "sp": 252, "df": 4},
 			"moves": ["Flare Blitz", "Brave Bird", "Close Combat", "Swords Dance"]
+		}
+	},
+	"Volcarona-Delta": {
+		"Meteor Beam": {
+			"level": 100,
+			"ability": "Crescent Form",
+			"item": "Power Herb",
+			"nature": "Timid",
+			"teraType": "Bug",
+			"evs": {"sa": 252, "sp": 252, "sd": 4},
+			"moves": ["Psychic", "Meteor Beam", "Heat Wave", "Quiver Dance"]
+		}
+	},
+	"Spiritomb-Unbound": {
+		"Physical Trick Room": {
+			"level": 100,
+			"ability": "Spectre Onslaught",
+			"item": "Spell Tag",
+			"nature": "Brave",
+			"teraType": "Ghost",
+			"ivs": {"sp": 0},
+			"evs": {"at": 252, "hp": 252, "df": 4},
+			"moves": ["Poltergeist", "Sucker Punch", "Return", "Trick Room"]
+		},
+		"Z-Trick Room Hypnosis": {
+			"level": 100,
+			"ability": "Spectre Onslaught",
+			"item": "Psychium Z",
+			"nature": "Brave",
+			"teraType": "Ghost",
+			"ivs": {"sp": 0},
+			"evs": {"at": 252, "hp": 252, "df": 4},
+			"moves": ["Poltergeist", "Sucker Punch", "Hypnosis", "Trick Room"]
 		}
 	},
 };
