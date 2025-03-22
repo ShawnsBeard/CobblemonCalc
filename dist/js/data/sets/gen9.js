@@ -5371,6 +5371,15 @@ var SETDEX_SV = {
 			"teraType": "Dragon",
 			"evs": {"df": 252, "hp": 248, "sp": 8},
 			"moves": ["Lava Plume", "Draco Meteor", "Knock Off", "Blaze Out"]
+		},
+		"Sun Setter": {
+			"level": 100,
+			"ability": "Run Away",
+			"item": "Heat Rock",
+			"nature": "Bold",
+			"teraType": "Fire",
+			"evs": {"hp": 248, "df": 40, "sd":212, "sp":8},
+			"moves": ["Stealth Rock", "Draco Meteor", "Overheat", "Blaze Out"]
 		}
 	},
 	"Secret Armor": {
@@ -5424,9 +5433,9 @@ var SETDEX_SV = {
 			"level": 100,
 			"ability": "Protosynthesis",
 			"item": "Booster Energy",
-			"nature": "Bold",
+			"nature": "Modest",
 			"teraType": "Water",
-			"evs": {"hp": 248, "def": 200, "sd": 60},
+			"evs": {"hp": 232, "sa": 216, "sp": 60},
 			"moves": ["Take Heart", "Agility", "Surf", "Psyshock"]
 		},
 		"Assault Vest Pivot": {
@@ -5435,7 +5444,7 @@ var SETDEX_SV = {
 			"item": "Assault Vest",
 			"nature": "Modest",
 			"teraType": "Water",
-			"evs": {"hp": 228, "spa": 252, "sd": 28},
+			"evs": {"hp": 228, "sa": 252, "sp": 28},
 			"moves": ["Scald", "Future Sight", "Flip Turn", "Ice Beam"]
 		}
 	},
@@ -5569,6 +5578,28 @@ var SETDEX_SV = {
 			"ivs": {"sp": 0},
 			"evs": {"at": 252, "hp": 252, "df": 4},
 			"moves": ["Poltergeist", "Sucker Punch", "Hypnosis", "Trick Room"]
+		}
+	},
+	"Infernape-Delta-Mega": {
+		"Mixed Sweeper": {
+			"level": 100,
+			"ability": "Run Away",
+			"item": "Auditnite",
+			"nature": "Naive",
+			"teraType": "Electric",
+			"evs": {"at": 252, "sa": 4, "sp":252},
+			"moves": ["Close Combat", "Swords Dance", "Shocking Blow", "Hidden Power Ice"]
+		}
+	},
+	"Electisaur": {
+		"Chlorophyll Sweeper": {
+			"level": 100,
+			"ability": "Chlorophyll",
+			"item": "Heavy-Duty Boots",
+			"nature": "Naive",
+			"teraType": "Grass",
+			"evs": {"at": 4, "sp": 252, "sa": 252},
+			"moves": ["Thunderbolt", "Weather Ball", "Earthquake", "Growth"]
 		}
 	},
 };

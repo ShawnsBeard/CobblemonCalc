@@ -411,6 +411,14 @@ function getNaturalGift(gen, item) {
 exports.getNaturalGift = getNaturalGift;
 function getTechnoBlast(item) {
     switch (item) {
+        case 'Dread Drive':
+            return 'Dark';
+        case 'Thrash Drive':
+            return 'Fighting';
+        case 'Pixie Drive':
+            return 'Fairy';
+        case 'Mind Drive':
+            return 'Psychic';
         case 'Burn Drive':
             return 'Fire';
         case 'Chill Drive':

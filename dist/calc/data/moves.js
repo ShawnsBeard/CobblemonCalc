@@ -4210,7 +4210,7 @@ var SV_PATCH = {
         isSound: true
     },
     'Amber Assault': {
-        bp: 90,
+        bp: 85,
         type: 'Electric',
         category: 'Physical',
         zp: 175,
@@ -4362,7 +4362,23 @@ var SV_PATCH = {
         category: 'Physical',
         zp: 100,
         maxPower: 100,
+        secondaries: true
+    },
+    'Crescent Edge': {
+        bp: 85,
+        type: 'Steel',
+        category: 'Physical',
+        overrideDefensiveStat: 'spd',
+        target: 'allAdjacentFoes',
         makesContact: true
+    },
+    'Crimson Charge': {
+        bp: 90,
+        type: 'Fire',
+        category: 'Physical',
+        zp: 175,
+        maxPower: 90,
+        secondaries: true
     },
     Doodle: {
         bp: 0,
@@ -4503,6 +4519,14 @@ var SV_PATCH = {
         maxPower: 130,
         makesContact: true
     },
+    'Indigo Impact': {
+        bp: 90,
+        type: 'Water',
+        category: 'Special',
+        zp: 175,
+        maxPower: 90,
+        secondaries: true
+    },
     'Infernal Parade': {
         bp: 60,
         type: 'Ghost',
@@ -4628,6 +4652,14 @@ var SV_PATCH = {
         maxPower: 120,
         secondaries: true
     },
+    'New Moon': {
+        bp: 90,
+        type: 'Dark',
+        category: 'Special',
+        zp: 175,
+        maxPower: 90,
+        secondaries: true
+    },
     'Noxious Torque': {
         bp: 100,
         type: 'Poison',
@@ -4736,6 +4768,12 @@ var SV_PATCH = {
         category: 'Physical',
         zp: 190,
         maxPower: 140
+    },
+    'Refraction Reactor': {
+        bp: 100,
+        type: 'Electric',
+        category: 'Special',
+        secondaries: true
     },
     'Revival Blessing': {
         bp: 0,
@@ -4860,6 +4898,13 @@ var SV_PATCH = {
         type: 'Psychic',
         category: 'Status'
     },
+    'Techno Beam': {
+        bp: 80,
+        type: 'Normal',
+        category: 'Special',
+        zp: 160,
+        maxPower: 140
+    },
     'Temper Flare': {
         bp: 75,
         type: 'Fire',
@@ -4894,6 +4939,14 @@ var SV_PATCH = {
         bp: 0,
         type: 'Normal',
         category: 'Status'
+    },
+    'Titanium Tempest': {
+        bp: 100,
+        type: 'Steel',
+        category: 'Physical',
+        zp: 180,
+        maxPower: 130,
+        secondaries: true
     },
     'Torch Song': {
         bp: 80,

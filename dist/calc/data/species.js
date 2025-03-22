@@ -9041,7 +9041,7 @@ var SV_PATCH = {
     },
     'Ambipom-Ultra': {
         types: ['Fire', 'Fairy'],
-        bs: { hp: 75, at: 108, df: 66, sa: 58, sd: 60, sp: 115 },
+        bs: { hp: 75, at: 118, df: 61, sa: 58, sd: 55, sp: 115 },
         weightkg: 16.5,
         abilities: { 0: 'Flash Fire' }
     },
@@ -9071,7 +9071,7 @@ var SV_PATCH = {
         abilities: { 0: 'Seed Sower' }
     },
     'Arcanine-Delta': {
-        types: ['Water'],
+        types: ['Water', 'Dragon'],
         bs: { hp: 85, at: 115, df: 80, sa: 95, sd: 80, sp: 100 },
         weightkg: 158,
         abilities: { 0: 'Intimidate' }
@@ -9259,7 +9259,7 @@ var SV_PATCH = {
     },
     Clefgar: {
         types: ['Ghost', 'Fairy'],
-        bs: { hp: 80, at: 84, df: 76, sa: 124, sd: 108, sp: 88 },
+        bs: { hp: 64, at: 100, df: 80, sa: 124, sd: 100, sp: 92 },
         weightkg: 40,
         gender: 'N',
         abilities: { 0: 'Unaware' }
@@ -9603,10 +9603,10 @@ var SV_PATCH = {
         abilities: { 0: 'Toxic Debris' }
     },
     'Glimmora-Ultra': {
-        types: ['Electric', 'Fairy'],
-        bs: { hp: 83, at: 55, df: 75, sa: 135, sd: 91, sp: 86 },
+        types: ['Electric', 'Psychic'],
+        bs: { hp: 70, at: 60, df: 64, sa: 140, sd: 99, sp: 92 },
         weightkg: 20.5,
-        abilities: { 0: 'Swift Swim' }
+        abilities: { 0: 'Volt Absorb' }
     },
     'Gogoat-Delta': {
         types: ['Normal', 'Steel'],
@@ -9805,7 +9805,7 @@ var SV_PATCH = {
     },
     'Iron Runner': {
         types: ['Normal', 'Steel'],
-        bs: { hp: 78, at: 98, df: 82, sa: 100, sd: 72, sp: 140 },
+        bs: { hp: 68, at: 98, df: 94, sa: 96, sd: 80, sp: 134 },
         weightkg: 88,
         gender: 'N',
         abilities: { 0: 'Quark Drive' }
@@ -9960,7 +9960,7 @@ var SV_PATCH = {
     },
     Magoodra: {
         types: ['Dragon', 'Fire'],
-        bs: { hp: 68, at: 112, df: 142, sa: 102, sd: 64, sp: 72 },
+        bs: { hp: 68, at: 104, df: 152, sa: 100, sd: 64, sp: 72 },
         weightkg: 288,
         gender: 'N',
         abilities: { 0: 'Magma Armor' }
@@ -9986,8 +9986,8 @@ var SV_PATCH = {
         abilities: { 0: 'Cloud Nine' }
     },
     'Manaphy-Mega': {
-        types: ['Water', 'Fairy'],
-        bs: { hp: 100, at: 135, df: 115, sa: 135, sd: 120, sp: 100 },
+        types: ['Water'],
+        bs: { hp: 100, at: 135, df: 120, sa: 125, sd: 120, sp: 100 },
         weightkg: 1.4,
         gender: 'N',
         abilities: { 0: 'Run Away' }
@@ -10191,7 +10191,7 @@ var SV_PATCH = {
         types: ['Grass', 'Electric'],
         bs: { hp: 80, at: 120, df: 84, sa: 60, sd: 96, sp: 110 },
         weightkg: 39.8,
-        abilities: { 0: 'Natural Cure' }
+        abilities: { 0: 'Infiltrator' }
     },
     'Ogerpon-Teal-Tera': {
         types: ['Grass'],
@@ -10370,10 +10370,10 @@ var SV_PATCH = {
     },
     'Radiant Moon': {
         types: ['Dragon', 'Ghost'],
-        bs: { hp: 100, at: 92, df: 76, sa: 124, sd: 116, sp: 92 },
+        bs: { hp: 84, at: 108, df: 76, sa: 124, sd: 116, sp: 92 },
         weightkg: 320,
         gender: 'N',
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Brilliance' }
     },
     'Raging Bolt': {
         types: ['Electric', 'Dragon'],
@@ -10467,6 +10467,13 @@ var SV_PATCH = {
         weightkg: 90,
         abilities: { 0: 'Contrary' }
     },
+    Shaykarp: {
+        types: ['Water', 'Grass'],
+        bs: { hp: 60, at: 60, df: 60, sa: 60, sd: 60, sp: 144 },
+        weightkg: 16,
+        abilities: { 0: 'Fabled' },
+        gender: 'N'
+    },
     'Shaymin-Delta-Land': {
         types: ['Ice'],
         bs: { hp: 100, at: 100, df: 100, sa: 100, sd: 100, sp: 100 },
@@ -10490,7 +10497,7 @@ var SV_PATCH = {
     },
     Shrookle: {
         types: ['Bug', 'Poison'],
-        bs: { hp: 60, at: 55, df: 150, sa: 90, sd: 150, sp: 35 },
+        bs: { hp: 60, at: 45, df: 160, sa: 80, sd: 160, sp: 35 },
         weightkg: 18,
         abilities: { 0: 'Harvest' }
     },
@@ -10818,7 +10825,7 @@ var SV_PATCH = {
     },
     'Uxie-Delta': {
         types: ['Poison', 'Dark'],
-        bs: { hp: 75, at: 90, df: 115, sa: 90, sd: 115, sp: 95 },
+        bs: { hp: 60, at: 95, df: 115, sa: 95, sd: 115, sp: 100 },
         weightkg: 0.3,
         gender: 'N',
         abilities: { 0: 'Toxic Chain' }
@@ -10827,7 +10834,7 @@ var SV_PATCH = {
         types: ['Steel', 'Fairy'],
         bs: { hp: 80, at: 140, df: 68, sa: 104, sd: 100, sp: 108 },
         weightkg: 36,
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Transience' }
     },
     Varoom: {
         types: ['Steel', 'Poison'],

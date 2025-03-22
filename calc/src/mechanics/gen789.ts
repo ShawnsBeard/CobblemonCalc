@@ -254,6 +254,10 @@ export function calculateSMSSSV(
     attacker.item && attacker.item.includes('Drive')) {
     type = getTechnoBlast(attacker.item)!;
     desc.moveType = type;
+  } else if (move.originalName === 'Techno Beam' &&
+    attacker.item && attacker.item.includes('Drive')) {
+    type = getTechnoBlast(attacker.item)!;
+    desc.moveType = type;
   } else if (move.originalName === 'Multi-Attack' &&
     attacker.item && attacker.item.includes('Memory')) {
     type = getMultiAttack(attacker.item)!;
@@ -1213,6 +1217,15 @@ export function calculateBPModsSMSSSV(
     (attacker.hasAbility('Crescent Form') && move.flags.beam)
   ) {
     bpMods.push(5325);
+    desc.attackerAbility = attacker.ability;
+  }
+
+  if ((attacker.hasAbility('Final Verdict') && move.type === 'Ghost' &&
+        move.category === 'Physical') ||
+      (attacker.hasAbility('Final Verdict') && move.type === 'Psychic' &&
+        move.category === 'Special')
+  ) {
+    bpMods.push(6144);
     desc.attackerAbility = attacker.ability;
   }
 

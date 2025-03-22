@@ -266,6 +266,23 @@ function checkIntimidate(gen, source, target) {
             target.boosts.spa = Math.min(6, target.boosts.spa + 2);
         }
     }
+    if (source.hasAbility('Brilliance') && source.abilityOn && !blocked) {
+        if (target.hasAbility('Contrary')) {
+            target.boosts.spa = Math.min(6, target.boosts.spa + 1);
+        }
+        else if (target.hasAbility('Defiant')) {
+            target.boosts.atk = Math.min(6, target.boosts.atk + 2);
+        }
+        else if (target.hasAbility('Simple')) {
+            target.boosts.spa = Math.max(-6, target.boosts.spa - 2);
+        }
+        else {
+            target.boosts.spa = Math.max(-6, target.boosts.spa - 1);
+        }
+        if (target.hasAbility('Competitive')) {
+            target.boosts.spa = Math.min(6, target.boosts.spa + 1);
+        }
+    }
 }
 exports.checkIntimidate = checkIntimidate;
 function checkDownload(source, target, wonderRoomActive) {

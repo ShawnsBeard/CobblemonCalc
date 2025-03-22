@@ -149,6 +149,11 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         type = (0, items_1.getTechnoBlast)(attacker.item);
         desc.moveType = type;
     }
+    else if (move.originalName === 'Techno Beam' &&
+        attacker.item && attacker.item.includes('Drive')) {
+        type = (0, items_1.getTechnoBlast)(attacker.item);
+        desc.moveType = type;
+    }
     else if (move.originalName === 'Multi-Attack' &&
         attacker.item && attacker.item.includes('Memory')) {
         type = (0, items_1.getMultiAttack)(attacker.item);
@@ -863,6 +868,13 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         (attacker.hasAbility('Spectre Onslaught') && !move.named('Night Shade')) ||
         (attacker.hasAbility('Crescent Form') && move.flags.beam)) {
         bpMods.push(5325);
+        desc.attackerAbility = attacker.ability;
+    }
+    if ((attacker.hasAbility('Final Verdict') && move.type === 'Ghost' &&
+        move.category === 'Physical') ||
+        (attacker.hasAbility('Final Verdict') && move.type === 'Psychic' &&
+            move.category === 'Special')) {
+        bpMods.push(6144);
         desc.attackerAbility = attacker.ability;
     }
     if (field.attackerSide.isBattery && move.category === 'Special') {
