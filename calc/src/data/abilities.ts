@@ -298,6 +298,7 @@ const SV = SS.concat([
   'Armor Tail',
   'Beads of Ruin',
   'Brilliance',
+  'Chronostasis',
   'Commander',
   'Costar',
   'Crescent Form',

@@ -5428,6 +5428,18 @@ var SETDEX_SV = {
 			"moves": ["Scorching Sands", "Psychic Noise", "Stealth Rock", "Teleport"]
 		}
 	},
+	"Steelix-Delta-Mega": {
+		"Trick Room Gravity": {
+			"level": 100,
+			"ability": "Planar Collapse",
+			"item": "Audinite",
+			"nature": "Quiet",
+			"teraType": "Ground",
+			"ivs": {"sp": 0},
+			"evs": {"hp": 252, "sa": 252, "sd": 4},
+			"moves": ["Earth Power", "Psychic", "Trick Room", "Teleport"]
+		}
+	},
 	"Rogue Prince": {
 		"Booster Double Dance": {
 			"level": 100,
@@ -5600,6 +5612,66 @@ var SETDEX_SV = {
 			"teraType": "Grass",
 			"evs": {"at": 4, "sp": 252, "sa": 252},
 			"moves": ["Thunderbolt", "Weather Ball", "Earthquake", "Growth"]
+		}
+	},
+	"Tinkaton-Delta": {
+		"Assault Vest": {
+			"level": 100,
+			"ability": "Immunity",
+			"item": "Assault Vest",
+			"nature": "Careful",
+			"teraType": "Fairy",
+			"evs": {"hp": 252, "at": 4, "sd":252},
+			"moves": ["Gigaton Anchor", "Flip Turn", "Rapid Spin", "Knock Off"]
+		},
+		"Utility": {
+			"level": 100,
+			"ability": "Immunity",
+			"item": "Heavy-Duty Boots",
+			"nature": "Impish",
+			"teraType": "Fairy",
+			"evs": {"hp": 252, "df": 92, "sd":164},
+			"moves": ["Gigaton Anchor", "Flip Turn", "Rapid Spin", "Moonlight"]
+		}
+	},
+	"Klinklang-Delta": {
+		"Life Orb Attacker": {
+			"level": 100,
+			"ability": "Chronostasis",
+			"item": "Life Orb",
+			"nature": "Timid",
+			"teraType": "Steel",
+			"evs": {"sa": 252, "hp": 4, "sp":252},
+			"moves": ["Freeze Dry", "Ice Beam", "Flash Cannon", "Earth Power"]
+		},
+		"Choice Item": {
+			"level": 100,
+			"ability": "Chronostasis",
+			"item": "Choice Specs",
+			"nature": "Timid",
+			"teraType": "Steel",
+			"evs": {"sa": 252, "hp": 4, "sp":252},
+			"moves": ["Freeze Dry", "Ice Beam", "Flash Cannon", "Earth Power"]
+		},
+		"Setup Sweeper ": {
+			"level": 100,
+			"ability": "Chronostasis",
+			"item": "Normalium Z",
+			"nature": "Timid",
+			"teraType": "Steel",
+			"evs": {"sa": 252, "hp": 4, "sp":252},
+			"moves": ["Freeze Dry", "Flux Emission", "Flash Cannon", "Earth Power"]
+		}
+	},
+	"Malevorus-Therian": {
+		"Choice Item": {
+			"level": 100,
+			"ability": "Cloud Nine",
+			"item": "Choice Specs",
+			"nature": "Timid",
+			"teraType": "Dark",
+			"evs": {"sa": 252, "hp": 4, "sp":252},
+			"moves": ["Moonrift Storm", "U-turn", "Focus Blast", "Earth Power"]
 		}
 	},
 };

@@ -30,11 +30,12 @@ import {
   checkTeraformZero,
   checkWindRider,
   checkWonderRoom,
-  computeFinalStats,
+  computeFinalStats, // Check this for Chronostasis
   countBoosts,
   getBaseDamage,
   getStatDescriptionText,
   getFinalDamage,
+  getFinalSpeed,
   getModifiedStat,
   getQPBoostedStat,
   getMoveEffectiveness,

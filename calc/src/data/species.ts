@@ -9852,7 +9852,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     weightkg: 79,
     abilities: {0: 'Anger Shell'},
   },
-  'Klingklang-Delta': {
+  'Klinklang-Delta': {
     types: ['Steel', 'Ice'],
     bs: {hp: 80, at: 60, df: 98, sa: 114, sd: 80, sp: 88},
     weightkg: 121,

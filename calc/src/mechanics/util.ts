@@ -150,6 +150,8 @@ export function getMoveEffectiveness(
     return 2;
   } else if (move.named('Dual Divide') && type === 'Steel') {
     return 2;
+  } else if (move.named('Gigaton Anchor') && type === 'Water') {
+    return 2;
   } else {
     let effectiveness = gen.types.get(toID(move.type))!.effectiveness[type]!;
     if (effectiveness === 0 && isRingTarget) {

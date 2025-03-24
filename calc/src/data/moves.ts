@@ -4466,11 +4466,23 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     zp: 140,
     maxPower: 120,
   },
+  'Flux Emission': {
+    bp: 0,
+    type: 'Ice',
+    category: 'Status',
+  },
   'Foam Frenzy': {
     bp: 95,
     type: 'Water',
     category: 'Special',
     zp: 175,
+    maxPower: 150,
+  },
+  'Gigaton Anchor': {
+    bp: 160,
+    type: 'Steel',
+    category: 'Physical',
+    zp: 200,
     maxPower: 150,
   },
   'Gigaton Hammer': {
@@ -4645,6 +4657,14 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     makesContact: true,
     secondaries: true,
     target: 'allAdjacentFoes',
+  },
+  'Moonrift Storm': {
+    bp: 100,
+    type: 'Dark',
+    category: 'Special',
+    zp: 180,
+    maxPower: 130,
+    secondaries: true,
   },
   'Mountain Gale': {
     bp: 100,
