@@ -609,6 +609,10 @@ export function getStabMod(pokemon: Pokemon, move: Move, desc: RawDesc) {
   } else if (pokemon.hasAbility('Protean', 'Libero') && !pokemon.teraType) {
     stabMod += 2048;
     desc.attackerAbility = pokemon.ability;
+  } else if (pokemon.hasAbility('Boundless') && !pokemon.teraType &&
+    move.hasType('Electric', 'Fire', 'Ice')) {
+    stabMod += 2048;
+    desc.attackerAbility = pokemon.ability;
   }
   const teraType = pokemon.teraType;
   if (teraType === move.type && teraType !== 'Stellar') {

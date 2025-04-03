@@ -4217,6 +4217,15 @@ var SV_PATCH = {
         maxPower: 130,
         secondaries: true
     },
+    'Amp Serum': {
+        bp: 80,
+        type: 'Electric',
+        category: 'Special',
+        zp: 160,
+        maxPower: 130,
+        secondaries: true,
+        makesContact: true
+    },
     'Aqua Step': {
         bp: 80,
         type: 'Water',
@@ -4317,6 +4326,15 @@ var SV_PATCH = {
         makesContact: true,
         isSlicing: true,
         secondaries: true
+    },
+    'Chilling Silence': {
+        bp: 40,
+        type: 'Ghost',
+        category: 'Special',
+        zp: 100,
+        maxPower: 100,
+        secondaries: true,
+        priority: 3
     },
     'Chilling Water': {
         bp: 50,
@@ -4466,7 +4484,8 @@ var SV_PATCH = {
         type: 'Water',
         category: 'Special',
         zp: 175,
-        maxPower: 150
+        maxPower: 150,
+        target: 'allAdjacentFoes'
     },
     'Gigaton Anchor': {
         bp: 160,
@@ -4522,6 +4541,14 @@ var SV_PATCH = {
         maxPower: 130,
         makesContact: true,
         breaksProtect: true
+    },
+    'Ice Mace': {
+        bp: 150,
+        type: 'Ice',
+        category: 'Physical',
+        zp: 200,
+        maxPower: 150,
+        makesContact: true
     },
     'Ice Spinner': {
         bp: 80,
@@ -4579,6 +4606,11 @@ var SV_PATCH = {
         category: 'Physical',
         zp: 100,
         maxPower: 100
+    },
+    'Lift Off': {
+        bp: 0,
+        type: 'Electric',
+        category: 'Status'
     },
     'Lumina Crash': {
         bp: 80,
@@ -4680,6 +4712,14 @@ var SV_PATCH = {
         maxPower: 90,
         secondaries: true
     },
+    'Noxious Power': {
+        bp: 70,
+        type: 'Poison',
+        category: 'Special',
+        zp: 140,
+        maxPower: 120,
+        secondaries: true
+    },
     'Noxious Torque': {
         bp: 100,
         type: 'Poison',
@@ -4696,6 +4736,24 @@ var SV_PATCH = {
         maxPower: 130,
         isPulse: true
     },
+    'Pearly Parade': {
+        bp: 120,
+        type: 'Water',
+        category: 'Special',
+        zp: 195,
+        maxPower: 140,
+        target: 'allAdjacentFoes',
+        self: { boosts: { spa: -1 } }
+    },
+    'Phantasmal Voyage': {
+        bp: 70,
+        type: 'Ghost',
+        category: 'Special',
+        zp: 140,
+        maxPower: 95,
+        target: 'allAdjacentFoes',
+        breaksProtect: true
+    },
     'Planet Demolition': {
         bp: 120,
         type: 'Rock',
@@ -4704,6 +4762,13 @@ var SV_PATCH = {
         maxPower: 95,
         self: { boosts: { atk: -1, def: -1 } },
         isBullet: true
+    },
+    'Pollen Bloom': {
+        bp: 130,
+        type: 'Grass',
+        category: 'Special',
+        zp: 195,
+        maxPower: 140
     },
     'Psychic Noise': {
         bp: 75,
@@ -4795,6 +4860,14 @@ var SV_PATCH = {
         category: 'Special',
         secondaries: true
     },
+    Retribution: {
+        bp: 100,
+        type: 'Dark',
+        category: 'Special',
+        overrideDefensiveStat: 'def',
+        zp: 180,
+        maxPower: 140
+    },
     'Revival Blessing': {
         bp: 0,
         type: 'Normal',
@@ -4825,6 +4898,24 @@ var SV_PATCH = {
         isWind: true,
         target: 'allAdjacentFoes'
     },
+    'Sandstorm Fury': {
+        bp: 100,
+        type: 'Ground',
+        category: 'Special',
+        zp: 180,
+        maxPower: 130,
+        secondaries: true,
+        breaksProtect: true
+    },
+    'Sandstorm Sphere': {
+        bp: 80,
+        type: 'Rock',
+        category: 'Physical',
+        zp: 160,
+        maxPower: 130,
+        secondaries: true,
+        breaksProtect: true
+    },
     'Shed Tail': {
         bp: 0,
         type: 'Normal',
@@ -4840,6 +4931,14 @@ var SV_PATCH = {
         type: 'Bug',
         category: 'Status',
         priority: 4
+    },
+    'Snow Flare': {
+        bp: 120,
+        type: 'Ice',
+        category: 'Special',
+        zp: 180,
+        maxPower: 130,
+        secondaries: true
     },
     Snowscape: {
         bp: 0,
@@ -5035,6 +5134,13 @@ var SV_PATCH = {
         maxPower: 140,
         makesContact: true,
         recoil: [33, 100]
+    },
+    'Whisk Away': {
+        bp: 65,
+        type: 'Ghost',
+        category: 'Special',
+        zp: 120,
+        maxPower: 120
     },
     'Wicked Torque': {
         bp: 80,

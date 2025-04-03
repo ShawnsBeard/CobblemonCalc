@@ -607,6 +607,11 @@ function getStabMod(pokemon, move, desc) {
         stabMod += 2048;
         desc.attackerAbility = pokemon.ability;
     }
+    else if (pokemon.hasAbility('Boundless') && !pokemon.teraType &&
+        move.hasType('Electric', 'Fire', 'Ice')) {
+        stabMod += 2048;
+        desc.attackerAbility = pokemon.ability;
+    }
     var teraType = pokemon.teraType;
     if (teraType === move.type && teraType !== 'Stellar') {
         stabMod += 2048;

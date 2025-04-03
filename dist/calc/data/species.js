@@ -9605,7 +9605,7 @@ var SV_PATCH = {
     'Glimmora-Ultra': {
         types: ['Electric', 'Psychic'],
         bs: { hp: 70, at: 60, df: 64, sa: 140, sd: 99, sp: 92 },
-        weightkg: 20.5,
+        weightkg: 44,
         abilities: { 0: 'Volt Absorb' }
     },
     'Gogoat-Delta': {
@@ -9671,6 +9671,18 @@ var SV_PATCH = {
         weightkg: 45,
         abilities: { 0: 'Torrent' }
     },
+    'Greninja-Omega': {
+        types: ['Ice', 'Fighting'],
+        bs: { hp: 75, at: 106, df: 75, sa: 97, sd: 68, sp: 109 },
+        weightkg: 40,
+        abilities: { 0: 'Flurry' }
+    },
+    'Greninja-Omega-BattleBond': {
+        types: ['Ice', 'Fighting'],
+        bs: { hp: 75, at: 156, df: 75, sa: 147, sd: 68, sp: 119 },
+        weightkg: 40,
+        abilities: { 0: 'Battle Bond' }
+    },
     'Grimmsnarl-Delta': {
         types: ['Ice', 'Fighting'],
         bs: { hp: 95, at: 130, df: 65, sa: 65, sd: 85, sp: 70 },
@@ -9714,7 +9726,7 @@ var SV_PATCH = {
         bs: { hp: 80, at: 170, df: 125, sa: 160, sd: 60, sp: 85 },
         weightkg: 490,
         gender: 'N',
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Mirage' }
     },
     Houndstone: {
         types: ['Ghost'],
@@ -9889,11 +9901,18 @@ var SV_PATCH = {
         gender: 'N',
         abilities: { 0: 'Orichalcum Pulse' }
     },
+    'Kyurem-Original': {
+        types: ['Dragon'],
+        bs: { hp: 120, at: 160, df: 100, sa: 160, sd: 100, sp: 100 },
+        weightkg: 325,
+        gender: 'N',
+        abilities: { 0: 'Boundless' }
+    },
     Labsire: {
-        types: ['Psychic', 'Poison'],
-        bs: { hp: 90, at: 45, df: 75, sa: 60, sd: 135, sp: 25 },
+        types: ['Poison'],
+        bs: { hp: 75, at: 45, df: 140, sa: 75, sd: 70, sp: 25 },
         weightkg: 15,
-        abilities: { 0: 'Sticky Hold' }
+        abilities: { 0: 'Liquid Ooze' }
     },
     Lechonk: {
         types: ['Normal'],
@@ -9914,7 +9933,14 @@ var SV_PATCH = {
         bs: { hp: 100, at: 70, df: 65, sa: 130, sd: 145, sp: 70 },
         weightkg: 25.5,
         gender: 'N',
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Abyssal Neigh' }
+    },
+    'Looming Tune': {
+        types: ['Normal', 'Psychic'],
+        bs: { hp: 79, at: 95, df: 75, sa: 123, sd: 127, sp: 71 },
+        weightkg: 157,
+        gender: 'N',
+        abilities: { 0: 'Protosynthesis' }
     },
     'Lopunny-Delta': {
         types: ['Dark', 'Fairy'],
@@ -9990,7 +10016,7 @@ var SV_PATCH = {
         bs: { hp: 100, at: 135, df: 120, sa: 125, sd: 120, sp: 100 },
         weightkg: 1.4,
         gender: 'N',
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Noblesse' }
     },
     Manteon: {
         types: ['Bug'],
@@ -10045,7 +10071,7 @@ var SV_PATCH = {
         types: ['Fairy', 'Ghost'],
         bs: { hp: 76, at: 82, df: 73, sa: 100, sd: 99, sp: 100 },
         weightkg: 34.5,
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Twinkle' }
     },
     'Mesprit-Delta': {
         types: ['Poison', 'Fighting'],
@@ -10479,7 +10505,7 @@ var SV_PATCH = {
         bs: { hp: 100, at: 100, df: 100, sa: 100, sd: 100, sp: 100 },
         weightkg: 2.1,
         gender: 'N',
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Altruistic' }
     },
     'Shaymin-Delta-Flying': {
         types: ['Ice', 'Flying'],

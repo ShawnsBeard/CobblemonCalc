@@ -88,7 +88,7 @@ export function calculateSMSSSV(
   checkWindRider(attacker, field.attackerSide);
   checkWindRider(defender, field.defenderSide);
 
-  if (move.named('Meteor Beam', 'Electro Shot')) {
+  if (move.named('Meteor Beam', 'Electro Shot', 'Pollen Bloom')) {
     attacker.boosts.spa +=
       attacker.hasAbility('Simple') ? 2
       : attacker.hasAbility('Contrary') ? -1
@@ -164,7 +164,7 @@ export function calculateSMSSSV(
     'Big Pecks', 'Bulletproof', 'Clear Body', 'Contrary',
     'Damp', 'Dazzling', 'Disguise', 'Dry Skin',
     'Earth Eater', 'Filter', 'Flash Fire', 'Flower Gift',
-    'Flower Veil', 'Fluffy', 'Friend Guard', 'Fur Coat',
+    'Flower Veil', 'Fluffy', 'Friend Guard', 'Fur Coat', 'Geyser',
     'Good as Gold', 'Grass Pelt', 'Guard Dog', 'Heatproof',
     'Heavy Metal', 'Hyper Cutter', 'Ice Face', 'Ice Scales',
     'Illuminate', 'Immunity', 'Inner Focus', 'Insomnia',
@@ -183,7 +183,8 @@ export function calculateSMSSSV(
     'Wonder Skin'
   );
 
-  const attackerIgnoresAbility = attacker.hasAbility('Mold Breaker', 'Teravolt', 'Turboblaze');
+  const attackerIgnoresAbility = attacker.hasAbility('Mold Breaker', 'Teravolt',
+    'Turboblaze', 'Boundless');
   const moveIgnoresAbility = move.named(
     'G-Max Drum Solo',
     'G-Max Fire Ball',
@@ -322,6 +323,8 @@ export function calculateSMSSSV(
       type = 'Fire';
     } else if (attacker.name.includes('Ogerpon-Wellspring')) {
       type = 'Water';
+    } else if (attacker.name.includes('Ogerpon-Stormpeak')) {
+      type = 'Electric';
     }
   } else if (
     move.named('Tera Starstorm') && attacker.name === 'Terapagos-Stellar'
@@ -490,7 +493,8 @@ export function calculateSMSSSV(
   if ((defender.hasAbility('Wonder Guard') && typeEffectiveness <= 1) ||
       (move.hasType('Grass') && defender.hasAbility('Sap Sipper')) ||
       (move.hasType('Fire') && defender.hasAbility('Flash Fire', 'Well-Baked Body')) ||
-      (move.hasType('Water') && defender.hasAbility('Dry Skin', 'Storm Drain', 'Water Absorb')) ||
+      (move.hasType('Water') && defender.hasAbility('Dry Skin', 'Storm Drain',
+        'Water Absorb', 'Geyser')) ||
       (move.hasType('Electric') &&
         defender.hasAbility('Lightning Rod', 'Motor Drive', 'Volt Absorb')) ||
       (move.hasType('Ground') &&
@@ -500,6 +504,7 @@ export function calculateSMSSSV(
       (move.flags.sound && !move.named('Clangorous Soul') && defender.hasAbility('Soundproof')) ||
       (move.priority > 0 && defender.hasAbility('Queenly Majesty', 'Dazzling', 'Armor Tail')) ||
       (move.hasType('Ground') && defender.hasAbility('Earth Eater')) ||
+    (move.hasType('Fighting') && defender.hasAbility('Altruistic')) ||
       (move.flags.wind && defender.hasAbility('Wind Rider'))
   ) {
     desc.defenderAbility = defender.ability;
@@ -907,6 +912,16 @@ export function calculateBasePowerSMSSSV(
     break;
   case 'Dragon Energy':
   case 'Eruption':
+  case 'Ice Mace':
+    if (attacker.named('Greninja-Omega-BattleBond') && attacker.hasAbility('Battle Bond')) {
+      basePower = 120;
+      desc.moveBP = basePower;
+      break;
+    } else {
+      basePower = Math.max(1, Math.floor((150 * attacker.curHP()) / attacker.maxHP()));
+      desc.moveBP = basePower;
+      break;
+    }
   case 'Water Spout':
     basePower = Math.max(1, Math.floor((150 * attacker.curHP()) / attacker.maxHP()));
     desc.moveBP = basePower;
@@ -1088,6 +1103,7 @@ export function calculateBPModsSMSSSV(
     (move.named('Barbaric Incision') && attacker.hasStatus('brn', 'par', 'psn', 'tox')) ||
     (move.named('Brine') && defender.curHP() <= defender.maxHP() / 2) ||
     (move.named('Venoshock') && defender.hasStatus('psn', 'tox')) ||
+    (move.named('Noxious Power') && defender.hasStatus('psn', 'tox')) ||
     (move.named('Lash Out') && (countBoosts(gen, attacker.boosts) < 0))
   ) {
     bpMods.push(8192);
@@ -1098,7 +1114,7 @@ export function calculateBPModsSMSSSV(
     move.target = 'allAdjacentFoes';
     bpMods.push(6144);
     desc.moveBP = basePower * 1.5;
-  } else if ((move.named('Knock Off') && !resistedKnockOffDamage) ||
+  } else if ((move.named('Knock Off', 'Whisk Away') && !resistedKnockOffDamage) ||
     (move.named('Misty Explosion') && isGrounded(attacker, field) && field.hasTerrain('Misty')) ||
     (move.named('Grav Apple') && field.isGravity)
   ) {
@@ -1405,8 +1421,10 @@ export function calculateAtModsSMSSSV(
       ((attacker.hasAbility('Overgrow') && move.hasType('Grass')) ||
        (attacker.hasAbility('Blaze') && move.hasType('Fire')) ||
        (attacker.hasAbility('Torrent') && move.hasType('Water')) ||
+        (attacker.hasAbility('Twinkle') && move.hasType('Fairy')) ||
         (attacker.hasAbility('Surge') && move.hasType('Electric')) ||
         (attacker.hasAbility('Draconic') && move.hasType('Dragon')) ||
+        (attacker.hasAbility('Flurry') && move.hasType('Ice')) ||
        (attacker.hasAbility('Swarm') && move.hasType('Bug')))) ||
     (move.category === 'Special' && attacker.abilityOn && attacker.hasAbility('Plus', 'Minus'))
   ) {
@@ -1693,7 +1711,7 @@ function calculateBaseDamageSMSSSV(
       baseDamage = pokeRound(OF32(baseDamage * 6144) / 4096);
       desc.weather = field.weather;
     } else if (
-      (field.hasWeather('Sun') && move.hasType('Water')) ||
+      (field.hasWeather('Sun') && move.hasType('Water') && !attacker.hasAbility('Noblesse')) ||
       (field.hasWeather('Rain') && move.hasType('Fire'))
     ) {
       baseDamage = pokeRound(OF32(baseDamage * 2048) / 4096);
