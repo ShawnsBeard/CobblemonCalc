@@ -4476,6 +4476,13 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     type: 'Normal',
     category: 'Status',
   },
+  'Florid Puff': {
+    bp: 80,
+    type: 'Fairy',
+    category: 'Special',
+    zp: 160,
+    maxPower: 130,
+  },
   'Flower Trick': {
     bp: 70,
     type: 'Grass',
@@ -4937,6 +4944,13 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     type: 'Steel',
     category: 'Status',
   },
+  'Shocking Blow': {
+    bp: 85,
+    type: 'Electric',
+    category: 'Physical',
+    zp: 160,
+    maxPower: 130,
+  },
   'Silk Trap': {
     bp: 0,
     type: 'Bug',
@@ -5131,6 +5145,13 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     makesContact: true,
     secondaries: true,
     priority: 3,
+  },
+  'Verdant Flush': {
+    bp: 80,
+    type: 'Fairy',
+    category: 'Special',
+    zp: 160,
+    maxPower: 130,
   },
   'Victory Dance': {
     bp: 0,

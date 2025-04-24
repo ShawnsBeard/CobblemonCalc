@@ -9005,15 +9005,15 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Aegislash-Delta-Shield': {
     types: ['Steel', 'Fire'],
-    bs: {hp: 85, at: 45, df: 125, sa: 45, sd: 125, sp: 75},
+    bs: {hp: 85, at: 45, df: 130, sa: 45, sd: 130, sp: 65},
     weightkg: 0,
-    abilities: {0: 'Run Away'},
+    abilities: {0: 'Blazing Swap'},
   },
   'Aegislash-Delta-Sword': {
     types: ['Steel', 'Fire'],
-    bs: {hp: 85, at: 125, df: 45, sa: 125, sd: 45, sp: 75},
+    bs: {hp: 85, at: 130, df: 45, sa: 130, sd: 45, sp: 65},
     weightkg: 0,
-    abilities: {0: ''},
+    abilities: {0: 'Blazing Swap'},
   },
   'Ambipom-Delta': {
     types: ['Normal', 'Ghost'],
@@ -9209,7 +9209,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Charizard-Delta-Mega': {
     types: ['Dragon', 'Rock'],
-    bs: {hp: 72, at: 155, df: 132, sa: 97, sd: 108, sp: 70},
+    bs: {hp: 72, at: 155, df: 132, sa: 92, sd: 103, sp: 80},
     weightkg: 210.5,
     abilities: {0: 'Sheer Force'},
   },
@@ -9267,7 +9267,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   Cosmachi: {
     types: ['Psychic'],
-    bs: {hp: 136, at: 100, df: 68, sa: 104, sd: 100, sp: 96},
+    bs: {hp: 136, at: 84, df: 72, sa: 112, sd: 100, sp: 100},
     weightkg: 4,
     gender: 'N',
     abilities: {0: 'Run Away'},
@@ -9287,7 +9287,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   Curesola: {
     types: ['Grass', 'Fairy'],
-    bs: {hp: 130, at: 55, df: 85, sa: 100, sd: 95, sp: 45},
+    bs: {hp: 120, at: 65, df: 75, sa: 120, sd: 85, sp: 45},
     weightkg: 7,
     abilities: {0: 'Natural Cure'},
   },
@@ -9598,7 +9598,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Golurk-Delta': {
     types: ['Ghost', 'Rock'],
-    bs: {hp: 89, at: 144, df: 80, sa: 55, sd: 60, sp: 55},
+    bs: {hp: 79, at: 134, df: 80, sa: 65, sd: 60, sp: 65},
     weightkg: 31.2,
     abilities: {0: 'Klutz'},
   },
@@ -9896,6 +9896,34 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     weightkg: 15,
     abilities: {0: 'Liquid Ooze'},
   },
+  'Latias-Delta': {
+    types: ['Dragon', 'Fairy'],
+    bs: {hp: 80, at: 75, df: 110, sa: 95, sd: 130, sp: 110},
+    weightkg: 40,
+    gender: 'N',
+    abilities: {0: 'Levitate'},
+  },
+  'Latias-Delta-Mega': {
+    types: ['Dragon', 'Fairy'],
+    bs: {hp: 80, at: 95, df: 140, sa: 125, sd: 150, sp: 110},
+    weightkg: 40,
+    gender: 'N',
+    abilities: {0: 'Levitate'},
+  },
+  'Latios-Delta': {
+    types: ['Dragon', 'Fairy'],
+    bs: {hp: 80, at: 110, df: 95, sa: 130, sd: 75, sp: 110},
+    weightkg: 50,
+    gender: 'N',
+    abilities: {0: 'Levitate'},
+  },
+  'Latios-Delta-Mega': {
+    types: ['Dragon', 'Fairy'],
+    bs: {hp: 80, at: 140, df: 115, sa: 160, sd: 95, sp: 110},
+    weightkg: 50,
+    gender: 'N',
+    abilities: {0: 'Levitate'},
+  },
   Lechonk: {
     types: ['Normal'],
     bs: {hp: 54, at: 45, df: 40, sa: 35, sd: 45, sp: 35},
@@ -9905,7 +9933,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   Liesler: {
     types: ['Dark', 'Poison'],
-    bs: {hp: 72, at: 104, df: 84, sa: 96, sd: 60, sp: 144},
+    bs: {hp: 72, at: 116, df: 76, sa: 88, sd: 64, sp: 144},
     weightkg: 28,
     gender: 'N',
     abilities: {0: 'Limber'},
@@ -10005,6 +10033,13 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 65, at: 110, df: 130, sa: 60, sd: 95, sp: 65},
     weightkg: 25,
     abilities: {0: 'Analytic'},
+  },
+  'Marshadow-Delta': {
+    types: ['Fire', 'Ghost'],
+    bs: {hp: 80, at: 125, df: 90, sa: 90, sd: 125, sp: 90},
+    weightkg: 22.2,
+    gender: 'N',
+    abilities: {0: 'Regenerator'},
   },
   Maschiff: {
     types: ['Dark'],
@@ -10429,6 +10464,18 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     weightkg: 18.5,
     abilities: {0: 'Sharpness'},
   },
+  'Rotom-Dowse': {
+    types: ['Electric', 'Normal'],
+    bs: {hp: 50, at: 65, df: 107, sa: 105, sd: 107, sp: 86},
+    weightkg: 0.3,
+    abilities: {0: 'Levitate'},
+  },
+  'Rotom-Radio': {
+    types: ['Electric', 'Psychic'],
+    bs: {hp: 50, at: 65, df: 107, sa: 105, sd: 107, sp: 86},
+    weightkg: 0.3,
+    abilities: {0: 'Levitate'},
+  },
   'Sableye-Delta': {
     types: ['Ghost', 'Rock'],
     bs: {hp: 80, at: 20, df: 60, sa: 40, sd: 75, sp: 105},
@@ -10464,14 +10511,14 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Secret Armor': {
     types: ['Fighting', 'Steel'],
-    bs: {hp: 101, at: 127, df: 137, sa: 67, sd: 73, sp: 85},
+    bs: {hp: 101, at: 137, df: 137, sa: 57, sd: 73, sp: 85},
     weightkg: 32,
     gender: 'N',
     abilities: {0: 'Protosynthesis'},
   },
   'Serperior-Ultra': {
     types: ['Water', 'Dragon'],
-    bs: {hp: 77, at: 75, df: 95, sa: 75, sd: 95, sp: 111},
+    bs: {hp: 77, at: 88, df: 90, sa: 75, sd: 90, sp: 108},
     weightkg: 90,
     abilities: {0: 'Contrary'},
   },
@@ -10495,6 +10542,13 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     weightkg: 5.2,
     gender: 'N',
     abilities: {0: 'Serene Grace'},
+  },
+  'Shaymin-Lake': {
+    types: ['Grass', 'Water'],
+    bs: {hp: 100, at: 120, df: 75, sa: 127, sd: 75, sp: 103},
+    weightkg: 5.2,
+    gender: 'N',
+    abilities: {0: 'Sap Sipper'},
   },
   Shroodle: {
     types: ['Poison', 'Normal'],
@@ -10596,7 +10650,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Steelix-Delta-Mega': {
     types: ['Ground', 'Psychic'],
-    bs: {hp: 85, at: 75, df: 65, sa: 135, sd: 230, sp: 20},
+    bs: {hp: 85, at: 65, df: 65, sa: 135, sd: 230, sp: 30},
     weightkg: 350,
     abilities: {0: 'Run Away'},
   },

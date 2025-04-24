@@ -331,6 +331,7 @@ var SV = SS.concat([
     'Anger Shell',
     'Armor Tail',
     'Beads of Ruin',
+    'Blazing Swap',
     'Boundless',
     'Brilliance',
     'Chronostasis',

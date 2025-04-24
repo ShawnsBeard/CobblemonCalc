@@ -497,6 +497,7 @@ export function calculateSMSSSV(
         'Water Absorb', 'Geyser')) ||
       (move.hasType('Electric') &&
         defender.hasAbility('Lightning Rod', 'Motor Drive', 'Volt Absorb')) ||
+      (move.hasType('Fire') && defender.hasAbility('Blazing Swap')) ||
       (move.hasType('Ground') &&
         !field.isGravity && !move.named('Thousand Arrows') &&
         !defender.hasItem('Iron Ball') && defender.hasAbility('Levitate')) ||
@@ -504,7 +505,7 @@ export function calculateSMSSSV(
       (move.flags.sound && !move.named('Clangorous Soul') && defender.hasAbility('Soundproof')) ||
       (move.priority > 0 && defender.hasAbility('Queenly Majesty', 'Dazzling', 'Armor Tail')) ||
       (move.hasType('Ground') && defender.hasAbility('Earth Eater')) ||
-    (move.hasType('Fighting') && defender.hasAbility('Altruistic')) ||
+      (move.hasType('Fighting') && defender.hasAbility('Altruistic')) ||
       (move.flags.wind && defender.hasAbility('Wind Rider'))
   ) {
     desc.defenderAbility = defender.ability;
