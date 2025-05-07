@@ -9528,7 +9528,7 @@ var SV_PATCH = {
     },
     'Garchomp-Delta': {
         types: ['Dragon', 'Ice'],
-        bs: { hp: 94, at: 95, df: 95, sa: 110, sd: 100, sp: 106 },
+        bs: { hp: 94, at: 85, df: 95, sa: 120, sd: 100, sp: 106 },
         weightkg: 87,
         abilities: { 0: 'Slush Rush' }
     },
@@ -9601,6 +9601,12 @@ var SV_PATCH = {
         bs: { hp: 83, at: 55, df: 90, sa: 130, sd: 81, sp: 86 },
         weightkg: 45,
         abilities: { 0: 'Toxic Debris' }
+    },
+    'Glimmora-Delta': {
+        types: ['Ice', 'Rock'],
+        bs: { hp: 81, at: 50, df: 137, sa: 115, sd: 60, sp: 82 },
+        weightkg: 35,
+        abilities: { 0: 'Slush Rush' }
     },
     'Glimmora-Ultra': {
         types: ['Electric', 'Psychic'],
@@ -9700,7 +9706,13 @@ var SV_PATCH = {
         types: ['Dragon', 'Fire'],
         bs: { hp: 76, at: 124, df: 105, sa: 63, sd: 73, sp: 99 },
         weightkg: 140.5,
-        abilities: { 0: 'Insomnia' }
+        abilities: { 0: 'Rivalry' }
+    },
+    'Haxorus-Delta-Mega': {
+        types: ['Dragon', 'Fire'],
+        bs: { hp: 76, at: 159, df: 140, sa: 78, sd: 108, sp: 79 },
+        weightkg: 140.5,
+        abilities: { 0: 'Ragnarok' }
     },
     Hemogoblin: {
         types: ['Fairy', 'Fire'],
@@ -9890,7 +9902,7 @@ var SV_PATCH = {
     },
     Klocktowl: {
         types: ['Dark', 'Flying'],
-        bs: { hp: 145, at: 50, df: 70, sa: 110, sd: 102, sp: 65 },
+        bs: { hp: 145, at: 50, df: 70, sa: 100, sd: 112, sp: 65 },
         weightkg: 70,
         abilities: { 0: 'Insomnia' }
     },
@@ -10054,7 +10066,7 @@ var SV_PATCH = {
     },
     'Marshadow-Delta': {
         types: ['Fire', 'Ghost'],
-        bs: { hp: 80, at: 125, df: 90, sa: 90, sd: 125, sp: 90 },
+        bs: { hp: 80, at: 120, df: 85, sa: 110, sd: 115, sp: 90 },
         weightkg: 22.2,
         gender: 'N',
         abilities: { 0: 'Regenerator' }
@@ -10738,7 +10750,7 @@ var SV_PATCH = {
     },
     'Tangled Time': {
         types: ['Dragon', 'Psychic'],
-        bs: { hp: 100, at: 100, df: 75, sa: 120, sd: 75, sp: 120 },
+        bs: { hp: 100, at: 95, df: 75, sa: 125, sd: 75, sp: 120 },
         weightkg: 10,
         gender: 'N',
         abilities: { 0: 'Run Away' }
@@ -10844,9 +10856,15 @@ var SV_PATCH = {
     },
     'Tinkaton-Omega': {
         types: ['Fairy', 'Bug'],
-        bs: { hp: 105, at: 120, df: 86, sa: 50, sd: 60, sp: 85 },
+        bs: { hp: 95, at: 130, df: 86, sa: 50, sd: 60, sp: 85 },
         weightkg: 34.5,
-        abilities: { 0: 'Hyper Cutter' }
+        abilities: { 0: 'Sharpness' }
+    },
+    'Tinkaton-Ultra': {
+        types: ['Fairy', 'Electric'],
+        bs: { hp: 83, at: 65, df: 60, sa: 155, sd: 70, sp: 73 },
+        weightkg: 62.8,
+        abilities: { 0: 'Beast Boost' }
     },
     Tinkatuff: {
         types: ['Fairy', 'Steel'],

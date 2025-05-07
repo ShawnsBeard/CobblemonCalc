@@ -339,6 +339,7 @@ const SV = SS.concat([
   'Protosynthesis',
   'Purifying Salt',
   'Quark Drive',
+  'Ragnarok', // Effect needs implemented
   'Rocky Payload',
   'Seed Sower',
   'Sharpness',

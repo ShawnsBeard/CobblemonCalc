@@ -371,6 +371,7 @@ var SV = SS.concat([
     'Protosynthesis',
     'Purifying Salt',
     'Quark Drive',
+    'Ragnarok',
     'Rocky Payload',
     'Seed Sower',
     'Sharpness',

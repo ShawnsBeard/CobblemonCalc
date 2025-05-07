@@ -5568,6 +5568,15 @@ var SETDEX_SV = {
 			"teraType": "Bug",
 			"evs": {"sa": 252, "sp": 252, "sd": 4},
 			"moves": ["Psychic", "Meteor Beam", "Heat Wave", "Quiver Dance"]
+		},
+		"Bulkarona": {
+			"level": 100,
+			"ability": "Crescent Form",
+			"item": "Heavy-Duty Boots",
+			"nature": "Bold",
+			"teraType": "Bug",
+			"evs": {"hp": 252, "de": 252, "sa": 4},
+			"moves": ["Signal Beam", "Stored Power", "Roost", "Quiver Dance"]
 		}
 	},
 	"Spiritomb-Unbound": {
@@ -5672,6 +5681,101 @@ var SETDEX_SV = {
 			"teraType": "Dark",
 			"evs": {"sa": 252, "hp": 4, "sp":252},
 			"moves": ["Moonrift Storm", "U-turn", "Focus Blast", "Earth Power"]
+		}
+	},
+	"Gholdengo-Delta": {
+		"Defensive Pivot": {
+			"level": 100,
+			"ability": "Magic Bounce",
+			"item": "Leftovers",
+			"nature": "Bold",
+			"teraType": "Water",
+			"evs": {"hp": 252, "de": 252, "sp": 4},
+			"moves": ["Parting Shot", "Scald", "Recover", "Ice Beam"]
+		}
+	},
+	"Spectreon": {
+		"Cm Stored Power": {
+			"level": 100,
+			"ability": "Speed Boost",
+			"item": "Leftovers",
+			"nature": "Bold",
+			"teraType": "Ghost",
+			"evs": {"hp": 252, "sa": 4, "df":252},
+			"moves": ["Calm Mind", "Stored Power", "Draining Kiss", "Substitute"]
+		},
+		"Choice Specs": {
+			"level": 100,
+			"ability": "Speed Boost",
+			"item": "Choice Specs",
+			"nature": "Modest",
+			"teraType": "Ghost",
+			"evs": {"sp": 252, "df": 4, "sa":252},
+			"moves": ["Whisk Away", "Mystical Fire", "Dazzling Gleam", "Trick"]
+		},
+		"Special Sauce": {
+			"level": 100,
+			"ability": "Speed Boost",
+			"item": "Leftovers",
+			"nature": "Modest",
+			"teraType": "Ghost",
+			"evs": {"hp": 252, "df": 20, "sa":238},
+			"moves": ["Shadow Ball", "Draining Kiss", "Substitute", "Calm Mind"]
+		}
+	},
+	"Tinkaton-Ultra": {
+		"Xurkitree Who?": {
+			"level": 100,
+			"ability": "Beast Boost",
+			"item": "Psychium Z",
+			"nature": "Timid",
+			"teraType": "Electric",
+			"evs": {"sa": 252, "df": 4, "sp":252},
+			"moves": ["Tail Glow", "Thunderbolt", "Hypnosis", "Dazzling Gleam"]
+		}
+	},
+	"Haxorus-Delta-Mega": {
+		"Setup Sweeper": {
+			"level": 100,
+			"ability": "Runaway",
+			"item": "Audinite",
+			"nature": "Jolly",
+			"teraType": "Dragon",
+			"evs": {"at": 252, "df": 4, "sp":252},
+			"moves": ["Scale Shot", "Close Combat", "Swords Dance", "Tomahawk Volley"]
+		}
+	},
+	"Greninja-Omega": {
+		"Choice Band": {
+			"level": 100,
+			"ability": "Battle Bond",
+			"item": "Choice Band",
+			"nature": "Jolly",
+			"teraType": "Ice",
+			"evs": {"at": 252, "df": 4, "sp":252},
+			"moves": ["Ice Mace", "Close Combat", "Ice Shard", "U-turn"]
+		}
+	},
+	"Greninja-Omega-BattleBond": {
+		"Choice Band BB": {
+			"level": 100,
+			"ability": "Battle Bond",
+			"item": "Choice Band",
+			"nature": "Jolly",
+			"teraType": "Ice",
+			"evs": {"at": 252, "df": 4, "sp":252},
+			"moves": ["Ice Mace", "Close Combat", "Ice Shard", "U-turn"]
+		}
+	},
+	"Latios-Delta": {
+		"CM Setup": {
+			"level": 100,
+			"ability": "Levitate",
+			"item": "Heavy-Duty Boots",
+			"nature": "Timid",
+			"teraType": "Fairy",
+			"evs": {"hp": 252, "df": 4, "sp":252},
+			"moves": ["Moonblast", "Dragon Pulse", "Calm Mind", "Recover"]
 		}
 	},
 };

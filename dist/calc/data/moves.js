@@ -4423,7 +4423,7 @@ var SV_PATCH = {
     'Dragon Cheer': { bp: 0, type: 'Dragon' },
     'Dual Divide': {
         bp: 40,
-        type: 'Fairy',
+        type: 'Bug',
         category: 'Physical',
         zp: 100,
         maxPower: 100,
@@ -5081,6 +5081,14 @@ var SV_PATCH = {
         maxPower: 130,
         secondaries: true
     },
+    'Tomahawk Volley': {
+        bp: 25,
+        type: 'Fire',
+        category: 'Physical',
+        multihit: [2, 5],
+        zp: 140,
+        maxPower: 130
+    },
     'Torch Song': {
         bp: 80,
         type: 'Fire',
@@ -5180,6 +5188,14 @@ var SV_PATCH = {
         secondaries: true,
         isWind: true,
         target: 'allAdjacentFoes'
+    },
+    'Wild Wire': {
+        bp: 75,
+        type: 'Electric',
+        category: 'Special',
+        zp: 140,
+        maxPower: 130,
+        secondaries: true
     }
 };
 var SV = (0, util_1.extend)(true, {}, SS, SV_PATCH);

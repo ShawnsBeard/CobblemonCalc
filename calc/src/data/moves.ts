@@ -4433,7 +4433,7 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
   'Dragon Cheer': {bp: 0, type: 'Dragon'},
   'Dual Divide': {
     bp: 40,
-    type: 'Fairy',
+    type: 'Bug',
     category: 'Physical',
     zp: 100,
     maxPower: 100,
@@ -5092,6 +5092,14 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     maxPower: 130,
     secondaries: true,
   },
+  'Tomahawk Volley': {
+    bp: 25,
+    type: 'Fire',
+    category: 'Physical',
+    multihit: [2, 5],
+    zp: 140,
+    maxPower: 130,
+  },
   'Torch Song': {
     bp: 80,
     type: 'Fire',
@@ -5191,6 +5199,14 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     secondaries: true,
     isWind: true,
     target: 'allAdjacentFoes',
+  },
+  'Wild Wire': {
+    bp: 75,
+    type: 'Electric',
+    category: 'Special',
+    zp: 140,
+    maxPower: 130,
+    secondaries: true,
   },
 };
 
