@@ -3213,7 +3213,16 @@ var SETDEX_SV = {
     "Balanced Hackmons Choice Scarf": {"ability":"Regenerator","item":"Choice Scarf","nature":"Careful","evs":{"hp":252,"at":252,"df":252,"sd":252,"sp":252},"moves":["U-turn","Gigaton Hammer","Final Gambit","Trick"]},
     "Balanced Hackmons Primordial Sea": {"ability":"Primordial Sea","item":"Leftovers","nature":"Impish","evs":{"hp":252,"at":252,"df":252,"sa":252,"sd":252,"sp":252},"moves":["Strength Sap","Psychic Noise","Flip Turn","Gigaton Hammer"]},
     "Ubers UU Specially Defensive": {"ability":"Full Metal Body","item":"Leftovers","nature":"Careful","teraType":"Water","evs":{"hp":248,"df":8,"sd":252},"moves":["Knock Off","Roar","Teleport","Morning Sun"]},
-    "Ubers UU Trick Room Setter": {"ability":"Full Metal Body","item":"Leftovers","nature":"Careful","teraType":"Water","evs":{"hp":248,"at":8,"sd":252},"moves":["Sunsteel Strike","Morning Sun","Trick Room","Teleport"]}
+    "Ubers UU Trick Room Setter": {"ability":"Full Metal Body","item":"Leftovers","nature":"Careful","teraType":"Water","evs":{"hp":248,"at":8,"sd":252},"moves":["Sunsteel Strike","Morning Sun","Trick Room","Teleport"]},
+	  "Weakness Policy": {
+		  "level": 100,
+		  "ability": "Full Metal Body",
+		  "item": "Weakness Policy",
+		  "nature": "Adamant",
+		  "teraType": "Psychic",
+		  "evs": {"hp": 252, "at": 116, "sp":140},
+		  "moves": ["Close Combat", "Agility", "Sunsteel Strike", "Stone Edge"]
+	  }
   },
   "Lunala": {
     "Ubers Agility": {"ability":"Shadow Shield","item":"Power Herb","nature":"Timid","teraType":"Ghost","ivs":{"at":0},"evs":{"hp":56,"sa":252,"sp":200},"moves":["Agility","Moongeist Beam","Focus Blast","Meteor Beam"]},
@@ -5776,6 +5785,37 @@ var SETDEX_SV = {
 			"teraType": "Fairy",
 			"evs": {"hp": 252, "df": 4, "sp":252},
 			"moves": ["Moonblast", "Dragon Pulse", "Calm Mind", "Recover"]
+		}
+	},
+	"Liesler": {
+		"Choice Band": {
+			"level": 100,
+			"ability": "Poison Touch",
+			"item": "Choice Band",
+			"nature": "Jolly",
+			"teraType": "Dark",
+			"evs": {"at": 252, "df": 4, "sp":252},
+			"moves": ["U-Turn", "Gunk Shot", "Knock Off", "Close Combat"]
+		}
+	},
+	"Marshadow-Delta": {
+		"Defogger": {
+			"level": 100,
+			"ability": "Regenerator",
+			"item": "Heavy-Duty Boots",
+			"nature": "Jolly",
+			"teraType": "Ghost",
+			"evs": {"at": 252, "df": 4, "sp":252},
+			"moves": ["Spectral Thief", "Defog", "Shadow Sneak", "Flare Blitz"]
+		},
+		"Assault Vest": {
+			"level": 100,
+			"ability": "Regenerator",
+			"item": "Assault Vest",
+			"nature": "Jolly",
+			"teraType": "Ghost",
+			"evs": {"at": 252, "df": 4, "sp":252},
+			"moves": ["Spectral Thief", "Close Combat", "Shadow Sneak", "Flare Blitz"]
 		}
 	},
 };
