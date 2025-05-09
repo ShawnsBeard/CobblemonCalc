@@ -5584,7 +5584,7 @@ var SETDEX_SV = {
 			"item": "Heavy-Duty Boots",
 			"nature": "Bold",
 			"teraType": "Bug",
-			"evs": {"hp": 252, "de": 252, "sa": 4},
+			"evs": {"hp": 252, "df": 252, "sa": 4},
 			"moves": ["Signal Beam", "Stored Power", "Roost", "Quiver Dance"]
 		}
 	},
@@ -5699,7 +5699,7 @@ var SETDEX_SV = {
 			"item": "Leftovers",
 			"nature": "Bold",
 			"teraType": "Water",
-			"evs": {"hp": 252, "de": 252, "sp": 4},
+			"evs": {"hp": 252, "df": 252, "sp": 4},
 			"moves": ["Parting Shot", "Scald", "Recover", "Ice Beam"]
 		}
 	},
