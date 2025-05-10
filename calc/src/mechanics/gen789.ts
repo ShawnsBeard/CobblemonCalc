@@ -144,6 +144,10 @@ export function calculateSMSSSV(
     move.flags.sound = 1;
   }
 
+  if (attacker.ability === 'Transience') {
+    move.drain = [1, 4];
+  }
+
   const breaksProtect = move.breaksProtect || move.isZ || attacker.isDynamaxed ||
   (attacker.hasAbility('Unseen Fist') && move.flags.contact);
 

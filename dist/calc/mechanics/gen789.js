@@ -75,6 +75,9 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     if (attacker.ability === 'Desert Spirit' && field.hasWeather('Sand')) {
         move.flags.sound = 1;
     }
+    if (attacker.ability === 'Transience') {
+        move.drain = [1, 4];
+    }
     var breaksProtect = move.breaksProtect || move.isZ || attacker.isDynamaxed ||
         (attacker.hasAbility('Unseen Fist') && move.flags.contact);
     if (field.defenderSide.isProtected && !breaksProtect) {

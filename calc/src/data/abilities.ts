@@ -356,7 +356,7 @@ const SV = SS.concat([
   'Thermal Exchange',
   'Toxic Chain',
   'Toxic Debris',
-  'Transcience',
+  'Transience',
   'Twinkle',
   'Usurped',
   'Vessel of Ruin',
