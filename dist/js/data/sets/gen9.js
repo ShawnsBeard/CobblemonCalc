@@ -5392,15 +5392,15 @@ var SETDEX_SV = {
 		}
 	},
 	"Secret Armor": {
-		"Booster Speed Bulk Up": {
+		"Dan's Booster Speed Bulk Up": {
 			"level": 100,
 			"ability": "Protosynthesis",
 			"item": "Booster Energy",
-			"nature": "Jolly",
+			"nature": "Hasty",
 			"teraType": "Fighting",
-			"ivs": {"df": 15},
-			"evs": {"hp": 252, "sp": 252, "sd": 4},
-			"moves": ["Drain Punch", "Iron Head", "Thunder Punch", "Bulk Up"]
+			"ivs": {"at": 14},
+			"evs": {"hp": 252, "sp": 252, "at": 4},
+			"moves": ["Drain Punch", "Iron Head", "Stone Edge", "Bulk Up"]
 		}
 	},
 	"Clefgar": {
