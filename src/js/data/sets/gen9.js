@@ -5403,6 +5403,17 @@ var SETDEX_SV = {
 			"moves": ["Drain Punch", "Iron Head", "Stone Edge", "Bulk Up"]
 		}
 	},
+	"Lucaurus": {
+		"Swords Dance Sweeper": {
+			"level": 100,
+			"ability": "Strong Jaw",
+			"item": "Booster Energy",
+			"nature": "Jolly",
+			"teraType": "Dark",
+			"evs": {"at": 252, "sp": 252, "df": 4},
+			"moves": ["Adamantine Molars", "Crunch", "Extreme Speed", "Swords Dance"]
+		}
+	},
 	"Clefgar": {
 		"Poison Heal Hex": {
 			"level": 100,

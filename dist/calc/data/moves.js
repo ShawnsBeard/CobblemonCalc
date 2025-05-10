@@ -4192,6 +4192,15 @@ var SV_PATCH = {
     Whirlwind: { isWind: true },
     'Wicked Blow': { bp: 75, zp: 140 },
     'X-Scissor': { isSlicing: true },
+    'Adamantine Molars': {
+        bp: 75,
+        type: 'Steel',
+        makesContact: true,
+        isBite: true,
+        category: 'Physical',
+        zp: 140,
+        maxPower: 130
+    },
     'Aqua Cutter': {
         bp: 70,
         type: 'Water',
