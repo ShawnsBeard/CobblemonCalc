@@ -5407,11 +5407,11 @@ var SETDEX_SV = {
 		"Swords Dance Sweeper": {
 			"level": 100,
 			"ability": "Strong Jaw",
-			"item": "Booster Energy",
+			"item": "Air Balloon",
 			"nature": "Jolly",
 			"teraType": "Dark",
 			"evs": {"at": 252, "sp": 252, "df": 4},
-			"moves": ["Adamantine Molars", "Crunch", "Extreme Speed", "Swords Dance"]
+			"moves": ["Adamantine Molars", "Crunch", "Ice Fang", "Swords Dance"]
 		}
 	},
 	"Clefgar": {
