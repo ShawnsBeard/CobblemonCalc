@@ -618,11 +618,13 @@ export function calculateSMSSSV(
   // #region (Special) Defense
 
   const defense = calculateDefenseSMSSSV(gen, attacker, defender, move, field, desc, isCritical);
-  const hitsPhysical = move.overrideDefensiveStat === 'def' || move.category === 'Physical' ||
+  const hitsPhysical = move.overrideDefensiveStat === 'def' ||
+    (move.category === 'Physical' && !move.named('Crescent Edge')) ||
     (move.named('Shell Side Arm') && getShellSideArmCategory(attacker, defender) === 'Physical');
   const defenseStat = hitsPhysical ? 'def' : 'spd';
 
   // #endregion
+
   // #region Damage
 
   const baseDamage = calculateBaseDamageSMSSSV(
@@ -1557,7 +1559,8 @@ export function calculateDefenseSMSSSV(
   isCritical = false
 ) {
   let defense: number;
-  const hitsPhysical = move.overrideDefensiveStat === 'def' || move.category === 'Physical' ||
+  const hitsPhysical = move.overrideDefensiveStat === 'def' ||
+    (move.category === 'Physical' && !move.named('Crescent Edge')) ||
     (move.named('Shell Side Arm') && getShellSideArmCategory(attacker, defender) === 'Physical');
   const defenseStat = hitsPhysical ? 'def' : 'spd';
   desc.defenseEVs = getStatDescriptionText(gen, defender, defenseStat, defender.nature);
