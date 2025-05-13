@@ -5851,4 +5851,15 @@ var SETDEX_SV = {
 			"moves": ["Fake Out", "Extreme Speed", "Iron Tail", "Close Combat"]
 		}
 	},
+	"Valiant Time": {
+		"SD Life Orb": {
+			"level": 100,
+			"ability": "Transience",
+			"item": "Life Orb",
+			"nature": "Jolly",
+			"teraType": "Fighting",
+			"evs": {"sd": 4, "at": 252, "sp": 252},
+			"moves": ["Crescent Edge", "Close Combat", "Liquidation", "Swords Dance"]
+		}
+	},
 };
