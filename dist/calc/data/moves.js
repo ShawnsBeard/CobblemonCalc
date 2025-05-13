@@ -4396,7 +4396,9 @@ var SV_PATCH = {
         type: 'Steel',
         category: 'Physical',
         overrideDefensiveStat: 'spd',
-        target: 'allAdjacentFoes'
+        target: 'allAdjacentFoes',
+        zp: 160,
+        maxPower: 160
     },
     'Crimson Charge': {
         bp: 90,
