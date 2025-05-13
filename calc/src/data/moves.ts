@@ -4407,7 +4407,6 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     category: 'Physical',
     overrideDefensiveStat: 'spd',
     target: 'allAdjacentFoes',
-    makesContact: true,
   },
   'Crimson Charge': {
     bp: 90,
