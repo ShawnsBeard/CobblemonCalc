@@ -5806,7 +5806,7 @@ var SETDEX_SV = {
 			"nature": "Jolly",
 			"teraType": "Dark",
 			"evs": {"at": 252, "df": 4, "sp":252},
-			"moves": ["U-Turn", "Gunk Shot", "Knock Off", "Close Combat"]
+			"moves": ["U-turn", "Gunk Shot", "Knock Off", "Close Combat"]
 		}
 	},
 	"Marshadow-Delta": {
@@ -5827,6 +5827,28 @@ var SETDEX_SV = {
 			"teraType": "Ghost",
 			"evs": {"at": 252, "df": 4, "sp":252},
 			"moves": ["Spectral Thief", "Close Combat", "Shadow Sneak", "Flare Blitz"]
+		}
+	},
+	"Lopunny-Delta": {
+		"Black Glasses": {
+			"level": 100,
+			"ability": "Fatalize",
+			"item": "Black Glasses",
+			"nature": "Jolly",
+			"teraType": "Dark",
+			"evs": {"at": 252, "df": 4, "sp":252},
+			"moves": ["Fake Out", "Extreme Speed", "Play Rough", "Close Combat"]
+		}
+	},
+	"Lopunny-Delta-Mega": {
+		"Mega 4 attacks": {
+			"level": 100,
+			"ability": "Fatalize",
+			"item": "Audinite",
+			"nature": "Jolly",
+			"teraType": "Dark",
+			"evs": {"at": 252, "df": 4, "sp":252},
+			"moves": ["Fake Out", "Extreme Speed", "Iron Tail", "Close Combat"]
 		}
 	},
 };
