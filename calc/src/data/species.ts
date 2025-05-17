@@ -10501,6 +10501,13 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     gender: 'N',
     abilities: {0: 'Protosynthesis'},
   },
+  'Savage Scar': {
+    types: ['Ground', 'Dragon'],
+    bs: {hp: 81, at: 127, df: 101, sa: 69, sd: 93, sp: 99},
+    weightkg: 114.5,
+    gender: 'N',
+    abilities: {0: 'Protosynthesis'},
+  },
   Scattervein: {
     types: ['Fairy'],
     bs: {hp: 75, at: 74, df: 87, sa: 62, sd: 89, sp: 63},

@@ -5693,14 +5693,14 @@ var SETDEX_SV = {
 		}
 	},
 	"Malevorus-Therian": {
-		"Choice Item": {
+		"Choice Specs": {
 			"level": 100,
 			"ability": "Cloud Nine",
 			"item": "Choice Specs",
 			"nature": "Timid",
 			"teraType": "Dark",
-			"evs": {"sa": 252, "hp": 4, "sp":252},
-			"moves": ["Moonrift Storm", "U-turn", "Focus Blast", "Earth Power"]
+			"evs": {"sa": 252, "sd": 4, "sp":252},
+			"moves": ["Moonrift Storm", "Dark Pulse", "Focus Blast", "U-Turn"]
 		}
 	},
 	"Gholdengo-Delta": {
@@ -5860,6 +5860,39 @@ var SETDEX_SV = {
 			"teraType": "Fighting",
 			"evs": {"sd": 4, "at": 252, "sp": 252},
 			"moves": ["Crescent Edge", "Close Combat", "Liquidation", "Swords Dance"]
+		}
+	},
+	"Latios-Delta-Mega": {
+		"Calm Mind": {
+			"level": 100,
+			"ability": "Levitate",
+			"item": "Audinite",
+			"nature": "Timid",
+			"teraType": "Dragon",
+			"evs": {"hp": 144, "sa": 112, "sp": 252},
+			"moves": ["Moonblast", "Mystical Fire", "Calm Mind", "Recover"]
+		}
+	},
+	"Malevorus-Incarnate": {
+		"Black Glasses 4 Attacks": {
+			"level": 100,
+			"ability": "Tough Claws",
+			"item": "Black Glasses",
+			"nature": "Jolly",
+			"teraType": "Dark",
+			"evs": {"at": 252, "sd": 4, "sp": 252},
+			"moves": ["Knock Off", "Sucker Punch", "Pursuit", "Superpower"]
+		}
+	},
+	"Garchomp-Delta": {
+		"Specs Snow Sweeper": {
+			"level": 100,
+			"ability": "Slush Rush",
+			"item": "Choice Specs",
+			"nature": "Timid",
+			"teraType": "Ice",
+			"evs": {"sa": 252, "df": 4, "sp": 252},
+			"moves": ["Blizzard", "Freeze-Dry", "Draco Meteor", "Earth Power"]
 		}
 	},
 };

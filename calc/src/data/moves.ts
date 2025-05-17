@@ -4377,6 +4377,15 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     maxPower: 150,
     isBeam: true,
   },
+  'Coffee Splatter': {
+    bp: 90,
+    type: 'Water',
+    category: 'Special',
+    target: 'allAdjacentFoes',
+    zp: 180,
+    maxPower: 130,
+    secondaries: true,
+  },
   'Collision Course': {
     bp: 100,
     type: 'Fighting',
@@ -4438,6 +4447,14 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     zp: 160,
     maxPower: 90,
     makesContact: true,
+    secondaries: true,
+  },
+  'Divination': {
+    bp: 120,
+    type: 'Dark',
+    category: 'Special',
+    zp: 180,
+    maxPower: 130,
     secondaries: true,
   },
   'Dragon Cheer': {bp: 0, type: 'Dragon'},
@@ -4944,6 +4961,13 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     secondaries: true,
     breaksProtect: true,
   },
+  'Septic Wave': {
+    bp: 0,
+    type: 'Poison',
+    category: 'Special',
+    zp: 100,
+    maxPower: 100,
+  },
   'Shed Tail': {
     bp: 0,
     type: 'Normal',
@@ -5094,6 +5118,14 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     type: 'Normal',
     category: 'Status',
   },
+  'Timeless Torrent': {
+    bp: 100,
+    type: 'Dragon',
+    category: 'Special',
+    zp: 180,
+    maxPower: 130,
+    secondaries: true,
+  },
   'Titanium Tempest': {
     bp: 100,
     type: 'Steel',
@@ -5190,6 +5222,13 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     type: 'Ghost',
     category: 'Special',
     zp: 120,
+    maxPower: 120,
+  },
+  'Whiteout': {
+    bp: 120,
+    type: 'Ice',
+    category: 'Special',
+    zp: 180,
     maxPower: 120,
   },
   'Wicked Torque': {

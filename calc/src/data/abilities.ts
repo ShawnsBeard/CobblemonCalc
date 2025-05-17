@@ -343,6 +343,7 @@ const SV = SS.concat([
   'Rocky Payload',
   'Seed Sower',
   'Sharpness',
+  'Sheltered Slumber',
   'Spectre Onslaught',
   'Stoneheart',
   'Supersweet Syrup',

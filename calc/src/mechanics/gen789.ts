@@ -1528,6 +1528,12 @@ export function calculateAtModsSMSSSV(
     desc.attackerAbility = attacker.ability;
   }
 
+  if (attacker.status === 'slp' && move.named('Coffee Splatter'))
+  {
+    atMods.push(6144);
+    desc.attackerItem = attacker.item;
+  }
+
   if ((attacker.hasItem('Thick Club') &&
        attacker.named('Cubone', 'Marowak', 'Marowak-Alola', 'Marowak-Alola-Totem') &&
        move.category === 'Physical') ||
@@ -1611,7 +1617,8 @@ export function calculateDfModsSMSSSV(
   hitsPhysical = false
 ) {
   const dfMods = [];
-  if (defender.hasAbility('Marvel Scale') && defender.status && hitsPhysical) {
+  if ((defender.hasAbility('Marvel Scale') && defender.status && hitsPhysical) ||
+    (defender.hasAbility('Sheltered Slumber') && defender.status === 'slp' && hitsPhysical)) {
     dfMods.push(6144);
     desc.defenderAbility = defender.ability;
   } else if (
