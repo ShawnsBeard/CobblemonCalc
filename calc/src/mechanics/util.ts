@@ -169,6 +169,10 @@ export function checkAirLock(pokemon: Pokemon, field: Field) {
   if (pokemon.hasAbility('Air Lock', 'Cloud Nine')) {
     field.weather = undefined;
   }
+
+  if (pokemon.status === 'slp' && pokemon.hasAbility('Sheltered Slumber')) {
+    pokemon.types = ['Steel', 'Ghost'];
+  }
 }
 
 export function checkTeraformZero(pokemon: Pokemon, field: Field) {
