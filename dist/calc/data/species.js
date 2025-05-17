@@ -10389,7 +10389,7 @@ var SV_PATCH = {
         types: ['Water', 'Ghost'],
         bs: { hp: 65, at: 65, df: 132, sa: 91, sd: 85, sp: 70 },
         weightkg: 5.6,
-        abilities: { 0: 'Insomnia' }
+        abilities: { 0: 'Sheltered Slumber' }
     },
     Poltchageist: {
         types: ['Grass', 'Ghost'],
