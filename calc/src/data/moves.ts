@@ -4587,7 +4587,7 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     breaksProtect: true,
   },
   'Ice Mace': {
-    bp: 150,
+    bp: 140,
     type: 'Ice',
     category: 'Physical',
     zp: 200,
@@ -5053,6 +5053,13 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     makesContact: true,
     hasCrashDamage: true,
   },
+  'Surging Shot': {
+    bp: 100,
+    type: 'Electric',
+    category: 'Special',
+    secondaries: true,
+    isBullet: true,
+  },
   'Syrup Bomb': {
     bp: 60,
     type: 'Grass',
@@ -5195,6 +5202,14 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     makesContact: true,
     secondaries: true,
     priority: 3,
+  },
+  'V-ascend': {
+    bp: 150,
+    type: 'Electric',
+    makesContact: true,
+    category: 'Physical',
+    zp: 220,
+    maxPower: 150,
   },
   'Verdant Flush': {
     bp: 80,

@@ -646,7 +646,7 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
                 break;
             }
             else {
-                basePower = Math.max(1, Math.floor((150 * attacker.curHP()) / attacker.maxHP()));
+                basePower = Math.max(1, Math.floor((140 * attacker.curHP()) / attacker.maxHP()));
                 desc.moveBP = basePower;
                 break;
             }
@@ -921,7 +921,8 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         bpMods.push(4915);
     }
     if ((attacker.hasAbility('Reckless') && (move.recoil || move.hasCrashDamage)) ||
-        (attacker.hasAbility('Iron Fist') && move.flags.punch)) {
+        (attacker.hasAbility('Iron Fist') && move.flags.punch) ||
+        (attacker.hasAbility('Valor Heart'))) {
         bpMods.push(4915);
         desc.attackerAbility = attacker.ability;
     }

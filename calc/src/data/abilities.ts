@@ -318,6 +318,7 @@ const SV = SS.concat([
   'Embody Aspect (Wellspring)',
   'Fabled',
   'Fatalize',
+  'Feast or Famine',
   'Final Verdict',
   'Flurry',
   'Geyser',
@@ -361,6 +362,7 @@ const SV = SS.concat([
   'Twinkle',
   'Usurped',
   'Vessel of Ruin',
+  'Valor Heart', // Only works for singles currently
   'Vorpal',
   'Well-Baked Body',
   'Wind Power',

@@ -9490,7 +9490,7 @@ var SV_PATCH = {
     },
     'Flygon-Delta': {
         types: ['Bug', 'Dragon'],
-        bs: { hp: 80, at: 65, df: 90, sa: 110, sd: 75, sp: 100 },
+        bs: { hp: 80, at: 80, df: 80, sa: 100, sd: 80, sp: 100 },
         weightkg: 76.5,
         abilities: { 0: 'Run Away' }
     },
@@ -9735,7 +9735,7 @@ var SV_PATCH = {
     },
     'Hoopa-Delta-Unbound': {
         types: ['Dark', 'Ground'],
-        bs: { hp: 80, at: 170, df: 125, sa: 160, sd: 60, sp: 85 },
+        bs: { hp: 80, at: 170, df: 120, sa: 160, sd: 70, sp: 80 },
         weightkg: 490,
         gender: 'N',
         abilities: { 0: 'Mirage' }
@@ -9782,6 +9782,13 @@ var SV_PATCH = {
         types: ['Rock', 'Psychic'],
         bs: { hp: 90, at: 120, df: 80, sa: 68, sd: 108, sp: 124 },
         weightkg: 162.5,
+        gender: 'N',
+        abilities: { 0: 'Quark Drive' }
+    },
+    'Iron Coil': {
+        types: ['Steel', 'Electric'],
+        bs: { hp: 78, at: 56, df: 124, sa: 168, sd: 108, sp: 36 },
+        weightkg: 99,
         gender: 'N',
         abilities: { 0: 'Quark Drive' }
     },
@@ -10053,7 +10060,7 @@ var SV_PATCH = {
     },
     'Manaphy-Mega': {
         types: ['Water'],
-        bs: { hp: 100, at: 135, df: 120, sa: 125, sd: 120, sp: 100 },
+        bs: { hp: 100, at: 130, df: 120, sa: 130, sd: 120, sp: 100 },
         weightkg: 1.4,
         gender: 'N',
         abilities: { 0: 'Noblesse' }
@@ -10133,19 +10140,12 @@ var SV_PATCH = {
         weightkg: 345.5,
         abilities: { 0: 'Bulletproof' }
     },
-    'Mewrai-Equinox': {
+    'Mewrai': {
         types: ['Psychic', 'Dark'],
-        bs: { hp: 100, at: 80, df: 120, sa: 80, sd: 120, sp: 100 },
+        bs: { hp: 100, at: 100, df: 80, sa: 120, sd: 88, sp: 112 },
         weightkg: 4,
         gender: 'N',
-        abilities: { 0: 'Run Away' }
-    },
-    'Mewrai-Solstice': {
-        types: ['Psychic', 'Dark'],
-        bs: { hp: 100, at: 132, df: 88, sa: 132, sd: 88, sp: 100 },
-        weightkg: 4,
-        gender: 'N',
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Feast or Famine' }
     },
     Mewthree: {
         types: ['Dark'],
@@ -10483,7 +10483,7 @@ var SV_PATCH = {
     },
     'Rogue Prince': {
         types: ['Water', 'Psychic'],
-        bs: { hp: 97, at: 101, df: 81, sa: 125, sd: 107, sp: 79 },
+        bs: { hp: 97, at: 91, df: 81, sa: 125, sd: 103, sp: 93 },
         weightkg: 2.2,
         gender: 'N',
         abilities: { 0: 'Protosynthesis' }
@@ -10959,6 +10959,12 @@ var SV_PATCH = {
         bs: { hp: 65, at: 60, df: 130, sa: 95, sd: 110, sp: 65 },
         weightkg: 20.5,
         abilities: { 0: 'Liquid Ooze' }
+    },
+    'Victini-Delta': {
+        types: ['Electric', 'Psychic'],
+        bs: { hp: 100, at: 100, df: 100, sa: 100, sd: 100, sp: 100 },
+        weightkg: 22.2,
+        abilities: { 0: 'Valor Heart' }
     },
     'Volcarona-Delta': {
         types: ['Bug', 'Psychic'],

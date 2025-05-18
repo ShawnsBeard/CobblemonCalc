@@ -5452,7 +5452,6 @@ var SETDEX_SV = {
 		"Trick Room Gravity": {
 			"level": 100,
 			"ability": "Planar Collapse",
-			"item": "Audinite",
 			"nature": "Quiet",
 			"teraType": "Ground",
 			"ivs": {"sp": 0},
@@ -5625,7 +5624,6 @@ var SETDEX_SV = {
 		"Mixed Sweeper": {
 			"level": 100,
 			"ability": "Run Away",
-			"item": "Auditnite",
 			"nature": "Naive",
 			"teraType": "Electric",
 			"evs": {"at": 252, "sa": 4, "sp":252},
@@ -5700,7 +5698,7 @@ var SETDEX_SV = {
 			"nature": "Timid",
 			"teraType": "Dark",
 			"evs": {"sa": 252, "sd": 4, "sp":252},
-			"moves": ["Moonrift Storm", "Dark Pulse", "Focus Blast", "U-Turn"]
+			"moves": ["Moonrift Storm", "Dark Pulse", "Focus Blast", "U-turn"]
 		}
 	},
 	"Gholdengo-Delta": {
@@ -5758,7 +5756,6 @@ var SETDEX_SV = {
 		"Setup Sweeper": {
 			"level": 100,
 			"ability": "Runaway",
-			"item": "Audinite",
 			"nature": "Jolly",
 			"teraType": "Dragon",
 			"evs": {"at": 252, "df": 4, "sp":252},
@@ -5796,6 +5793,15 @@ var SETDEX_SV = {
 			"teraType": "Fairy",
 			"evs": {"hp": 252, "df": 4, "sp":252},
 			"moves": ["Moonblast", "Dragon Pulse", "Calm Mind", "Recover"]
+		},
+		"Z-Draco": {
+			"level": 100,
+			"ability": "Levitate",
+			"item": "Dragonium Z",
+			"nature": "Timid",
+			"teraType": "Dragon",
+			"evs": {"df": 4, "sa": 252, "sp": 252},
+			"moves": ["Verdant Flush", "Draco Meteor", "Mystical Fire", "Recover"]
 		}
 	},
 	"Liesler": {
@@ -5844,7 +5850,6 @@ var SETDEX_SV = {
 		"Mega 4 attacks": {
 			"level": 100,
 			"ability": "Fatalize",
-			"item": "Audinite",
 			"nature": "Jolly",
 			"teraType": "Dark",
 			"evs": {"at": 252, "df": 4, "sp":252},
@@ -5866,7 +5871,6 @@ var SETDEX_SV = {
 		"Calm Mind": {
 			"level": 100,
 			"ability": "Levitate",
-			"item": "Audinite",
 			"nature": "Timid",
 			"teraType": "Dragon",
 			"evs": {"hp": 144, "sa": 112, "sp": 252},
@@ -5893,6 +5897,17 @@ var SETDEX_SV = {
 			"teraType": "Ice",
 			"evs": {"sa": 252, "df": 4, "sp": 252},
 			"moves": ["Blizzard", "Freeze-Dry", "Draco Meteor", "Earth Power"]
+		}
+	},
+	"Goolossal": {
+		"Mixed Defense Wish Passer": {
+			"level": 100,
+			"ability": "Sticky Hold",
+			"item": "Heavy-Duty Boots",
+			"nature": "Calm",
+			"teraType": "Fairy",
+			"evs": {"sd": 252, "hp": 4, "df":252},
+			"moves": [ "Wish", "Protect", "Dazzling Gleam", "Toxic"]
 		}
 	},
 };
