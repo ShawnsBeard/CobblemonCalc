@@ -379,6 +379,10 @@ function autosetWeather(ability, i) {
 		lastAutoWeather[i] = "Strong Winds";
 		$("#strong-winds").prop("checked", true);
 		break;
+	case "Parasol Prayer":
+		lastAutoWeather[i] = "Strong Winds";
+		$("#strong-winds").prop("checked", true);
+		break;
 	default:
 		lastAutoWeather[i] = "";
 		var newWeather = lastAutoWeather[1 - i] !== "" ? lastAutoWeather[1 - i] : "";
@@ -421,6 +425,10 @@ function autosetTerrain(ability, i) {
 	case "Psychic Surge":
 		lastAutoTerrain[i] = "Psychic";
 		$("#psychic").prop("checked", true);
+		break;
+	case "Corrosive Surge":
+		lastAutoTerrain[i] = "Corrosive";
+		$("#corrosive").prop("checked", true);
 		break;
 	default:
 		lastAutoTerrain[i] = "";
