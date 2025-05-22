@@ -2063,7 +2063,8 @@ var ADV_PATCH = {
         types: ['Ground', 'Dragon'],
         bs: { hp: 80, at: 100, df: 80, sa: 80, sd: 80, sp: 100 },
         weightkg: 82,
-        abilities: { 0: 'Levitate' }
+        abilities: { 0: 'Levitate' },
+        otherFormes: ['Flygon-Mega']
     },
     Gardevoir: {
         types: ['Psychic'],
@@ -3378,7 +3379,8 @@ var DPP_PATCH = {
         bs: { hp: 100, at: 100, df: 100, sa: 100, sd: 100, sp: 100 },
         weightkg: 1.4,
         abilities: { 0: 'Hydration' },
-        gender: 'N'
+        gender: 'N',
+        otherFormes: ['Manaphy-Mega']
     },
     Mantyke: {
         types: ['Water', 'Flying'],
@@ -8795,7 +8797,7 @@ var PLA_PATCH = {
     Typhlosion: { otherFormes: ['Typhlosion-Hisui'] },
     Ursaring: { nfe: true },
     Voltorb: { otherFormes: ['Voltorb-Hisui'] },
-    Zoroark: { otherFormes: ['Zoroark-Hisui'] },
+    Zoroark: { otherFormes: ['Zoroark-Hisui', 'Zoroark-Hisui-Mega'] },
     Zorua: { otherFormes: ['Zorua-Hisui'] },
     'Arcanine-Hisui': {
         types: ['Fire', 'Rock'],
@@ -9223,13 +9225,15 @@ var SV_PATCH = {
         types: ['Dragon'],
         bs: { hp: 72, at: 125, df: 107, sa: 77, sd: 88, sp: 65 },
         weightkg: 179.5,
-        abilities: { 0: 'Draconic' }
+        abilities: { 0: 'Draconic' },
+        otherFormes: ['Charizard-Delta-Mega']
     },
     'Charizard-Delta-Mega': {
         types: ['Dragon', 'Rock'],
         bs: { hp: 72, at: 155, df: 132, sa: 92, sd: 103, sp: 80 },
         weightkg: 210.5,
-        abilities: { 0: 'Sheer Force' }
+        abilities: { 0: 'Sheer Force' },
+        baseSpecies: 'Charizard-Delta'
     },
     'Chi-Yu': {
         types: ['Dark', 'Fire'],
@@ -9498,7 +9502,8 @@ var SV_PATCH = {
         types: ['Ground', 'Dragon'],
         bs: { hp: 80, at: 115, df: 80, sa: 115, sd: 80, sp: 150 },
         weightkg: 50,
-        abilities: { 0: 'Desert Spirit' }
+        abilities: { 0: 'Desert Spirit' },
+        baseSpecies: 'Flygon'
     },
     'Flygon-Ultra': {
         types: ['Steel', 'Dragon'],
@@ -9681,13 +9686,15 @@ var SV_PATCH = {
         types: ['Ice', 'Fighting'],
         bs: { hp: 75, at: 106, df: 75, sa: 97, sd: 68, sp: 109 },
         weightkg: 40,
-        abilities: { 0: 'Flurry' }
+        abilities: { 0: 'Flurry' },
+        otherFormes: ['Greninja-Omega-BattleBond']
     },
     'Greninja-Omega-BattleBond': {
         types: ['Ice', 'Fighting'],
         bs: { hp: 75, at: 156, df: 75, sa: 147, sd: 68, sp: 119 },
         weightkg: 40,
-        abilities: { 0: 'Battle Bond' }
+        abilities: { 0: 'Battle Bond' },
+        baseSpecies: 'Greninja-Omega'
     },
     'Grimmsnarl-Delta': {
         types: ['Ice', 'Fighting'],
@@ -9706,13 +9713,15 @@ var SV_PATCH = {
         types: ['Dragon', 'Fire'],
         bs: { hp: 76, at: 124, df: 105, sa: 63, sd: 73, sp: 99 },
         weightkg: 140.5,
-        abilities: { 0: 'Rivalry' }
+        abilities: { 0: 'Rivalry' },
+        otherFormes: ['Haxorus-Delta-Mega']
     },
     'Haxorus-Delta-Mega': {
         types: ['Dragon', 'Fire'],
         bs: { hp: 76, at: 159, df: 140, sa: 78, sd: 108, sp: 79 },
         weightkg: 140.5,
-        abilities: { 0: 'Ragnarok' }
+        abilities: { 0: 'Ragnarok' },
+        baseSpecies: 'Haxorus-Delta'
     },
     Hemogoblin: {
         types: ['Fairy', 'Fire'],
@@ -9720,25 +9729,28 @@ var SV_PATCH = {
         weightkg: 85,
         abilities: { 0: 'Pixilate' }
     },
-    'Hisuian Zoroark-Mega': {
+    'Zoroark-Hisui-Mega': {
         types: ['Normal', 'Ghost'],
         bs: { hp: 55, at: 130, df: 70, sa: 155, sd: 70, sp: 130 },
         weightkg: 90.5,
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Run Away' },
+        baseSpecies: 'Zoroark'
     },
     'Hoopa-Delta': {
         types: ['Dark', 'Rock'],
         bs: { hp: 80, at: 150, df: 125, sa: 110, sd: 60, sp: 75 },
         weightkg: 9,
         gender: 'N',
-        abilities: { 0: 'Sand Rush' }
+        abilities: { 0: 'Sand Rush' },
+        otherFormes: ['Hoopa-Delta-Unbound']
     },
     'Hoopa-Delta-Unbound': {
         types: ['Dark', 'Ground'],
         bs: { hp: 80, at: 170, df: 120, sa: 160, sd: 70, sp: 80 },
         weightkg: 490,
         gender: 'N',
-        abilities: { 0: 'Mirage' }
+        abilities: { 0: 'Mirage' },
+        baseSpecies: 'Hoopa-Delta'
     },
     Houndstone: {
         types: ['Ghost'],
@@ -9763,13 +9775,15 @@ var SV_PATCH = {
         types: ['Electric', 'Fighting'],
         bs: { hp: 73, at: 112, df: 75, sa: 97, sd: 75, sp: 102 },
         weightkg: 65,
-        abilities: { 0: 'Surge' }
+        abilities: { 0: 'Surge' },
+        otherFormes: ['Infernape-Delta-Mega']
     },
     'Infernape-Delta-Mega': {
         types: ['Electric', 'Fighting'],
         bs: { hp: 73, at: 125, df: 114, sa: 107, sd: 104, sp: 111 },
         weightkg: 65,
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Run Away' },
+        baseSpecies: 'Infernape-Delta'
     },
     'Iron Bundle': {
         types: ['Ice', 'Water'],
@@ -9938,28 +9952,32 @@ var SV_PATCH = {
         bs: { hp: 80, at: 75, df: 110, sa: 95, sd: 130, sp: 110 },
         weightkg: 40,
         gender: 'N',
-        abilities: { 0: 'Levitate' }
+        abilities: { 0: 'Levitate' },
+        otherFormes: ['Latias-Delta-Mega']
     },
     'Latias-Delta-Mega': {
         types: ['Dragon', 'Fairy'],
         bs: { hp: 80, at: 95, df: 140, sa: 125, sd: 150, sp: 110 },
         weightkg: 40,
         gender: 'N',
-        abilities: { 0: 'Levitate' }
+        abilities: { 0: 'Levitate' },
+        baseSpecies: 'Latias-Delta'
     },
     'Latios-Delta': {
         types: ['Dragon', 'Fairy'],
         bs: { hp: 80, at: 110, df: 95, sa: 130, sd: 75, sp: 110 },
         weightkg: 50,
         gender: 'N',
-        abilities: { 0: 'Levitate' }
+        abilities: { 0: 'Levitate' },
+        otherFormes: ['Latios-Delta-Mega']
     },
     'Latios-Delta-Mega': {
         types: ['Dragon', 'Fairy'],
         bs: { hp: 80, at: 140, df: 115, sa: 160, sd: 95, sp: 110 },
         weightkg: 50,
         gender: 'N',
-        abilities: { 0: 'Levitate' }
+        abilities: { 0: 'Levitate' },
+        baseSpecies: 'Latios-Delta'
     },
     Lechonk: {
         types: ['Normal'],
@@ -9993,13 +10011,15 @@ var SV_PATCH = {
         types: ['Dark', 'Fairy'],
         bs: { hp: 75, at: 85, df: 76, sa: 60, sd: 92, sp: 92 },
         weightkg: 33.5,
-        abilities: { 0: 'Fatalize' }
+        abilities: { 0: 'Fatalize' },
+        otherFormes: ['Lopunny-Delta-Mega']
     },
     'Lopunny-Delta-Mega': {
         types: ['Dark', 'Fighting'],
         bs: { hp: 75, at: 115, df: 81, sa: 90, sd: 112, sp: 107 },
         weightkg: 33.5,
-        abilities: { 0: 'Fatalize' }
+        abilities: { 0: 'Fatalize' },
+        baseSpecies: 'Lopunny-Delta'
     },
     Lokix: {
         types: ['Bug', 'Dark'],
@@ -10049,21 +10069,24 @@ var SV_PATCH = {
         bs: { hp: 89, at: 115, df: 90, sa: 115, sd: 80, sp: 111 },
         weightkg: 65,
         gender: 'N',
-        abilities: { 0: 'Tough Claws' }
+        abilities: { 0: 'Tough Claws' },
+        otherFormes: ['Malevorus-Therian']
     },
     'Malevorus-Therian': {
         types: ['Dark', 'Flying'],
         bs: { hp: 89, at: 105, df: 80, sa: 130, sd: 80, sp: 116 },
         weightkg: 65,
         gender: 'N',
-        abilities: { 0: 'Cloud Nine' }
+        abilities: { 0: 'Cloud Nine' },
+        baseSpecies: 'Malevorus-Incarnate'
     },
     'Manaphy-Mega': {
         types: ['Water'],
         bs: { hp: 100, at: 130, df: 120, sa: 130, sd: 120, sp: 100 },
         weightkg: 1.4,
         gender: 'N',
-        abilities: { 0: 'Noblesse' }
+        abilities: { 0: 'Noblesse' },
+        baseSpecies: 'Manaphy'
     },
     Manteon: {
         types: ['Bug'],
@@ -10106,14 +10129,16 @@ var SV_PATCH = {
         bs: { hp: 100, at: 77, df: 128, sa: 128, sd: 77, sp: 90 },
         weightkg: 34.5,
         gender: 'N',
-        abilities: { 0: 'Serene Grace' }
+        abilities: { 0: 'Serene Grace' },
+        baseSpecies: 'Meloetta-Delta-Lento'
     },
     'Meloetta-Delta-Lento': {
         types: ['Normal', 'Water'],
         bs: { hp: 100, at: 77, df: 90, sa: 128, sd: 128, sp: 77 },
         weightkg: 34.5,
         gender: 'N',
-        abilities: { 0: 'Serene Grace' }
+        abilities: { 0: 'Serene Grace' },
+        otherFormes: ['Meloetta-Delta-Allegro']
     },
     Meowscarada: {
         types: ['Grass', 'Dark'],
@@ -10683,13 +10708,15 @@ var SV_PATCH = {
         types: ['Ground', 'Psychic'],
         bs: { hp: 85, at: 55, df: 65, sa: 75, sd: 200, sp: 30 },
         weightkg: 350,
-        abilities: { 0: 'Regenerator' }
+        abilities: { 0: 'Regenerator' },
+        otherFormes: ['Steelix-Delta-Mega']
     },
     'Steelix-Delta-Mega': {
         types: ['Ground', 'Psychic'],
         bs: { hp: 85, at: 65, df: 65, sa: 135, sd: 230, sp: 30 },
         weightkg: 350,
-        abilities: { 0: 'Run Away' }
+        abilities: { 0: 'Run Away' },
+        baseSpecies: 'Steelix-Delta'
     },
     Sprigatito: {
         types: ['Grass'],
