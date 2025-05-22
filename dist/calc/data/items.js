@@ -524,6 +524,7 @@ var SV = SS.concat([
     'Booster Energy',
     'Clear Amulet',
     'Cornerstone Mask',
+    'Corrosive Seed',
     'Covert Cloak',
     'Dread Drive',
     'Fairy Feather',

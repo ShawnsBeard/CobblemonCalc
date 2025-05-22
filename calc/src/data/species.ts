@@ -9927,7 +9927,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Poison'],
     bs: {hp: 75, at: 45, df: 140, sa: 75, sd: 70, sp: 25},
     weightkg: 15,
-    abilities: {0: 'Liquid Ooze'},
+    abilities: {0: 'Corrosive Surge'},
   },
   'Latias-Delta': {
     types: ['Dragon', 'Fairy'],
@@ -10775,7 +10775,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Poison', 'Fairy'],
     bs: {hp: 70, at: 85, df: 130, sa: 95, sd: 115, sp: 75},
     weightkg: 25.6,
-    abilities: {0: 'Telepathy'},
+    abilities: {0: 'Corrosive Surge'},
   },
   Tarountula: {
     types: ['Bug'],

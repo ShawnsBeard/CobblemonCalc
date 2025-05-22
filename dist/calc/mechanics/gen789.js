@@ -175,7 +175,8 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
                 : field.hasTerrain('Grassy') ? 'Grass'
                     : field.hasTerrain('Misty') ? 'Fairy'
                         : field.hasTerrain('Psychic') ? 'Psychic'
-                            : 'Normal';
+                            : field.hasTerrain('Corrosive') ? 'Poison'
+                                : 'Normal';
         desc.terrain = field.terrain;
         if (move.isMax) {
             desc.moveType = type;
@@ -703,6 +704,10 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
                         desc.moveName = 'Psychic';
                     }
                     break;
+                case 'Corrosive':
+                    basePower = 95;
+                    desc.moveName = 'Sludge Wave';
+                    break;
                 default:
                     basePower = 80;
                     desc.moveName = 'Tri Attack';
@@ -787,6 +792,7 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         (move.named('Barbaric Incision') && attacker.hasStatus('brn', 'par', 'psn', 'tox')) ||
         (move.named('Brine') && defender.curHP() <= defender.maxHP() / 2) ||
         (move.named('Venoshock') && defender.hasStatus('psn', 'tox')) ||
+        (move.named('Venoshock') && field.hasTerrain('Corrosive')) ||
         (move.named('Noxious Power') && defender.hasStatus('psn', 'tox')) ||
         (move.named('Lash Out') && ((0, util_2.countBoosts)(gen, attacker.boosts) < 0))) {
         bpMods.push(8192);
@@ -837,7 +843,8 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
     }
     if ((0, util_2.isGrounded)(defender, field)) {
         if ((field.hasTerrain('Misty') && move.hasType('Dragon')) ||
-            (field.hasTerrain('Grassy') && move.named('Bulldoze', 'Earthquake'))) {
+            (field.hasTerrain('Grassy') && move.named('Bulldoze', 'Earthquake')) ||
+            (field.hasTerrain('Corrosive') && move.hasType('Steel'))) {
             bpMods.push(2048);
             desc.terrain = field.terrain;
         }
@@ -850,7 +857,9 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         (attacker.hasAbility('Mega Launcher') && move.flags.pulse) ||
         (attacker.hasAbility('Strong Jaw') && move.flags.bite) ||
         (attacker.hasAbility('Steely Spirit') && move.hasType('Steel')) ||
-        (attacker.hasAbility('Sharpness') && move.flags.slicing)) {
+        (attacker.hasAbility('Sharpness') && move.flags.slicing) ||
+        (attacker.hasAbility('Swordmaster') && move.flags.slicing) ||
+        (attacker.hasAbility('Toxic Boost') && field.hasTerrain('Corrosive'))) {
         bpMods.push(6144);
         desc.attackerAbility = attacker.ability;
     }
@@ -1385,6 +1394,6 @@ function calculateFinalModsSMSSSV(gen, attacker, defender, move, field, desc, is
 }
 exports.calculateFinalModsSMSSSV = calculateFinalModsSMSSSV;
 function hasTerrainSeed(pokemon) {
-    return pokemon.hasItem('Electric Seed', 'Misty Seed', 'Grassy Seed', 'Psychic Seed');
+    return pokemon.hasItem('Electric Seed', 'Misty Seed', 'Grassy Seed', 'Psychic Seed', 'Corosive Seed');
 }
 //# sourceMappingURL=gen789.js.map
