@@ -455,20 +455,42 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
             texts.push('Grassy Terrain recovery');
         }
     }
+    if (field.hasTerrain('Corrosive')) {
+        if (defender.status && !defender.hasType('Poison') && !defender.hasType('Steel') &&
+            (0, util_2.isGrounded)(defender, field) && !defender.hasAbility('Magic Guard') &&
+            !defender.hasAbility('Toxic Boost') && !defender.hasAbility('Poison Heal') &&
+            !defender.hasAbility('Immunity') && !defender.hasAbility('Pastel Veil') &&
+            !defender.hasAbility('Wonder Guard')) {
+            damage -= Math.floor(defender.maxHP() / 16);
+            texts.push('Corrosive Terrain damage');
+        }
+    }
     if (defender.hasStatus('psn')) {
-        if (defender.hasAbility('Poison Heal')) {
+        if (defender.hasAbility('Poison Heal') && field.hasTerrain('Corrosive')) {
+            if (!healBlock) {
+                damage += Math.floor(defender.maxHP() / 6);
+                texts.push('Poison Heal');
+            }
+        }
+        else if (defender.hasAbility('Poison Heal') && !field.hasTerrain('Corrosive')) {
             if (!healBlock) {
                 damage += Math.floor(defender.maxHP() / 8);
                 texts.push('Poison Heal');
             }
         }
-        else if (!defender.hasAbility('Magic Guard')) {
+        else if (!defender.hasAbility('Magic Guard') && !field.hasTerrain('Corrosive')) {
             damage -= Math.floor(defender.maxHP() / (gen.num === 1 ? 16 : 8));
             texts.push('poison damage');
         }
     }
     else if (defender.hasStatus('tox')) {
-        if (defender.hasAbility('Poison Heal')) {
+        if (defender.hasAbility('Poison Heal') && field.hasTerrain('Corrosive')) {
+            if (!healBlock) {
+                damage += Math.floor(defender.maxHP() / 6);
+                texts.push('Poison Heal');
+            }
+        }
+        else if (defender.hasAbility('Poison Heal') && !field.hasTerrain('Corrosive')) {
             if (!healBlock) {
                 damage += Math.floor(defender.maxHP() / 8);
                 texts.push('Poison Heal');

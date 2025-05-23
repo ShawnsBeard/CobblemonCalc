@@ -10517,7 +10517,7 @@ var SV_PATCH = {
         types: ['Grass', 'Steel'],
         bs: { hp: 60, at: 105, df: 120, sa: 60, sd: 70, sp: 100 },
         weightkg: 18.5,
-        abilities: { 0: 'Sharpness' }
+        abilities: { 0: 'Swordmaster' }
     },
     'Rotom-Dowse': {
         types: ['Electric', 'Normal'],

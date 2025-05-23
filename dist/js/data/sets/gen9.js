@@ -5910,4 +5910,15 @@ var SETDEX_SV = {
 			"moves": [ "Wish", "Protect", "Dazzling Gleam", "Toxic"]
 		}
 	},
+	"Roserade-Delta": {
+		"Sun Sweeper": {
+			"level": 100,
+			"ability": "Swordmaster",
+			"item": "Life Orb",
+			"nature": "Adamant",
+			"teraType": "Grass",
+			"evs": {"at": 252, "hp": 4, "sp":252},
+			"moves": [ "Solar Blade", "Sacred Sword", "Swords Dance", "Smart Strike"]
+		}
+	},
 };
