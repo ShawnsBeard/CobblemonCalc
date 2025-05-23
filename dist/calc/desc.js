@@ -478,7 +478,7 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
                 texts.push('Poison Heal');
             }
         }
-        else if (!defender.hasAbility('Magic Guard') && !field.hasTerrain('Corrosive')) {
+        else if (!defender.hasAbility('Magic Guard')) {
             damage -= Math.floor(defender.maxHP() / (gen.num === 1 ? 16 : 8));
             texts.push('poison damage');
         }
