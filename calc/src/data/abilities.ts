@@ -317,6 +317,7 @@ const SV = SS.concat([
   'Embody Aspect (Hearthflame)',
   'Embody Aspect (Teal)',
   'Embody Aspect (Wellspring)',
+  'Evil\'s Bane',
   'Fabled',
   'Fatalize',
   'Feast or Famine',
@@ -326,6 +327,7 @@ const SV = SS.concat([
   'Good as Gold',
   'Guard Dog',
   'Hadron Engine',
+  'Helix Nebula', // Type copying needs done
   'Hospitality',
   'Lingering Aroma',
   'Marvel',
@@ -336,7 +338,7 @@ const SV = SS.concat([
   'Noblesse',
   'Opportunist',
   'Orichalcum Pulse',
-  'Parasol Prayer', // Automatic strong winds needs fixed
+  'Parasol Prayer',
   'Poison Puppeteer',
   'Protosynthesis',
   'Purifying Salt',
@@ -363,13 +365,14 @@ const SV = SS.concat([
   'Transience',
   'Twinkle',
   'Usurped',
+  'Usurper',
   'Vessel of Ruin',
   'Valor Heart', // Only works for singles currently
   'Vorpal',
   'Well-Baked Body',
   'Wind Power',
   'Wind Rider',
-  'Winter Arbiter',
+  'Winter Arbiter', // Ability effect may need altered to be an attack stage increase
   'Zero to Hero',
 ]);
 

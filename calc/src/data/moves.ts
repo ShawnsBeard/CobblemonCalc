@@ -4420,7 +4420,7 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     maxPower: 160,
   },
   'Crimson Charge': {
-    bp: 90,
+    bp: 85,
     type: 'Fire',
     category: 'Physical',
     zp: 175,
@@ -4490,6 +4490,13 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     zp: 160,
     maxPower: 130,
     secondaries: true,
+  },
+  'Ether Burst': {
+    bp: 90,
+    type: 'Psychic',
+    category: 'Special',
+    zp: 160,
+    maxPower: 130,
   },
   'Fickle Beam': {
     bp: 80,
@@ -4570,6 +4577,7 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     makesContact: true,
     isPunch: true,
   },
+  'Heat Siphon': {bp: 0, type: 'Fire'},
   'Hydro Steam': {
     bp: 80,
     type: 'Water',
@@ -4875,6 +4883,15 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     maxPower: 130,
     drain: [1, 2],
   },
+  'Reckoning': {
+    bp: 80,
+    type: 'Ghost',
+    category: 'Special',
+    zp: 160,
+    maxPower: 100,
+    makesContact: true,
+    secondaries: true,
+  },
   'Rage Fist': {
     bp: 50,
     type: 'Ghost',
@@ -5166,6 +5183,13 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     maxPower: 100,
     secondaries: true,
     makesContact: true,
+  },
+  'Tri Beam': {
+    bp: 70,
+    type: 'Normal',
+    category: 'Special',
+    zp: 140,
+    maxPower: 90,
   },
   'Triple Arrows': {
     bp: 90,

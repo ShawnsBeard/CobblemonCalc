@@ -72,6 +72,10 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         (0, util_2.getShellSideArmCategory)(attacker, defender) === 'Physical') {
         move.flags.contact = 1;
     }
+    if (move.named('Ether Burst') &&
+        (0, util_2.getShellSideArmCategory)(attacker, defender) === 'Physical') {
+        move.flags.contact = 1;
+    }
     if (attacker.ability === 'Desert Spirit' && field.hasWeather('Sand')) {
         move.flags.sound = 1;
     }
@@ -360,7 +364,8 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         (move.priority > 0 && defender.hasAbility('Queenly Majesty', 'Dazzling', 'Armor Tail')) ||
         (move.hasType('Ground') && defender.hasAbility('Earth Eater')) ||
         (move.hasType('Fighting') && defender.hasAbility('Altruistic')) ||
-        (move.flags.wind && defender.hasAbility('Wind Rider'))) {
+        (move.flags.wind && defender.hasAbility('Wind Rider')) ||
+        (move.hasType('Dark') && defender.hasAbility('Evil\'s Bane'))) {
         desc.defenderAbility = defender.ability;
         return result;
     }
@@ -442,7 +447,8 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
     var defense = calculateDefenseSMSSSV(gen, attacker, defender, move, field, desc, isCritical);
     var hitsPhysical = move.overrideDefensiveStat === 'def' ||
         (move.category === 'Physical' && !move.named('Crescent Edge')) ||
-        (move.named('Shell Side Arm') && (0, util_2.getShellSideArmCategory)(attacker, defender) === 'Physical');
+        (move.named('Shell Side Arm') && (0, util_2.getShellSideArmCategory)(attacker, defender) === 'Physical') ||
+        (move.named('Ether Burst') && (0, util_2.getShellSideArmCategory)(attacker, defender) === 'Physical');
     var defenseStat = hitsPhysical ? 'def' : 'spd';
     var baseDamage = calculateBaseDamageSMSSSV(gen, attacker, defender, basePower, attack, defense, move, field, desc, isCritical);
     if (hasTerrainSeed(defender) &&
@@ -990,7 +996,7 @@ exports.calculateBPModsSMSSSV = calculateBPModsSMSSSV;
 function calculateAttackSMSSSV(gen, attacker, defender, move, field, desc, isCritical) {
     if (isCritical === void 0) { isCritical = false; }
     var attack;
-    var attackStat = move.named('Shell Side Arm') &&
+    var attackStat = (move.named('Shell Side Arm') || move.named('Ether Burst')) &&
         (0, util_2.getShellSideArmCategory)(attacker, defender) === 'Physical'
         ? 'atk'
         : move.named('Body Press')
@@ -1038,6 +1044,9 @@ function calculateAtModsSMSSSV(gen, attacker, defender, move, field, desc) {
         (attacker.named('Cherrim') &&
             attacker.hasAbility('Flower Gift') &&
             field.hasWeather('Sun', 'Harsh Sunshine') &&
+            move.category === 'Physical') ||
+        (attacker.hasAbility('Winter Arbiter') &&
+            field.hasWeather('Hail', 'Snow') &&
             move.category === 'Physical')) {
         atMods.push(6144);
         desc.attackerAbility = attacker.ability;
@@ -1165,7 +1174,8 @@ function calculateDefenseSMSSSV(gen, attacker, defender, move, field, desc, isCr
     var defense;
     var hitsPhysical = move.overrideDefensiveStat === 'def' ||
         (move.category === 'Physical' && !move.named('Crescent Edge')) ||
-        (move.named('Shell Side Arm') && (0, util_2.getShellSideArmCategory)(attacker, defender) === 'Physical');
+        (move.named('Shell Side Arm') && (0, util_2.getShellSideArmCategory)(attacker, defender) === 'Physical') ||
+        (move.named('Ether Burst') && (0, util_2.getShellSideArmCategory)(attacker, defender) === 'Physical');
     var defenseStat = hitsPhysical ? 'def' : 'spd';
     desc.defenseEVs = (0, util_2.getStatDescriptionText)(gen, defender, defenseStat, defender.nature);
     if (defender.boosts[defenseStat] === 0 ||

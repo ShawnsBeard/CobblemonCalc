@@ -9085,7 +9085,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 80, at: 120, df: 68, sa: 120, sd: 68, sp: 104},
     weightkg: 84,
     gender: 'N',
-    abilities: {0: 'Flash Fire'},
+    abilities: {0: 'Final Verdict'},
   },
   Armarouge: {
     types: ['Fire', 'Psychic'],
@@ -9105,7 +9105,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 75, at: 125, df: 70, sa: 125, sd: 70, sp: 115},
     weightkg: 0.3,
     gender: 'N',
-    abilities: {0: 'Toxic Chain'},
+    abilities: {0: 'Levitate'},
   },
   'Azumarill-Delta': {
     types: ['Ice', 'Fairy'],
@@ -9118,7 +9118,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Ghost'],
     bs: {hp: 57, at: 60, df: 78, sa: 126, sd: 110, sp: 79},
     weightkg: 2,
-    abilities: {0: 'Aftermath'},
+    abilities: {0: 'Death Defiance'},
   },
   Baxcalibur: {
     types: ['Dragon', 'Ice'],
@@ -9274,7 +9274,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 136, at: 84, df: 72, sa: 112, sd: 100, sp: 100},
     weightkg: 4,
     gender: 'N',
-    abilities: {0: 'Run Away'},
+    abilities: {0: 'Helix Nebula'},
   },
   Cresceidon: {
     types: ['Water', 'Fairy'],
@@ -9617,7 +9617,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Dragon', 'Fairy'],
     bs: {hp: 180, at: 115, df: 86, sa: 115, sd: 64, sp: 40},
     weightkg: 208.5,
-    abilities: {0: 'Sap Sipper'},
+    abilities: {0: 'Sticky Hold'},
   },
   'Gorebyss-Delta': {
     types: ['Dragon', 'Fairy'],
@@ -9683,7 +9683,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 95, at: 130, df: 65, sa: 65, sd: 85, sp: 70},
     weightkg: 75,
     gender: 'N',
-    abilities: {0: 'Frisk'},
+    abilities: {0: 'Winter Arbiter'},
   },
   Guardeon: {
     types: ['Steel'],
@@ -10139,7 +10139,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 80, at: 105, df: 105, sa: 105, sd: 105, sp: 80},
     weightkg: 0.3,
     gender: 'N',
-    abilities: {0: 'Toxic Chain'},
+    abilities: {0: 'Levitate'},
   },
   'Metagross-Delta': {
     types: ['Rock', 'Grass'],
@@ -10653,7 +10653,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Water', 'Electric'],
     bs: {hp: 85, at: 75, df: 75, sa: 125, sd: 90, sp: 40},
     weightkg: 116,
-    abilities: {0: 'Unaware'},
+    abilities: {0: 'Usurped'},
   },
   Smoliv: {
     types: ['Grass', 'Normal'],
@@ -10839,7 +10839,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Poison', 'Electric'],
     bs: {hp: 80, at: 60, df: 70, sa: 90, sd: 100, sp: 115},
     weightkg: 54.5,
-    abilities: {0: 'Motor Drive'},
+    abilities: {0: 'Usurper'},
   },
   'Ting-Lu': {
     types: ['Dark', 'Ground'],
@@ -10945,7 +10945,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 60, at: 95, df: 115, sa: 95, sd: 115, sp: 100},
     weightkg: 0.3,
     gender: 'N',
-    abilities: {0: 'Toxic Chain'},
+    abilities: {0: 'Levitate'},
   },
   'Valiant Time': {
     types: ['Steel', 'Fairy'],

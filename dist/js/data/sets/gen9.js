@@ -5921,4 +5921,36 @@ var SETDEX_SV = {
 			"moves": [ "Solar Blade", "Sacred Sword", "Swords Dance", "Smart Strike"]
 		}
 	},
-};
+	"Eruptois": {
+		"Physically Defensive": {
+			"level": 100,
+			"ability": "Geyser",
+			"item": "Heavy-Duty Boots",
+			"nature": "Relaxed",
+			"teraType": "Water",
+			"ivs": {"sp": 0},
+			"evs": {"hp": 252, "df": 252, "sd": 4},
+			"moves": ["Scald", "Lava Plume", "Heat Siphon", "Rapid Spin"]
+		}
+	},
+	"Tapu-Kehe": {
+		"SpDef Terrain Setter": {
+			"level": 100,
+			"ability": "Corrosive Surge",
+			"item": "Terrain Extender",
+			"nature": "Careful",
+			"teraType": "Fairy",
+			"evs": {"hp": 248, "df": 8, "sd": 252},
+			"moves": ["Nature's Madness", "Mortal Spin", "Flip Turn", "Recover"]
+		}
+	},
+	"Zoroark-Hisui-Mega": {
+		"Nasty Plot": {
+			"level": 100,
+			"ability": "Illusion",
+			"nature": "Timid",
+			"evs": {"sa": 252, "sp": 252, "df": 4},
+			"moves": ["Shadow Ball", "Hyper Voice", "Focus Blast", "Nasty Plot"]
+		}
+	},
+	};
