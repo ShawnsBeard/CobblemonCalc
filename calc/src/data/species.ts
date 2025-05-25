@@ -10206,7 +10206,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Ghost', 'Poison'],
     bs: {hp: 150, at: 110, df: 60, sa: 40, sd: 60, sp: 50},
     weightkg: 4.5,
-    abilities: {0: 'Run Away'},
+    abilities: {0: 'Unrelenting Stampede'},
   },
   Niveon: {
     types: ['Flying'],
@@ -10684,7 +10684,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Ghost', 'Dark'],
     bs: {hp: 50, at: 132, df: 108, sa: 132, sd: 108, sp: 35},
     weightkg: 108,
-    abilities: {0: 'Run Away'},
+    abilities: {0: 'Spectre Onslaught'},
   },
   'Steelix-Delta': {
     types: ['Ground', 'Psychic'],
@@ -10697,7 +10697,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Ground', 'Psychic'],
     bs: {hp: 85, at: 65, df: 65, sa: 135, sd: 230, sp: 30},
     weightkg: 350,
-    abilities: {0: 'Run Away'},
+    abilities: {0: 'Planar Collapse'},
     baseSpecies: 'Steelix-Delta',
   },
   Sprigatito: {
@@ -10739,7 +10739,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     types: ['Fire', 'Flying'],
     bs: {hp: 85, at: 90, df: 80, sa: 70, sd: 60, sp: 100},
     weightkg: 30.5,
-    abilities: {0: 'Intimidate'},
+    abilities: {0: 'Welkin Torch'},
   },
   Tadbulb: {
     types: ['Electric'],
@@ -10769,7 +10769,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 100, at: 95, df: 75, sa: 125, sd: 75, sp: 120},
     weightkg: 10,
     gender: 'N',
-    abilities: {0: 'Run Away'},
+    abilities: {0: 'Chrono Catalyst'},
   },
   'Tapu-Kehe': {
     types: ['Poison', 'Fairy'],

@@ -14,6 +14,7 @@ export declare class Pokemon implements State.Pokemon {
     dynamaxLevel?: number;
     isSaltCure?: boolean;
     alliesFainted?: number;
+    enemiesFainted?: number;
     boostedStat?: I.StatIDExceptHP | 'auto';
     item?: I.ItemName;
     disabledItem?: I.ItemName;

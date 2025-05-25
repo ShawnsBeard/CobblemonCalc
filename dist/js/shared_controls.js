@@ -295,6 +295,14 @@ $(".ability").bind("keyup change", function () {
 		$(this).closest(".poke-info").find(".alliesFainted").hide();
 
 	}
+
+	if (ability === "Unrelenting Stampede") {
+		$(this).closest(".poke-info").find(".enemiesFainted").show();
+	} else {
+		$(this).closest(".poke-info").find(".enemiesFainted").val('0');
+		$(this).closest(".poke-info").find(".enemiesFainted").hide();
+
+	}
 });
 
 function autosetQP(pokemon) {
@@ -429,6 +437,10 @@ function autosetTerrain(ability, i) {
 	case "Corrosive Surge":
 		lastAutoTerrain[i] = "Corrosive";
 		$("#corrosive").prop("checked", true);
+		break;
+	case "Planar Collapse":
+		lastAutoTerrain[i] = "Gravity";
+		$("#gravity").prop("checked", true);
 		break;
 	default:
 		lastAutoTerrain[i] = "";

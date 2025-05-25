@@ -194,7 +194,7 @@ function getKOChance(gen, attacker, defender, move, field, damage, err) {
     }
     var hazards = getHazards(gen, defender, field.defenderSide);
     var eot = getEndOfTurn(gen, attacker, defender, move, field);
-    var toxicCounter = defender.hasStatus('tox') && !defender.hasAbility('Magic Guard', 'Poison Heal')
+    var toxicCounter = defender.hasStatus('tox') && !defender.hasAbility('Magic Guard', 'Poison Heal', 'Welkin Torch')
         ? defender.toxicCounter : 0;
     var qualifier = move.hits > 1 ? 'approx. ' : '';
     var hazardsText = hazards.texts.length > 0
@@ -325,14 +325,14 @@ function getHazards(gen, defender, defenderSide) {
     if (defender.hasItem('Heavy-Duty Boots')) {
         return { damage: damage, texts: texts };
     }
-    if (defenderSide.isSR && !defender.hasAbility('Magic Guard', 'Mountaineer')) {
+    if (defenderSide.isSR && !defender.hasAbility('Magic Guard', 'Mountaineer', 'Welkin Torch')) {
         var rockType = gen.types.get('rock');
         var effectiveness = rockType.effectiveness[defender.types[0]] *
             (defender.types[1] ? rockType.effectiveness[defender.types[1]] : 1);
         damage += Math.floor((effectiveness * defender.maxHP()) / 8);
         texts.push('Stealth Rock');
     }
-    if (defenderSide.steelsurge && !defender.hasAbility('Magic Guard', 'Mountaineer')) {
+    if (defenderSide.steelsurge && !defender.hasAbility('Magic Guard', 'Mountaineer', 'Welkin Torch')) {
         var steelType = gen.types.get('steel');
         var effectiveness = steelType.effectiveness[defender.types[0]] *
             (defender.types[1] ? steelType.effectiveness[defender.types[1]] : 1);
@@ -340,7 +340,7 @@ function getHazards(gen, defender, defenderSide) {
         texts.push('Steelsurge');
     }
     if (!defender.hasType('Flying') &&
-        !defender.hasAbility('Magic Guard', 'Levitate') &&
+        !defender.hasAbility('Magic Guard', 'Levitate', 'Welkin Torch') &&
         !defender.hasItem('Air Balloon')) {
         if (defenderSide.spikes === 1) {
             damage += Math.floor(defender.maxHP() / 8);
@@ -369,7 +369,7 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
     var damage = 0;
     var texts = [];
     var loseItem = move.named('Knock Off') && !defender.hasAbility('Sticky Hold');
-    var healBlock = move.named('Psychic Noise') &&
+    var healBlock = move.named('Psychic Noise', 'Wild Wire') &&
         !(attacker.hasAbility('Sheer Force') ||
             defender.hasItem('Covert Cloak') ||
             defender.hasAbility('Shield Dust', 'Aroma Veil'));
@@ -391,7 +391,7 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
     }
     else if (field.hasWeather('Sand')) {
         if (!defender.hasType('Rock', 'Ground', 'Steel') &&
-            !defender.hasAbility('Magic Guard', 'Overcoat', 'Sand Force', 'Sand Rush', 'Sand Veil') &&
+            !defender.hasAbility('Magic Guard', 'Overcoat', 'Sand Force', 'Sand Rush', 'Sand Veil', 'Welkin Torch') &&
             !defender.hasItem('Safety Goggles')) {
             damage -= Math.floor(defender.maxHP() / (gen.num === 2 ? 8 : 16));
             texts.push('sandstorm damage');
@@ -403,7 +403,7 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
             texts.push('Ice Body recovery');
         }
         else if (!defender.hasType('Ice') &&
-            !defender.hasAbility('Magic Guard', 'Overcoat', 'Snow Cloak') &&
+            !defender.hasAbility('Magic Guard', 'Overcoat', 'Snow Cloak', 'Welkin Torch') &&
             !defender.hasItem('Safety Goggles') &&
             field.hasWeather('Hail')) {
             damage -= Math.floor(defender.maxHP() / 16);
@@ -421,7 +421,7 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
                 texts.push('Black Sludge recovery');
             }
         }
-        else if (!defender.hasAbility('Magic Guard', 'Klutz')) {
+        else if (!defender.hasAbility('Magic Guard', 'Klutz', 'Welkin Torch')) {
             damage -= Math.floor(defender.maxHP() / 8);
             texts.push('Black Sludge damage');
         }
@@ -431,12 +431,12 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
         texts.push('Sticky Barb damage');
     }
     if (field.defenderSide.isSeeded) {
-        if (!defender.hasAbility('Magic Guard')) {
+        if (!defender.hasAbility('Magic Guard', 'Welkin Torch')) {
             damage -= Math.floor(defender.maxHP() / (gen.num >= 2 ? 8 : 16));
             texts.push('Leech Seed damage');
         }
     }
-    if (field.attackerSide.isSeeded && !attacker.hasAbility('Magic Guard')) {
+    if (field.attackerSide.isSeeded && !attacker.hasAbility('Magic Guard', 'Welkin Torch')) {
         var recovery = Math.floor(attacker.maxHP() / (gen.num >= 2 ? 8 : 16));
         if (defender.hasItem('Big Root'))
             recovery = Math.trunc(recovery * 5324 / 4096);
@@ -478,7 +478,7 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
                 texts.push('Poison Heal');
             }
         }
-        else if (!defender.hasAbility('Magic Guard')) {
+        else if (!defender.hasAbility('Magic Guard', 'Welkin Torch')) {
             damage -= Math.floor(defender.maxHP() / (gen.num === 1 ? 16 : 8));
             texts.push('poison damage');
         }
@@ -496,7 +496,7 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
                 texts.push('Poison Heal');
             }
         }
-        else if (!defender.hasAbility('Magic Guard')) {
+        else if (!defender.hasAbility('Magic Guard', 'Welkin Torch')) {
             texts.push('toxic damage');
         }
     }
@@ -505,18 +505,18 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
             damage -= Math.floor(defender.maxHP() / (gen.num > 6 ? 32 : 16));
             texts.push('reduced burn damage');
         }
-        else if (!defender.hasAbility('Magic Guard')) {
+        else if (!defender.hasAbility('Magic Guard', 'Welkin Torch')) {
             damage -= Math.floor(defender.maxHP() / (gen.num === 1 || gen.num > 6 ? 16 : 8));
             texts.push('burn damage');
         }
     }
     else if ((defender.hasStatus('slp') || defender.hasAbility('Comatose')) &&
         attacker.hasAbility('Bad Dreams') &&
-        !defender.hasAbility('Magic Guard')) {
+        !defender.hasAbility('Magic Guard', 'Welkin Torch')) {
         damage -= Math.floor(defender.maxHP() / 8);
         texts.push('Bad Dreams');
     }
-    if (!defender.hasAbility('Magic Guard') && TRAPPING.includes(move.name)) {
+    if (!defender.hasAbility('Magic Guard', 'Welkin Torch') && TRAPPING.includes(move.name)) {
         if (attacker.hasItem('Binding Band')) {
             damage -= gen.num > 5 ? Math.floor(defender.maxHP() / 6) : Math.floor(defender.maxHP() / 8);
             texts.push('trapping damage');
@@ -526,33 +526,33 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
             texts.push('trapping damage');
         }
     }
-    if (defender.isSaltCure && !defender.hasAbility('Magic Guard')) {
+    if (defender.isSaltCure && !defender.hasAbility('Magic Guard', 'Welkin Torch')) {
         var isWaterOrSteel = defender.hasType('Water', 'Steel') ||
             (defender.teraType && ['Water', 'Steel'].includes(defender.teraType));
         damage -= Math.floor(defender.maxHP() / (isWaterOrSteel ? 4 : 8));
         texts.push('Salt Cure');
     }
-    if (!defender.hasType('Fire') && !defender.hasAbility('Magic Guard') &&
+    if (!defender.hasType('Fire') && !defender.hasAbility('Magic Guard', 'Welkin Torch') &&
         (move.named('Fire Pledge (Grass Pledge Boosted)', 'Grass Pledge (Fire Pledge Boosted)'))) {
         damage -= Math.floor(defender.maxHP() / 8);
         texts.push('Sea of Fire damage');
     }
-    if (!defender.hasAbility('Magic Guard') && !defender.hasType('Grass') &&
+    if (!defender.hasAbility('Magic Guard', 'Welkin Torch') && !defender.hasType('Grass') &&
         (field.defenderSide.vinelash || move.named('G-Max Vine Lash'))) {
         damage -= Math.floor(defender.maxHP() / 6);
         texts.push('Vine Lash damage');
     }
-    if (!defender.hasAbility('Magic Guard') && !defender.hasType('Fire') &&
+    if (!defender.hasAbility('Magic Guard', 'Welkin Torch') && !defender.hasType('Fire') &&
         (field.defenderSide.wildfire || move.named('G-Max Wildfire'))) {
         damage -= Math.floor(defender.maxHP() / 6);
         texts.push('Wildfire damage');
     }
-    if (!defender.hasAbility('Magic Guard') && !defender.hasType('Water') &&
+    if (!defender.hasAbility('Magic Guard', 'Welkin Torch') && !defender.hasType('Water') &&
         (field.defenderSide.cannonade || move.named('G-Max Cannonade'))) {
         damage -= Math.floor(defender.maxHP() / 6);
         texts.push('Cannonade damage');
     }
-    if (!defender.hasAbility('Magic Guard') && !defender.hasType('Rock') &&
+    if (!defender.hasAbility('Magic Guard', 'Welkin Torch') && !defender.hasType('Rock') &&
         (field.defenderSide.volcalith || move.named('G-Max Volcalith'))) {
         damage -= Math.floor(defender.maxHP() / 6);
         texts.push('Volcalith damage');
@@ -752,6 +752,10 @@ function buildDescription(description, attacker, defender) {
     if (description.alliesFainted) {
         output += Math.min(5, description.alliesFainted) +
             " ".concat(description.alliesFainted === 1 ? 'ally' : 'allies', " fainted ");
+    }
+    if (description.enemiesFainted) {
+        output += Math.min(5, description.enemiesFainted) +
+            " ".concat(description.enemiesFainted === 1 ? 'ally' : 'allies', " fainted ");
     }
     if (description.attackerTera) {
         output += "Tera ".concat(description.attackerTera, " ");

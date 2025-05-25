@@ -955,6 +955,12 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         desc.attackerAbility = attacker.ability;
         desc.alliesFainted = attacker.alliesFainted;
     }
+    if (attacker.hasAbility('Unrelenting Stampede') && attacker.enemiesFainted) {
+        var powMod = [4096, 4506, 4915, 5325, 5734, 6144];
+        bpMods.push(powMod[Math.min(5, attacker.enemiesFainted)]);
+        desc.attackerAbility = attacker.ability;
+        desc.enemiesFainted = attacker.enemiesFainted;
+    }
     if (attacker.hasItem("".concat(move.type, " Gem"))) {
         bpMods.push(5325);
         desc.attackerItem = attacker.item;

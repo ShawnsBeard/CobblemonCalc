@@ -46,6 +46,7 @@ var Pokemon = (function () {
             ? (options.dynamaxLevel === undefined ? 10 : options.dynamaxLevel) : undefined;
         this.isSaltCure = !!options.isSaltCure;
         this.alliesFainted = options.alliesFainted;
+        this.enemiesFainted = options.enemiesFainted;
         this.boostedStat = options.boostedStat;
         this.teraType = options.teraType;
         this.item = options.item;
@@ -182,6 +183,7 @@ var Pokemon = (function () {
             dynamaxLevel: this.dynamaxLevel,
             isSaltCure: this.isSaltCure,
             alliesFainted: this.alliesFainted,
+            enemiesFainted: this.enemiesFainted,
             boostedStat: this.boostedStat,
             item: this.item,
             gender: this.gender,
