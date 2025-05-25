@@ -5539,7 +5539,7 @@ var SETDEX_SV = {
 		}
 	},
 	"Necromauser": {
-		"Reverse-Reverse Sweeper": {"ability":"Supreme Overlord","item":"Black Sludge","nature":"Adamant","evs":{"at":252,"df":4,"hp":252},"moves":["Shadow Sneak","Putrid Grasp","Low Kick","Swords Dance"]}
+		"Reverse-Reverse Sweeper": {"ability":"Unrelenting Stampede","item":"Black Sludge","nature":"Adamant","evs":{"at":252,"df":4,"hp":252},"moves":["Shadow Sneak","Putrid Grasp","Low Kick","Swords Dance"]}
 	},
 	"Flygon-Mega": {
 		"Physical Sand Sweeper": {"ability":"Desert Spirit","item":"Audinite","nature":"Jolly","evs":{"sp":252,"at":252,"sd":4},"moves":["Dragon Dance","Earthquake","Dragon Claw","Stone Edge"]},

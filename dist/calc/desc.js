@@ -755,7 +755,7 @@ function buildDescription(description, attacker, defender) {
     }
     if (description.enemiesFainted) {
         output += Math.min(5, description.enemiesFainted) +
-            " ".concat(description.enemiesFainted === 1 ? 'ally' : 'allies', " fainted ");
+            " ".concat(description.enemiesFainted === 1 ? 'enemy' : 'enemies', " fainted ");
     }
     if (description.attackerTera) {
         output += "Tera ".concat(description.attackerTera, " ");

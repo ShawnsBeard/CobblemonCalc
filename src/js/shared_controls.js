@@ -1123,6 +1123,7 @@ function createPokemon(pokeInfo) {
 			isDynamaxed: isDynamaxed,
 			isSaltCure: pokeInfo.find(".saltcure").is(":checked"),
 			alliesFainted: parseInt(pokeInfo.find(".alliesFainted").val()),
+			enemiesFainted: parseInt(pokeInfo.find(".enemiesFainted").val()),
 			boostedStat: pokeInfo.find(".boostedStat").val() || undefined,
 			teraType: teraType,
 			boosts: boosts,
