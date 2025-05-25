@@ -9351,6 +9351,12 @@ var SV_PATCH = {
         weightkg: 30,
         abilities: { 0: 'Mold Breaker' }
     },
+    'Dragapult-Ultra': {
+        types: ['Dragon', 'Fire'],
+        bs: { hp: 93, at: 100, df: 65, sa: 120, sd: 90, sp: 132 },
+        weightkg: 32.0,
+        abilities: { 0: 'Clear Body' }
+    },
     Dragetsu: {
         types: ['Dragon'],
         bs: { hp: 93, at: 70, df: 88, sa: 123, sd: 127, sp: 99 },
@@ -9485,6 +9491,13 @@ var SV_PATCH = {
         abilities: { 0: 'Overgrow' },
         nfe: true
     },
+    Florizim: {
+        types: ['Poison', 'Grass'],
+        bs: { hp: 79, at: 83, df: 61, sa: 113, sd: 151, sp: 83 },
+        weightkg: 63.5,
+        gender: 'N',
+        abilities: { 0: 'Beast Boost' }
+    },
     'Flutter Mane': {
         types: ['Ghost', 'Fairy'],
         bs: { hp: 55, at: 55, df: 55, sa: 135, sd: 135, sp: 135 },
@@ -9593,6 +9606,13 @@ var SV_PATCH = {
         abilities: { 0: 'Run Away' },
         nfe: true,
         baseSpecies: 'Gimmighoul'
+    },
+    Glimmerix: {
+        types: ['Ghost', 'Steel'],
+        bs: { hp: 61, at: 89, df: 151, sa: 103, sd: 83, sp: 83 },
+        weightkg: 132.0,
+        gender: 'N',
+        abilities: { 0: 'Beast Boost' }
     },
     Glimmet: {
         types: ['Rock', 'Poison'],
@@ -9722,6 +9742,12 @@ var SV_PATCH = {
         weightkg: 140.5,
         abilities: { 0: 'Ragnarok' },
         baseSpecies: 'Haxorus-Delta'
+    },
+    'Heliolisk-Ultra': {
+        types: ['Grass', 'Normal'],
+        bs: { hp: 67, at: 60, df: 50, sa: 111, sd: 88, sp: 105 },
+        weightkg: 21.0,
+        abilities: { 0: 'Steadfast' }
     },
     Hemogoblin: {
         types: ['Fairy', 'Fire'],
@@ -11019,6 +11045,13 @@ var SV_PATCH = {
         weightkg: 1.8,
         abilities: { 0: 'Gooey' },
         nfe: true
+    },
+    Wisphir: {
+        types: ['Flying'],
+        bs: { hp: 79, at: 101, df: 41, sa: 109, sd: 83, sp: 157 },
+        weightkg: 5.0,
+        gender: 'N',
+        abilities: { 0: 'Beast Boost' }
     },
     'Wo-Chien': {
         types: ['Dark', 'Grass'],
