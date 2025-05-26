@@ -5504,6 +5504,14 @@ var SETDEX_SV = {
 			"teraType": "Flying",
 			"evs": {"sa": 252, "sp": 252, "sd": 4},
 			"moves": ["Shadow Ball", "Alluring Voice", "Endeavor", "Nasty Plot"]
+		},
+		"Utility Spinblocker": {
+			"level": 100,
+			"ability": "Death Defiance",
+			"item": "Colbur Berry",
+			"nature": "Timid",
+			"evs": {"hp": 252, "sp": 252, "df": 4},
+			"moves": ["Night Shade", "Hex", "Thunder Wave", "Endeavor"]
 		}
 	},
 	"Gogoat-Delta": {
@@ -5951,6 +5959,25 @@ var SETDEX_SV = {
 			"nature": "Timid",
 			"evs": {"sa": 252, "sp": 252, "df": 4},
 			"moves": ["Shadow Ball", "Hyper Voice", "Focus Blast", "Nasty Plot"]
+		}
+	},
+	"Latias-Delta-Mega": {
+		"Dragon Dance": {
+			"level": 100,
+			"ability": "Levitate",
+			"nature": "Adamant",
+			"evs": {"hp": 140, "at": 252, "sp": 116},
+			"moves": ["Play Rough", "Earthquake", "Dragon Dance", "Recover"]
+		}
+	},
+	"Slowhost": {
+		"SpDef Pivot": {
+			"level": 100,
+			"ability": "Usurped",
+			"item": "Heavy-Duty Boots",
+			"nature": "Calm",
+			"evs": {"hp": 252, "sd": 252, "df": 4},
+			"moves": ["Scald", "Volt Switch", "Knock Off", "Slack Off"]
 		}
 	},
 	};
