@@ -648,7 +648,7 @@ function calculateBasePowerSMSSSV(gen, attacker, defender, move, field, hasAteAb
         case 'Eruption':
         case 'Ice Mace':
             if (attacker.named('Greninja-Omega-BattleBond') && attacker.hasAbility('Battle Bond')) {
-                basePower = 120;
+                basePower = 100;
                 desc.moveBP = basePower;
                 break;
             }

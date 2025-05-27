@@ -4757,10 +4757,10 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     secondaries: true,
   },
   'New Moon': {
-    bp: 90,
+    bp: 80,
     type: 'Dark',
     category: 'Special',
-    zp: 175,
+    zp: 160,
     maxPower: 90,
     secondaries: true,
   },
@@ -5045,7 +5045,7 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     target: 'allAdjacentFoes',
   },
   'Steel Skewer': {
-    bp: 80,
+    bp: 70,
     type: 'Steel',
     category: 'Physical',
     zp: 160,
@@ -5101,7 +5101,7 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     category: 'Status',
   },
   'Techno Beam': {
-    bp: 80,
+    bp: 120,
     type: 'Normal',
     category: 'Special',
     zp: 160,

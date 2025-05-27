@@ -9095,10 +9095,10 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   Articeon: {
     types: ['Water', 'Psychic'],
-    bs: {hp: 140, at: 84, df: 72, sa: 120, sd: 100, sp: 84},
+    bs: {hp: 132, at: 84, df: 72, sa: 116, sd: 104, sp: 92},
     weightkg: 32,
     gender: 'N',
-    abilities: {0: 'Competitive'},
+    abilities: {0: 'Snow Cloak'},
   },
   'Azelf-Delta': {
     types: ['Poison', 'Fairy'],
@@ -9502,7 +9502,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Flygon-Ultra': {
     types: ['Steel', 'Dragon'],
-    bs: {hp: 80, at: 90, df: 120, sa: 55, sd: 100, sp: 75},
+    bs: {hp: 80, at: 90, df: 110, sa: 75, sd: 90, sp: 75},
     weightkg: 170,
     abilities: {0: 'Thick Fat'},
   },
@@ -9686,14 +9686,14 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Greninja-Omega': {
     types: ['Ice', 'Fighting'],
-    bs: {hp: 75, at: 106, df: 75, sa: 97, sd: 68, sp: 109},
+    bs: {hp: 75, at: 90, df: 80, sa: 101, sd: 75, sp: 107},
     weightkg: 40,
     abilities: {0: 'Flurry'},
     otherFormes: ['Greninja-Omega-BattleBond'],
   },
   'Greninja-Omega-BattleBond': {
     types: ['Ice', 'Fighting'],
-    bs: {hp: 75, at: 156, df: 75, sa: 147, sd: 68, sp: 119},
+    bs: {hp: 75, at: 140, df: 80, sa: 151, sd: 75, sp: 117},
     weightkg: 40,
     abilities: {0: 'Battle Bond'},
     baseSpecies: 'Greninja-Omega',
@@ -9957,7 +9957,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Latias-Delta': {
     types: ['Dragon', 'Fairy'],
-    bs: {hp: 80, at: 75, df: 110, sa: 95, sd: 130, sp: 110},
+    bs: {hp: 80, at: 85, df: 100, sa: 105, sd: 120, sp: 110},
     weightkg: 40,
     gender: 'N',
     abilities: {0: 'Levitate'},
@@ -9973,7 +9973,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Latios-Delta': {
     types: ['Dragon', 'Fairy'],
-    bs: {hp: 80, at: 110, df: 95, sa: 130, sd: 75, sp: 110},
+    bs: {hp: 80, at: 130, df: 95, sa: 110, sd: 75, sp: 110},
     weightkg: 50,
     gender: 'N',
     abilities: {0: 'Levitate'},
@@ -9981,7 +9981,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Latios-Delta-Mega': {
     types: ['Dragon', 'Fairy'],
-    bs: {hp: 80, at: 140, df: 115, sa: 160, sd: 95, sp: 110},
+    bs: {hp: 80, at: 155, df: 115, sa: 140, sd: 100, sp: 110},
     weightkg: 50,
     gender: 'N',
     abilities: {0: 'Levitate'},
@@ -10162,7 +10162,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Mesprit-Delta': {
     types: ['Poison', 'Fighting'],
-    bs: {hp: 80, at: 105, df: 105, sa: 105, sd: 105, sp: 80},
+    bs: {hp: 80, at: 100, df: 100, sa: 100, sd: 100, sp: 100},
     weightkg: 0.3,
     gender: 'N',
     abilities: {0: 'Levitate'},
@@ -10175,7 +10175,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Mewrai': {
     types: ['Psychic', 'Dark'],
-    bs: {hp: 100, at: 100, df: 80, sa: 120, sd: 88, sp: 112},
+    bs: {hp: 100, at: 112, df: 80, sa: 112, sd: 96, sp: 100},
     weightkg: 4,
     gender: 'N',
     abilities: {0: 'Feast or Famine'},
@@ -10196,10 +10196,10 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   Molteon: {
     types: ['Fire', 'Dark'],
-    bs: {hp: 84, at: 140, df: 72, sa: 120, sd: 100, sp: 84},
+    bs: {hp: 84, at: 132, df: 72, sa: 116, sd: 104, sp: 92},
     weightkg: 18,
     gender: 'N',
-    abilities: {0: 'Berserk'},
+    abilities: {0: 'Flame Body'},
   },
   'Morgrem-Delta': {
     types: ['Ice', 'Fighting'],
@@ -10476,7 +10476,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Radiant Moon': {
     types: ['Dragon', 'Ghost'],
-    bs: {hp: 84, at: 108, df: 76, sa: 124, sd: 116, sp: 92},
+    bs: {hp: 84, at: 100, df: 76, sa: 132, sd: 116, sp: 92},
     weightkg: 320,
     gender: 'N',
     abilities: {0: 'Brilliance'},
@@ -11082,10 +11082,10 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   Zapeon: {
     types: ['Electric', 'Fighting'],
-    bs: {hp: 84, at: 120, df: 72, sa: 84, sd: 100, sp: 140},
+    bs: {hp: 84, at: 116, df: 72, sa: 92, sd: 104, sp: 132},
     weightkg: 32,
     gender: 'N',
-    abilities: {0: 'Defiant'},
+    abilities: {0: 'Static'},
   },
   Zorotales: {
     types: ['Normal', 'Fairy'],
