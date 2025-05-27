@@ -5460,22 +5460,22 @@ var SETDEX_SV = {
 		}
 	},
 	"Rogue Prince": {
-		"Booster Double Dance": {
+		"Take Heart": {
 			"level": 100,
 			"ability": "Protosynthesis",
 			"item": "Booster Energy",
-			"nature": "Modest",
+			"nature": "Timid",
 			"teraType": "Water",
-			"evs": {"hp": 232, "sa": 216, "sp": 60},
-			"moves": ["Take Heart", "Agility", "Surf", "Psyshock"]
+			"evs": {"hp": 152, "sa": 104, "sp": 252},
+			"moves": ["Take Heart", "Ice Beam", "Surf", "Psyshock"]
 		},
 		"Assault Vest Pivot": {
 			"level": 100,
 			"ability": "Protosynthesis",
 			"item": "Assault Vest",
-			"nature": "Modest",
+			"nature": "Timid",
 			"teraType": "Water",
-			"evs": {"hp": 228, "sa": 252, "sp": 28},
+			"evs": {"df": 4, "sa": 252, "sp": 252},
 			"moves": ["Scald", "Future Sight", "Flip Turn", "Ice Beam"]
 		}
 	},
@@ -5529,7 +5529,7 @@ var SETDEX_SV = {
 	"Zapeon": {
 		"Sub Psychium Z": {
 			"level": 100,
-			"ability": "Defiant",
+			"ability": "Static",
 			"item": "Psychium Z",
 			"nature": "Jolly",
 			"teraType": "Fighting",
@@ -5538,12 +5538,12 @@ var SETDEX_SV = {
 		},
 		"Choice Band": {
 			"level": 100,
-			"ability": "Defiant",
+			"ability": "Static",
 			"item": "Choice Band",
 			"nature": "Jolly",
 			"teraType": "Fighting",
 			"evs": {"at": 252, "sp": 252, "sd": 4},
-			"moves": ["Close Combat", "Amber Assault", "Knock Off", "U-turn"]
+			"moves": ["Close Combat", "Amber Assault", "Zen Headbutt", "U-turn"]
 		}
 	},
 	"Necromauser": {
@@ -5561,7 +5561,7 @@ var SETDEX_SV = {
 			"nature": "Careful",
 			"teraType": "Dragon",
 			"evs": {"hp": 252, "sd": 252, "df": 4},
-			"moves": ["Steel Skewer", "Dragon Tail", "Thunder Wave", "Roost"]
+			"moves": ["Steel Skewer", "Spikes", "Dragon Tail", "Roost"]
 		}
 	},
 	"Uxie-Delta": {
@@ -5881,7 +5881,7 @@ var SETDEX_SV = {
 			"ability": "Levitate",
 			"nature": "Timid",
 			"teraType": "Dragon",
-			"evs": {"hp": 144, "sa": 112, "sp": 252},
+			"evs": {"df": 4, "sa": 252, "sp": 252},
 			"moves": ["Moonblast", "Mystical Fire", "Calm Mind", "Recover"]
 		}
 	},
@@ -5966,7 +5966,7 @@ var SETDEX_SV = {
 			"level": 100,
 			"ability": "Levitate",
 			"nature": "Adamant",
-			"evs": {"hp": 140, "at": 252, "sp": 116},
+			"evs": {"hp": 184, "at": 252, "sp": 72},
 			"moves": ["Play Rough", "Earthquake", "Dragon Dance", "Recover"]
 		}
 	},
