@@ -5980,4 +5980,24 @@ var SETDEX_SV = {
 			"moves": ["Scald", "Volt Switch", "Knock Off", "Slack Off"]
 		}
 	},
+	"Dragapult-Ultra": {
+		"Choice Specs": {
+			"level": 100,
+			"ability": "Analytic",
+			"nature": "Timid",
+			"teraType": "Dragon",
+			"evs": {"sd": 4, "sa": 252, "sp": 252},
+			"moves": ["Draco Meteor", "Fire Blast", "Scorching Sands", "U-Turn"]
+		}
+	},
+	"Savage Scar": {
+		"Dragon Dance": {
+			"level": 100,
+			"ability": "Protosynthesis",
+			"nature": "Adamant",
+			"teraType": "Dragon",
+			"evs": {"df": 4, "at": 252, "sp": 252},
+			"moves": ["Outrage", "Earthquake", "Poison Jab", "Dragon Dance"]
+		}
+	},
 	};
