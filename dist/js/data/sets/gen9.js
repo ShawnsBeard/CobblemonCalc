@@ -5984,16 +5984,18 @@ var SETDEX_SV = {
 		"Choice Specs": {
 			"level": 100,
 			"ability": "Analytic",
+			"item": "Choice Specs"
 			"nature": "Timid",
 			"teraType": "Dragon",
 			"evs": {"sd": 4, "sa": 252, "sp": 252},
-			"moves": ["Draco Meteor", "Fire Blast", "Scorching Sands", "U-Turn"]
+			"moves": ["Draco Meteor", "Fire Blast", "Scorching Sands", "U-turn"]
 		}
 	},
 	"Savage Scar": {
 		"Dragon Dance": {
 			"level": 100,
 			"ability": "Protosynthesis",
+			"item": "Booster Energy",
 			"nature": "Adamant",
 			"teraType": "Dragon",
 			"evs": {"df": 4, "at": 252, "sp": 252},
