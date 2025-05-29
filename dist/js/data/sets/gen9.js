@@ -5984,7 +5984,7 @@ var SETDEX_SV = {
 		"Choice Specs": {
 			"level": 100,
 			"ability": "Analytic",
-			"item": "Choice Specs"
+			"item": "Choice Specs",
 			"nature": "Timid",
 			"teraType": "Dragon",
 			"evs": {"sd": 4, "sa": 252, "sp": 252},
