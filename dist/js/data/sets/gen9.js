@@ -6002,4 +6002,34 @@ var SETDEX_SV = {
 			"moves": ["Outrage", "Earthquake", "Poison Jab", "Dragon Dance"]
 		}
 	},
+	"Ambipom-Ultra": {
+		"Choice Band": {
+			"level": 100,
+			"ability": "Tough Claws",
+			"item": "Choice Band",
+			"nature": "Jolly",
+			"evs": {"at": 252, "sp": 252, "df": 4},
+			"moves": ["Play Rough", "Fire Lash", "Knock Off", "U-turn"]
+		}
+	},
+	"Niveon": {
+		"Specs": {
+			"level": 100,
+			"ability": "Super Luck",
+			"item": "Choice Specs",
+			"nature": "Timid",
+			"evs": {"sa": 252, "sp": 252, "df": 4},
+			"moves": ["Aeroblast", "Volt Switch", "Heat Wave", "Air Slash"]
+		}
+	},
+	"Ectarachnid": {
+		"Agility Sweeper": {
+			"level": 100,
+			"ability": "Merciless",
+			"item": "Loaded Dice",
+			"nature": "Jolly",
+			"evs": {"at": 252, "sp": 252, "df": 4},
+			"moves": ["Pin Missile", "Shadow Sneak", "Agility", "Wretched Stab"]
+		}
+	},
 	};

@@ -5284,7 +5284,8 @@ var SV_PATCH = {
         zp: 140,
         maxPower: 130,
         secondaries: true
-    }
+    },
+    'Wretched Stab': { bp: 20, type: 'Ghost', multihit: [2, 5] }
 };
 var SV = (0, util_1.extend)(true, {}, SS, SV_PATCH);
 exports.MOVES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];

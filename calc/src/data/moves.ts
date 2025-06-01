@@ -5296,6 +5296,7 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     maxPower: 130,
     secondaries: true,
   },
+  'Wretched Stab': {bp: 20, type: 'Ghost', multihit: [2, 5]},
 };
 
 const SV: {[name: string]: MoveData} = extend(true, {}, SS, SV_PATCH);
