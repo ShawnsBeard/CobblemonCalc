@@ -25,6 +25,7 @@ import {
   checkIntimidate,
   checkIntrepidSword,
   checkItem,
+  checkDawnbreak,
   checkMultihitBoost,
   checkSeedBoost,
   checkTeraformZero,
@@ -67,6 +68,8 @@ export function calculateSMSSSV(
   checkForecast(defender, field.weather);
   checkItem(attacker, field.isMagicRoom);
   checkItem(defender, field.isMagicRoom);
+  checkDawnbreak(attacker, defender);
+  checkDawnbreak(defender, attacker);
   checkWonderRoom(attacker, field.isWonderRoom);
   checkWonderRoom(defender, field.isWonderRoom);
   checkSeedBoost(attacker, field);
@@ -193,7 +196,7 @@ export function calculateSMSSSV(
   );
 
   const attackerIgnoresAbility = attacker.hasAbility('Mold Breaker', 'Teravolt',
-    'Turboblaze', 'Boundless');
+    'Turboblaze', 'Boundless', 'Moonwake');
   const moveIgnoresAbility = move.named(
     'G-Max Drum Solo',
     'G-Max Fire Ball',
@@ -1840,6 +1843,18 @@ export function calculateFinalModsSMSSSV(
 
   if (defender.hasAbility('Solid Rock', 'Filter', 'Prism Armor') && typeEffectiveness > 1) {
     finalMods.push(3072);
+    desc.defenderAbility = defender.ability;
+  }
+
+  if (defender.hasAbility('Diamond Grove') && field.hasTerrain('Grassy') &&
+    typeEffectiveness === 2) {
+    finalMods.push(2048);
+    desc.defenderAbility = defender.ability;
+  }
+
+  if (defender.hasAbility('Diamond Grove') && field.hasTerrain('Grassy') &&
+    typeEffectiveness === 4) {
+    finalMods.push(1024);
     desc.defenderAbility = defender.ability;
   }
 

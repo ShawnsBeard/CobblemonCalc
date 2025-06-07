@@ -4326,6 +4326,16 @@ var SV_PATCH = {
         maxPower: 140
     },
     'Burning Bulwark': { bp: 0, type: 'Fire', priority: 4 },
+    'Cataclench': {
+        bp: 80,
+        type: 'Rock',
+        category: 'Physical',
+        zp: 160,
+        maxPower: 120,
+        makesContact: true,
+        isBite: true,
+        secondaries: true
+    },
     'Ceaseless Edge': {
         bp: 65,
         type: 'Dark',

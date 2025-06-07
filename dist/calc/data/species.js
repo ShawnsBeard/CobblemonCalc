@@ -9325,6 +9325,12 @@ var SV_PATCH = {
         weightkg: 14.9,
         abilities: { 0: 'Well-Baked Body' }
     },
+    Diancette: {
+        types: ['Fairy', 'Rock'],
+        bs: { hp: 60, at: 100, df: 96, sa: 120, sd: 124, sp: 100 },
+        weightkg: 280,
+        abilities: { 0: 'Diamond Grove' }
+    },
     Dipplin: {
         types: ['Grass', 'Dragon'],
         bs: { hp: 80, at: 80, df: 110, sa: 95, sd: 80, sp: 40 },
@@ -9355,6 +9361,12 @@ var SV_PATCH = {
         types: ['Dragon', 'Fire'],
         bs: { hp: 93, at: 100, df: 65, sa: 120, sd: 90, sp: 132 },
         weightkg: 32.0,
+        abilities: { 0: 'Clear Body' }
+    },
+    Dragascue: {
+        types: ['Dragon', 'Ice'],
+        bs: { hp: 80, at: 104, df: 100, sa: 88, sd: 68, sp: 120 },
+        weightkg: 60,
         abilities: { 0: 'Clear Body' }
     },
     Dragetsu: {
@@ -9728,6 +9740,18 @@ var SV_PATCH = {
         bs: { hp: 110, at: 65, df: 130, sa: 65, sd: 95, sp: 60 },
         weightkg: 85,
         abilities: { 0: 'Clear Body' }
+    },
+    Grimmeon: {
+        types: ['Dark', 'Fairy'],
+        bs: { hp: 96, at: 76, df: 112, sa: 68, sd: 132, sp: 76 },
+        weightkg: 24,
+        abilities: { 0: 'Moonwake' }
+    },
+    Hatteon: {
+        types: ['Psychic', 'Fairy'],
+        bs: { hp: 76, at: 76, df: 68, sa: 132, sd: 96, sp: 112 },
+        weightkg: 24,
+        abilities: { 0: 'Dawnbreak' }
     },
     'Haxorus-Delta': {
         types: ['Dragon', 'Fire'],
@@ -10545,6 +10569,12 @@ var SV_PATCH = {
         weightkg: 18.5,
         abilities: { 0: 'Swordmaster' }
     },
+    Rotogar: {
+        types: ['Ghost', 'Electric'],
+        bs: { hp: 88, at: 92, df: 68, sa: 132, sd: 84, sp: 96 },
+        weightkg: 0.5,
+        abilities: { 0: 'Levitate' }
+    },
     'Rotom-Dowse': {
         types: ['Electric', 'Normal'],
         bs: { hp: 50, at: 65, df: 107, sa: 105, sd: 107, sp: 86 },
@@ -10583,6 +10613,12 @@ var SV_PATCH = {
         weightkg: 25,
         abilities: { 0: 'Pixilate' },
         nfe: true
+    },
+    Scizantrum: {
+        types: ['Bug', 'Rock'],
+        bs: { hp: 84, at: 136, df: 132, sa: 76, sd: 60, sp: 72 },
+        weightkg: 132,
+        abilities: { 0: 'Strong Jaw' }
     },
     Scovillain: {
         types: ['Grass', 'Fire'],

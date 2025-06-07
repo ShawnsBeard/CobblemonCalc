@@ -216,6 +216,13 @@ export function checkItem(pokemon: Pokemon, magicRoomActive?: boolean) {
   }
 }
 
+export function checkDawnbreak(source: Pokemon, target: Pokemon) {
+  if (source.hasAbility('Dawnbreak')) {
+    target.disabledItem = target.item;
+    target.item = '' as ItemName;
+  }
+}
+
 export function checkWonderRoom(pokemon: Pokemon, wonderRoomActive?: boolean) {
   if (wonderRoomActive) {
     [pokemon.rawStats.def, pokemon.rawStats.spd] = [pokemon.rawStats.spd, pokemon.rawStats.def];

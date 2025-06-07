@@ -248,6 +248,13 @@ function checkItem(pokemon, magicRoomActive) {
     }
 }
 exports.checkItem = checkItem;
+function checkDawnbreak(source, target) {
+    if (source.hasAbility('Dawnbreak')) {
+        target.disabledItem = target.item;
+        target.item = '';
+    }
+}
+exports.checkDawnbreak = checkDawnbreak;
 function checkWonderRoom(pokemon, wonderRoomActive) {
     var _a;
     if (wonderRoomActive) {
