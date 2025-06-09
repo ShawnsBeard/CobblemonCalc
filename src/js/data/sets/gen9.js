@@ -6032,4 +6032,34 @@ var SETDEX_SV = {
 			"moves": ["Pin Missile", "Shadow Sneak", "Agility", "Wretched Stab"]
 		}
 	},
+	"Diancette": {
+		"Meteor Beam": {
+			"level": 100,
+			"ability": "Diamond Grove",
+			"item": "Power Herb",
+			"nature": "Timid",
+			"evs": {"sa": 252, "sp": 252, "df": 4},
+			"moves": ["Meteor Beam", "Moonblast", "Earth Power", "Rock Polish"]
+		}
+	},
+	"Scizantrum": {
+		"Double Dance": {
+			"level": 100,
+			"ability": "Strong Jaw",
+			"item": "Heavy-Duty Boots",
+			"nature": "Adamant",
+			"evs": {"at": 252, "sp": 104, "hp": 152},
+			"moves": ["Cataclench", "Close Combat", "Swords Dance", "Rock Polish"]
+		}
+	},
+	"Rotogar": {
+		"Choice Scarf": {
+			"level": 100,
+			"ability": "Levitate",
+			"item": "Choice Scarf",
+			"nature": "Timid",
+			"evs": {"sp": 252, "sa": 252, "sd": 4},
+			"moves": ["Shadow Ball", "Volt Switch", "Focus Blast", "Trick"]
+		}
+	},
 	};
