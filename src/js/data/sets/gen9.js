@@ -5795,7 +5795,7 @@ var SETDEX_SV = {
 	"Latios-Delta": {
 		"CM Setup": {
 			"level": 100,
-			"ability": "Levitate",
+			"ability": "Pressure",
 			"item": "Heavy-Duty Boots",
 			"nature": "Timid",
 			"teraType": "Fairy",
@@ -5804,7 +5804,7 @@ var SETDEX_SV = {
 		},
 		"Z-Draco": {
 			"level": 100,
-			"ability": "Levitate",
+			"ability": "Pressure",
 			"item": "Dragonium Z",
 			"nature": "Timid",
 			"teraType": "Dragon",
@@ -5888,7 +5888,7 @@ var SETDEX_SV = {
 	"Malevorus-Incarnate": {
 		"Black Glasses 4 Attacks": {
 			"level": 100,
-			"ability": "Tough Claws",
+			"ability": "Guts",
 			"item": "Black Glasses",
 			"nature": "Jolly",
 			"teraType": "Dark",
@@ -5964,7 +5964,7 @@ var SETDEX_SV = {
 	"Latias-Delta-Mega": {
 		"Dragon Dance": {
 			"level": 100,
-			"ability": "Levitate",
+			"ability": "Pressure",
 			"nature": "Adamant",
 			"evs": {"hp": 184, "at": 252, "sp": 72},
 			"moves": ["Play Rough", "Earthquake", "Dragon Dance", "Recover"]
