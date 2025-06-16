@@ -5578,12 +5578,21 @@ var SETDEX_SV = {
 	"Staraptor-Delta": {
 		"LO Swords Dance": {
 			"level": 100,
-			"ability": "Magic Guard",
+			"ability": "Welkin Torch",
 			"item": "Life Orb",
 			"nature": "Jolly",
 			"teraType": "Fire",
 			"evs": {"at": 252, "sp": 252, "df": 4},
 			"moves": ["Flare Blitz", "Brave Bird", "Close Combat", "Swords Dance"]
+		},
+		"Physically Defensive": {
+			"level": 100,
+			"ability": "Welkin Torch",
+			"item": "Rocky Helmet",
+			"nature": "Impish",
+			"teraType": "Fire",
+			"evs": {"hp": 252, "df": 252, "sd": 4},
+			"moves": ["Sacred Fire", "U-turn", "Defog", "Roost"]
 		}
 	},
 	"Volcarona-Delta": {
@@ -5961,6 +5970,17 @@ var SETDEX_SV = {
 			"moves": ["Shadow Ball", "Hyper Voice", "Focus Blast", "Nasty Plot"]
 		}
 	},
+	"Latias-Delta": {
+		"Physically Defensive": {
+			"level": 100,
+			"ability": "Pressure",
+			"item": "Heavy-Duty Boots",
+			"nature": "Bold",
+			"teraType": "Fairy",
+			"evs": {"hp": 248, "df": 252, "sd": 8},
+			"moves": ["Moonblast", "Thunder Wave", "Defog", "Recover"]
+		}
+	},
 	"Latias-Delta-Mega": {
 		"Dragon Dance": {
 			"level": 100,
@@ -5983,7 +6003,7 @@ var SETDEX_SV = {
 	"Dragapult-Ultra": {
 		"Choice Specs": {
 			"level": 100,
-			"ability": "Analytic",
+			"ability": "Flash Fire",
 			"item": "Choice Specs",
 			"nature": "Timid",
 			"teraType": "Dragon",
