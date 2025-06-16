@@ -5727,6 +5727,15 @@ var SETDEX_SV = {
 			"teraType": "Water",
 			"evs": {"hp": 252, "df": 252, "sp": 4},
 			"moves": ["Parting Shot", "Scald", "Recover", "Ice Beam"]
+		},
+		"Choice Scarf": {
+			"level": 100,
+			"ability": "Magic Bounce",
+			"item": "Choice Scarf",
+			"nature": "Timid",
+			"teraType": "Water",
+			"evs": {"sa": 252, "df": 4, "sp": 252},
+			"moves": ["Hydro Pump", "Ice Beam", "Energy Ball", "Trick"]
 		}
 	},
 	"Spectreon": {
@@ -6070,6 +6079,24 @@ var SETDEX_SV = {
 			"nature": "Adamant",
 			"evs": {"at": 252, "sp": 104, "hp": 152},
 			"moves": ["Cataclench", "Close Combat", "Swords Dance", "Rock Polish"]
+		},
+		"Bulky Dragon Dance": {
+			"level": 100,
+			"ability": "Strong Jaw",
+			"item": "Heavy-Duty Boots",
+			"nature": "Adamant",
+			"teraType": "Bug",
+			"evs": {"hp": 240, "sd": 16, "sp": 252},
+			"moves": ["Cataclench", "Close Combat", "Ice Fang", "Dragon Dance"]
+		},
+		"Offensive Dragon Dance": {
+			"level": 100,
+			"ability": "Strong Jaw",
+			"item": "Heavy-Duty Boots",
+			"nature": "Adamant",
+			"teraType": "Bug",
+			"evs": {"at": 252, "sd": 4, "sp": 252},
+			"moves": ["Cataclench", "Close Combat", "Ice Fang", "Dragon Dance"]
 		}
 	},
 	"Rotogar": {
@@ -6080,6 +6107,17 @@ var SETDEX_SV = {
 			"nature": "Timid",
 			"evs": {"sp": 252, "sa": 252, "sd": 4},
 			"moves": ["Shadow Ball", "Volt Switch", "Focus Blast", "Trick"]
+		}
+	},
+	"Hoopa-Delta-Unbound": {
+		"Special Z-Switcheroo": {
+			"level": 100,
+			"ability": "Mirage",
+			"item": "Darkinium Z",
+			"nature": "Timid",
+			"teraType": "Dark",
+			"evs": {"sa": 252, "df": 4, "sp": 252},
+			"moves": ["Sandstorm Fury", "Dark Pulse", "Switcheroo", "Destiny Bond"]
 		}
 	},
 	};
