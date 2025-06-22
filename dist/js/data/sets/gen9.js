@@ -3222,6 +3222,14 @@ var SETDEX_SV = {
 		  "teraType": "Psychic",
 		  "evs": {"hp": 252, "at": 116, "sp":140},
 		  "moves": ["Close Combat", "Agility", "Sunsteel Strike", "Stone Edge"]
+	  },
+	  "Calm Mind": {
+		 "level": 100,
+		  "ability": "Full Metal Body",
+		  "item": "Leftovers",
+		  "nature": "Timid",
+		  "evs": {"hp": 240, "df": 18, "sp": 252},
+		  "moves": ["Calm Mind", "Morning Sun", "Psyshock", "Flash Cannon"]
 	  }
   },
   "Lunala": {
@@ -5515,7 +5523,24 @@ var SETDEX_SV = {
 		}
 	},
 	"Gogoat-Delta": {
-		"Guts Abuser": {"ability":"Guts","item":"Flame Orb","nature":"Jolly","evs":{"sp":252,"df":4,"at":252},"moves":["Trailblaze","Facade","Milk Drink","Close Combat"]}
+		"Guts": {
+			"level": 100,
+			"ability": "Guts",
+			"item": "Flame Orb",
+			"nature": "Jolly",
+			"teraType": "Normal",
+			"evs": {"at": 252, "sp": 252, "sd": 4},
+			"moves": ["Facade", "Close Combat", "Knock Off", "Triple Axel"]
+		},
+		"Guts Trailblaze": {
+			"level": 100,
+			"ability": "Guts",
+			"item": "Flame Orb",
+			"nature": "Adamant",
+			"teraType": "Normal",
+			"evs": {"at": 252, "sp": 252, "sd": 4},
+			"moves": ["Facade", "Close Combat", "Knock Off", "Trailblaze"]
+		}
 	},
 	"Serperior-Ultra": {
 		"Contrary Sweeper": {"ability":"Contrary","item":"Waterium Z","nature":"Timid","evs":{"sp":252,"df":4,"sa":252},"moves":["Draco Meteor","Hydro Pump","Substitute","Glare"]}
@@ -6120,4 +6145,26 @@ var SETDEX_SV = {
 			"moves": ["Sandstorm Fury", "Dark Pulse", "Switcheroo", "Destiny Bond"]
 		}
 	},
-	};
+	"Radiant Moon": {
+		"Choice Scarf": {
+			"level": 100,
+			"ability": "Brilliance",
+			"item": "Choice Scarf",
+			"nature": "Timid",
+			"teraType": "Ghost",
+			"evs": {"sa": 252, "sp": 252, "sd": 4},
+			"moves": ["Moongeist Beam", "Draco Meteor", "U-turn", "Trick"]
+		}
+	},
+	"Gholdaton ": {
+		"Utility": {
+			"level": 100,
+			"ability": "Mold Breaker",
+			"item": "Air Balloon",
+			"nature": "Jolly",
+			"teraType": "Fairy",
+			"evs": {"hp": 252, "sp": 252, "sd": 4},
+			"moves": ["Gigaton Hammer", "Stealth Rock", "Encore", "Recover"]
+		}
+	},
+};
