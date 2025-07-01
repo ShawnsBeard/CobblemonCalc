@@ -5670,6 +5670,22 @@ var SETDEX_SV = {
 			"teraType": "Electric",
 			"evs": {"at": 252, "sa": 4, "sp":252},
 			"moves": ["Close Combat", "Swords Dance", "Shocking Blow", "Hidden Power Ice"]
+		},
+		"NP Sweeper": {
+			"level": 100,
+			"ability": "Run Away",
+			"nature": "Timid",
+			"teraType": "Electric",
+			"evs": {"sa": 252, "df": 4, "sp":252},
+			"moves": ["Thunderbolt", "Nasty Plot", "Aura Sphere", "Hidden Power Ice"]
+		},
+		"SD Sweeper": {
+			"level": 100,
+			"ability": "Run Away",
+			"nature": "Jolly",
+			"teraType": "Electric",
+			"evs": {"at": 252, "df": 4, "sp":252},
+			"moves": ["Close Combat", "Swords Dance", "Shocking Blow", "Gunk Shot"]
 		}
 	},
 	"Electisaur": {
@@ -6043,6 +6059,15 @@ var SETDEX_SV = {
 			"teraType": "Dragon",
 			"evs": {"sd": 4, "sa": 252, "sp": 252},
 			"moves": ["Draco Meteor", "Fire Blast", "Scorching Sands", "U-turn"]
+		},
+		"Dragon Dance": {
+			"level": 100,
+			"ability": "Defiant",
+			"item": "Firium Z",
+			"nature": "Jolly",
+			"teraType": "Fire",
+			"evs": {"at": 252, "sp": 184, "df": 8, "hp":64},
+			"moves": ["Dragon Darts", "Flare Blitz", "Dragon Dance", "Substitute"]
 		}
 	},
 	"Savage Scar": {
@@ -6156,15 +6181,26 @@ var SETDEX_SV = {
 			"moves": ["Moongeist Beam", "Draco Meteor", "U-turn", "Trick"]
 		}
 	},
-	"Gholdaton ": {
+	"Gholdaton": {
 		"Utility": {
 			"level": 100,
 			"ability": "Mold Breaker",
 			"item": "Air Balloon",
-			"nature": "Jolly",
+			"nature": "Careful",
 			"teraType": "Fairy",
 			"evs": {"hp": 252, "sp": 252, "sd": 4},
-			"moves": ["Gigaton Hammer", "Stealth Rock", "Encore", "Recover"]
+			"moves": ["Gigaton Hammer", "Stealth Rock", "Knock Off", "Recover"]
+		}
+	},
+	"Azelf-Delta": {
+		"Nasty Plot": {
+			"level": 100,
+			"ability": "Levitate",
+			"item": "Ghostium Z",
+			"nature": "Timid",
+			"teraType": "Fairy",
+			"evs": {"sa": 252, "sp": 252, "df": 4},
+			"moves": ["Moonblast", "Shadow Ball", "Flamethrower", "Nasty Plot"]
 		}
 	},
 };
