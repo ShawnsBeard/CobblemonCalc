@@ -298,6 +298,9 @@ export function checkWindRider(source: Pokemon, attackingSide: Side) {
 export function checkEmbody(source: Pokemon, gen: Generation) {
   if (gen.num < 9) return;
   switch (source.ability) {
+  case 'Embody Aspect (Stormpeak)':
+    source.boosts.spd = Math.min(6, source.boosts.spe + 1);
+    break;
   case 'Embody Aspect (Cornerstone)':
     source.boosts.def = Math.min(6, source.boosts.def + 1);
     break;

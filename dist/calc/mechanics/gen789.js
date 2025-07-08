@@ -96,7 +96,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         result.damage = damage_1;
         return result;
     }
-    var defenderAbilityIgnored = defender.hasAbility('Armor Tail', 'Aroma Veil', 'Aura Break', 'Battle Armor', 'Big Pecks', 'Bulletproof', 'Clear Body', 'Contrary', 'Damp', 'Dazzling', 'Disguise', 'Dry Skin', 'Earth Eater', 'Filter', 'Flash Fire', 'Flower Gift', 'Flower Veil', 'Fluffy', 'Friend Guard', 'Fur Coat', 'Geyser', 'Good as Gold', 'Grass Pelt', 'Guard Dog', 'Heatproof', 'Heavy Metal', 'Hyper Cutter', 'Ice Face', 'Ice Scales', 'Illuminate', 'Immunity', 'Inner Focus', 'Insomnia', 'Keen Eye', 'Leaf Guard', 'Levitate', 'Light Metal', 'Lightning Rod', 'Limber', 'Magic Bounce', 'Magma Armor', 'Marvel Scale', "Mind's Eye", 'Mirror Armor', 'Motor Drive', 'Multiscale', 'Oblivious', 'Overcoat', 'Own Tempo', 'Pastel Veil', 'Punk Rock', 'Purifying Salt', 'Queenly Majesty', 'Sand Veil', 'Sap Sipper', 'Shell Armor', 'Shield Dust', 'Simple', 'Snow Cloak', 'Solid Rock', 'Soundproof', 'Sticky Hold', 'Storm Drain', 'Sturdy', 'Suction Cups', 'Sweet Veil', 'Tangled Feet', 'Telepathy', 'Tera Shell', 'Thermal Exchange', 'Thick Fat', 'Unaware', 'Vital Spirit', 'Volt Absorb', 'Water Absorb', 'Water Bubble', 'Water Veil', 'Well-Baked Body', 'White Smoke', 'Wind Rider', 'Wonder Guard', 'Wonder Skin');
+    var defenderAbilityIgnored = defender.hasAbility('Armor Tail', 'Aroma Veil', 'Aura Break', 'Battle Armor', 'Big Pecks', 'Bulletproof', 'Clear Body', 'Contrary', 'Damp', 'Dazzling', 'Disguise', 'Dry Skin', 'Earth Eater', 'Filter', 'Flash Fire', 'Flower Gift', 'Flower Veil', 'Fluffy', 'Friend Guard', 'Fur Coat', 'Geyser', 'Good as Gold', 'Grass Pelt', 'Guard Dog', 'Heatproof', 'Heavy Metal', 'Hyper Cutter', 'Ice Face', 'Ice Scales', 'Illuminate', 'Immunity', 'Inner Focus', 'Insomnia', 'Keen Eye', 'Leaf Guard', 'Levitate', 'Light Metal', 'Lightning Rod', 'Limber', 'Magic Bounce', 'Magma Armor', 'Marvel Scale', "Mind's Eye", 'Mirror Armor', 'Motor Drive', 'Multiscale', 'Oblivious', 'Overcoat', 'Own Tempo', 'Pastel Veil', 'Punk Rock', 'Purifying Salt', 'Queenly Majesty', 'Sand Veil', 'Sap Sipper', 'Shell Armor', 'Shield Dust', 'Simple', 'Snow Cloak', 'Solid Rock', 'Soundproof', 'Sticky Hold', 'Storm Drain', 'Sturdy', 'Suction Cups', 'Sweet Veil', 'Tangled Feet', 'Telepathy', 'Tera Shell', 'Thermal Exchange', 'Thick Fat', 'Unaware', 'Vital Spirit', 'Volt Absorb', 'Water Absorb', 'Renegade', 'Evil\'s Bane', 'Water Bubble', 'Water Veil', 'Well-Baked Body', 'White Smoke', 'Wind Rider', 'Wonder Guard', 'Wonder Skin');
     var attackerIgnoresAbility = attacker.hasAbility('Mold Breaker', 'Teravolt', 'Turboblaze', 'Boundless', 'Moonwake');
     var moveIgnoresAbility = move.named('G-Max Drum Solo', 'G-Max Fire Ball', 'G-Max Hydrosnipe', 'Light That Burns the Sky', 'Menacing Moonraze Maelstrom', 'Moongeist Beam', 'Photon Geyser', 'Searing Sunraze Smash', 'Sunsteel Strike');
     if (defenderAbilityIgnored && (attackerIgnoresAbility || moveIgnoresAbility)) {
@@ -236,6 +236,9 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         else if (attacker.name.includes('Ogerpon-Stormpeak')) {
             type = 'Electric';
         }
+        else if (attacker.name.includes('Ogerpon-Shadowcrest')) {
+            type = 'Ghost';
+        }
     }
     else if (move.named('Tera Starstorm') && attacker.name === 'Terapagos-Stellar') {
         move.target = 'allAdjacentFoes';
@@ -357,6 +360,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         (move.hasType('Water') && defender.hasAbility('Dry Skin', 'Storm Drain', 'Water Absorb', 'Geyser')) ||
         (move.hasType('Electric') &&
             defender.hasAbility('Lightning Rod', 'Motor Drive', 'Volt Absorb')) ||
+        (move.hasType('Dark') && defender.hasAbility('Evil\'s Bane', 'Renegade')) ||
         (move.hasType('Fire') && defender.hasAbility('Blazing Swap')) ||
         (move.hasType('Ground') &&
             !field.isGravity && !move.named('Thousand Arrows') &&
@@ -366,8 +370,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         (move.priority > 0 && defender.hasAbility('Queenly Majesty', 'Dazzling', 'Armor Tail')) ||
         (move.hasType('Ground') && defender.hasAbility('Earth Eater')) ||
         (move.hasType('Fighting') && defender.hasAbility('Altruistic')) ||
-        (move.flags.wind && defender.hasAbility('Wind Rider')) ||
-        (move.hasType('Dark') && defender.hasAbility('Evil\'s Bane'))) {
+        (move.flags.wind && defender.hasAbility('Wind Rider'))) {
         desc.defenderAbility = defender.ability;
         return result;
     }
@@ -788,6 +791,8 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         (defender.name.includes('Ogerpon-Cornerstone') && defenderItem === 'Cornerstone Mask') ||
         (defender.name.includes('Ogerpon-Hearthflame') && defenderItem === 'Hearthflame Mask') ||
         (defender.name.includes('Ogerpon-Wellspring') && defenderItem === 'Wellspring Mask') ||
+        (defender.name.includes('Ogerpon-Stormpeak') && defenderItem === 'Stormpeak Mask') ||
+        (defender.name.includes('Ogerpon-Shadowcrest') && defenderItem === 'Shadowcrest Mask') ||
         (defender.named('Venomicon-Epilogue') && defenderItem === 'Vile Vial');
     if (!resistedKnockOffDamage && defenderItem) {
         var item = gen.items.get((0, util_1.toID)(defenderItem));
@@ -992,7 +997,9 @@ function calculateBPModsSMSSSV(gen, attacker, defender, move, field, desc, baseP
         attacker.item && move.hasType((0, items_1.getItemBoostType)(attacker.item)) ||
         (attacker.name.includes('Ogerpon-Cornerstone') && attacker.hasItem('Cornerstone Mask')) ||
         (attacker.name.includes('Ogerpon-Hearthflame') && attacker.hasItem('Hearthflame Mask')) ||
-        (attacker.name.includes('Ogerpon-Wellspring') && attacker.hasItem('Wellspring Mask'))) {
+        (attacker.name.includes('Ogerpon-Wellspring') && attacker.hasItem('Wellspring Mask')) ||
+        (attacker.name.includes('Ogerpon-Stormpeak') && attacker.hasItem('Stormpeak Mask')) ||
+        (attacker.name.includes('Ogerpon-Shadowcrest') && attacker.hasItem('Shadowcrest Mask'))) {
         bpMods.push(4915);
         desc.attackerItem = attacker.item;
     }

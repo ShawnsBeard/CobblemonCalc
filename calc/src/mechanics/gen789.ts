@@ -190,7 +190,7 @@ export function calculateSMSSSV(
     'Sticky Hold', 'Storm Drain', 'Sturdy', 'Suction Cups',
     'Sweet Veil', 'Tangled Feet', 'Telepathy', 'Tera Shell',
     'Thermal Exchange', 'Thick Fat', 'Unaware', 'Vital Spirit',
-    'Volt Absorb', 'Water Absorb', 'Water Bubble', 'Water Veil',
+    'Volt Absorb', 'Water Absorb', 'Renegade', 'Evil\'s Bane', 'Water Bubble', 'Water Veil',
     'Well-Baked Body', 'White Smoke', 'Wind Rider', 'Wonder Guard',
     'Wonder Skin'
   );
@@ -338,6 +338,8 @@ export function calculateSMSSSV(
       type = 'Water';
     } else if (attacker.name.includes('Ogerpon-Stormpeak')) {
       type = 'Electric';
+    } else if (attacker.name.includes('Ogerpon-Shadowcrest')) {
+      type = 'Ghost';
     }
   } else if (
     move.named('Tera Starstorm') && attacker.name === 'Terapagos-Stellar'
@@ -510,6 +512,7 @@ export function calculateSMSSSV(
         'Water Absorb', 'Geyser')) ||
       (move.hasType('Electric') &&
         defender.hasAbility('Lightning Rod', 'Motor Drive', 'Volt Absorb')) ||
+      (move.hasType('Dark') && defender.hasAbility('Evil\'s Bane', 'Renegade')) ||
       (move.hasType('Fire') && defender.hasAbility('Blazing Swap')) ||
       (move.hasType('Ground') &&
         !field.isGravity && !move.named('Thousand Arrows') &&
@@ -519,8 +522,7 @@ export function calculateSMSSSV(
       (move.priority > 0 && defender.hasAbility('Queenly Majesty', 'Dazzling', 'Armor Tail')) ||
       (move.hasType('Ground') && defender.hasAbility('Earth Eater')) ||
       (move.hasType('Fighting') && defender.hasAbility('Altruistic')) ||
-      (move.flags.wind && defender.hasAbility('Wind Rider')) ||
-      (move.hasType('Dark') && defender.hasAbility('Evil\'s Bane'))
+      (move.flags.wind && defender.hasAbility('Wind Rider'))
   ) {
     desc.defenderAbility = defender.ability;
     return result;
@@ -1107,6 +1109,8 @@ export function calculateBPModsSMSSSV(
     (defender.name.includes('Ogerpon-Cornerstone') && defenderItem === 'Cornerstone Mask') ||
     (defender.name.includes('Ogerpon-Hearthflame') && defenderItem === 'Hearthflame Mask') ||
     (defender.name.includes('Ogerpon-Wellspring') && defenderItem === 'Wellspring Mask') ||
+    (defender.name.includes('Ogerpon-Stormpeak') && defenderItem === 'Stormpeak Mask') ||
+    (defender.name.includes('Ogerpon-Shadowcrest') && defenderItem === 'Shadowcrest Mask') ||
     (defender.named('Venomicon-Epilogue') && defenderItem === 'Vile Vial');
 
   // The last case only applies when the Pokemon has the Mega Stone that matches its species
@@ -1360,7 +1364,9 @@ export function calculateBPModsSMSSSV(
      attacker.item && move.hasType(getItemBoostType(attacker.item)) ||
     (attacker.name.includes('Ogerpon-Cornerstone') && attacker.hasItem('Cornerstone Mask')) ||
     (attacker.name.includes('Ogerpon-Hearthflame') && attacker.hasItem('Hearthflame Mask')) ||
-    (attacker.name.includes('Ogerpon-Wellspring') && attacker.hasItem('Wellspring Mask'))
+    (attacker.name.includes('Ogerpon-Wellspring') && attacker.hasItem('Wellspring Mask')) ||
+    (attacker.name.includes('Ogerpon-Stormpeak') && attacker.hasItem('Stormpeak Mask')) ||
+    (attacker.name.includes('Ogerpon-Shadowcrest') && attacker.hasItem('Shadowcrest Mask'))
   ) {
     bpMods.push(4915);
     desc.attackerItem = attacker.item;

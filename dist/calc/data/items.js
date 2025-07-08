@@ -544,6 +544,8 @@ var SV = SS.concat([
     'Thrash Drive',
     'Unremarkable Teacup',
     'Wellspring Mask',
+    'Stormpeak Mask',
+    'Shadowcrest Mask',
 ]);
 var BERRIES = {
     'Aguav Berry': { t: 'Dragon', p: 80 },

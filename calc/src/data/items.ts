@@ -497,6 +497,8 @@ const SV = SS.concat([
   'Thrash Drive',
   'Unremarkable Teacup',
   'Wellspring Mask',
+  'Stormpeak Mask',
+  'Shadowcrest Mask',
 ]);
 
 const BERRIES: {[berry: string]: {t: I.TypeName; p: number}} = {

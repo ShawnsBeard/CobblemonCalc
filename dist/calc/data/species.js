@@ -10330,6 +10330,8 @@ var SV_PATCH = {
             'Ogerpon-Hearthflame', 'Ogerpon-Hearthflame-Tera',
             'Ogerpon-Teal-Tera',
             'Ogerpon-Wellspring', 'Ogerpon-Wellspring-Tera',
+            'Ogerpon-Stormpeak', 'Ogerpon-Stormpeak-Tera',
+            'Ogerpon-Shadowcrest',
         ]
     },
     'Ogerpon-Wellspring': {
@@ -10359,6 +10361,13 @@ var SV_PATCH = {
         weightkg: 39.8,
         abilities: { 0: 'Infiltrator' }
     },
+    'Ogerpon-Shadowcrest': {
+        types: ['Grass', 'Ghost'],
+        bs: { hp: 80, at: 120, df: 84, sa: 60, sd: 96, sp: 110 },
+        abilities: { 0: 'Defeatist' },
+        weightkg: 39.8,
+        baseSpecies: 'Ogerpon'
+    },
     'Ogerpon-Teal-Tera': {
         types: ['Grass'],
         bs: { hp: 80, at: 120, df: 84, sa: 60, sd: 96, sp: 110 },
@@ -10384,6 +10393,13 @@ var SV_PATCH = {
         types: ['Grass', 'Rock'],
         bs: { hp: 80, at: 120, df: 84, sa: 60, sd: 96, sp: 110 },
         abilities: { 0: 'Embody Aspect (Cornerstone)' },
+        weightkg: 39.8,
+        baseSpecies: 'Ogerpon'
+    },
+    'Ogerpon-Stormpeak-Tera': {
+        types: ['Grass', 'Electric'],
+        bs: { hp: 80, at: 120, df: 84, sa: 60, sd: 96, sp: 110 },
+        abilities: { 0: 'Embody Aspect (Stormpeak)' },
         weightkg: 39.8,
         baseSpecies: 'Ogerpon'
     },
