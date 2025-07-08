@@ -24,6 +24,7 @@ export class Pokemon implements State.Pokemon {
   isSaltCure?: boolean;
   alliesFainted?: number;
   enemiesFainted?: number;
+  renegadeBoost?: number;
   boostedStat?: I.StatIDExceptHP | 'auto';
   item?: I.ItemName;
   disabledItem?: I.ItemName;
@@ -70,6 +71,7 @@ export class Pokemon implements State.Pokemon {
     this.isSaltCure = !!options.isSaltCure;
     this.alliesFainted = options.alliesFainted;
     this.enemiesFainted = options.enemiesFainted;
+    this.renegadeBoost = options.renegadeBoost;
     this.boostedStat = options.boostedStat;
     this.teraType = options.teraType;
     this.item = options.item;
@@ -169,6 +171,7 @@ export class Pokemon implements State.Pokemon {
       isSaltCure: this.isSaltCure,
       alliesFainted: this.alliesFainted,
       enemiesFainted: this.enemiesFainted,
+      renegadeBoost: this.renegadeBoost,
       boostedStat: this.boostedStat,
       item: this.item,
       gender: this.gender,

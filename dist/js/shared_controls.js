@@ -303,6 +303,14 @@ $(".ability").bind("keyup change", function () {
 		$(this).closest(".poke-info").find(".enemiesFainted").hide();
 
 	}
+
+	if (ability === "Renegade") {
+		$(this).closest(".poke-info").find(".renegadeBoost").show();
+	} else {
+		$(this).closest(".poke-info").find(".renegadeBoost").val('0');
+		$(this).closest(".poke-info").find(".renegadeBoost").hide();
+
+	}
 });
 
 function autosetQP(pokemon) {
@@ -1124,6 +1132,7 @@ function createPokemon(pokeInfo) {
 			isSaltCure: pokeInfo.find(".saltcure").is(":checked"),
 			alliesFainted: parseInt(pokeInfo.find(".alliesFainted").val()),
 			enemiesFainted: parseInt(pokeInfo.find(".enemiesFainted").val()),
+			renegadeBoost: parseInt(pokeInfo.find(".renegadeBoost").val()),
 			boostedStat: pokeInfo.find(".boostedStat").val() || undefined,
 			teraType: teraType,
 			boosts: boosts,

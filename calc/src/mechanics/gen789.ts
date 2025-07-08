@@ -1329,6 +1329,12 @@ export function calculateBPModsSMSSSV(
     desc.enemiesFainted = attacker.enemiesFainted;
   }
 
+  if (attacker.hasAbility('Renegade') && attacker.renegadeBoost) {
+    const powMod = [4096, 4915, 5734, 6554, 7373, 8192];
+    bpMods.push(powMod[Math.min(5, attacker.renegadeBoost)]);
+    desc.attackerAbility = attacker.ability;
+    desc.renegadeBoost = attacker.renegadeBoost;
+  }
   // Items
 
   if (attacker.hasItem(`${move.type} Gem`)) {

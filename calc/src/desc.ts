@@ -24,6 +24,7 @@ export interface RawDesc {
   hits?: number;
   alliesFainted?: number;
   enemiesFainted?: number;
+  renegadeBoost?: number;
   isStellarFirstUse?: boolean;
   isBeadsOfRuin?: boolean;
   isSwordOfRuin?: boolean;
@@ -962,6 +963,10 @@ function buildDescription(description: RawDesc, attacker: Pokemon, defender: Pok
   if (description.enemiesFainted) {
     output += Math.min(5, description.enemiesFainted) +
       ` ${description.enemiesFainted === 1 ? 'enemy' : 'enemies'} fainted `;
+  }
+  if (description.renegadeBoost) {
+    output += Math.min(5, description.renegadeBoost) +
+      ` ${description.renegadeBoost === 1 ? 'Renegade' : 'Renegade'} boosts `;
   }
   if (description.attackerTera) {
     output += `Tera ${description.attackerTera} `;

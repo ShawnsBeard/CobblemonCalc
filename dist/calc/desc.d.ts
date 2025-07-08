@@ -20,6 +20,7 @@ export interface RawDesc {
     hits?: number;
     alliesFainted?: number;
     enemiesFainted?: number;
+    renegadeBoost?: number;
     isStellarFirstUse?: boolean;
     isBeadsOfRuin?: boolean;
     isSwordOfRuin?: boolean;

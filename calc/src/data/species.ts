@@ -9159,7 +9159,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   Brewloom: {
     types: ['Ground', 'Fairy'],
-    bs: {hp: 60, at: 125, df: 65, sa: 60, sd: 65, sp: 85},
+    bs: {hp: 75, at: 40, df: 65, sa: 105, sd: 85, sp: 90},
     weightkg: 35.5,
     abilities: {0: 'Magician'},
   },
@@ -9363,6 +9363,12 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     weightkg: 120,
     abilities: {0: 'Stamina'},
   },
+  'Druddigon-Delta': {
+    types: ['Rock', 'Dragon'],
+    bs: {hp: 77, at: 109, df: 123, sa: 65, sd: 60, sp: 51},
+    weightkg: 164,
+    abilities: {0: 'Rough Skin'},
+  },
   Dudunsparce: {
     types: ['Normal'],
     bs: {hp: 125, at: 100, df: 80, sa: 85, sd: 75, sp: 55},
@@ -9431,6 +9437,12 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     bs: {hp: 95, at: 60, df: 60, sa: 101, sd: 60, sp: 105},
     weightkg: 90,
     abilities: {0: 'Opportunist'},
+  },
+  Etherion: {
+    types: ['Ghost', 'Fighting'],
+    bs: {hp: 91, at: 129, df: 90, sa: 90, sd: 72, sp: 108},
+    weightkg: 260,
+    abilities: {0: 'Renegade'},
   },
   'Falinks-Delta': {
     types: ['Fighting', 'Steel'],
@@ -9716,6 +9728,12 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
     weightkg: 75,
     gender: 'N',
     abilities: {0: 'Winter Arbiter'},
+  },
+  Grimorgon: {
+    types: ['Rock', 'Dragon'],
+    bs: {hp: 87, at: 134, df: 136, sa: 55, sd: 60, sp: 53},
+    weightkg: 287,
+    abilities: {0: 'Intimidate'},
   },
   Guardeon: {
     types: ['Steel'],

@@ -757,6 +757,10 @@ function buildDescription(description, attacker, defender) {
         output += Math.min(5, description.enemiesFainted) +
             " ".concat(description.enemiesFainted === 1 ? 'enemy' : 'enemies', " fainted ");
     }
+    if (description.renegadeBoost) {
+        output += Math.min(5, description.renegadeBoost) +
+            " ".concat(description.renegadeBoost === 1 ? 'Renegade' : 'Renegade', " boosts ");
+    }
     if (description.attackerTera) {
         output += "Tera ".concat(description.attackerTera, " ");
     }
