@@ -360,7 +360,7 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         (move.hasType('Water') && defender.hasAbility('Dry Skin', 'Storm Drain', 'Water Absorb', 'Geyser')) ||
         (move.hasType('Electric') &&
             defender.hasAbility('Lightning Rod', 'Motor Drive', 'Volt Absorb')) ||
-        (move.hasType('Dark') && defender.hasAbility('Evil\'s Bane', 'Renegade')) ||
+        (move.hasType('Dark') && defender.hasAbility('Evil\'s Bane')) ||
         (move.hasType('Fire') && defender.hasAbility('Blazing Swap')) ||
         (move.hasType('Ground') &&
             !field.isGravity && !move.named('Thousand Arrows') &&
