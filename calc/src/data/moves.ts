@@ -2732,6 +2732,14 @@ const SM_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     category: 'Physical',
     zp: 180,
   },
+  'Flashpoint Fists': {
+    bp: 100,
+    type: 'Fire',
+    makesContact: true,
+    isPunch: true,
+    category: 'Physical',
+    zp: 180,
+  },
   'Pollen Puff': {
     bp: 90,
     type: 'Bug',
@@ -4588,6 +4596,9 @@ const SV_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     isPunch: true,
   },
   'Heat Siphon': {bp: 0, type: 'Fire'},
+  'Pressurize': {bp: 0, type: 'Fire'},
+  'Solar Blessing': {bp: 0, type: 'Fire'},
+  'Solar Dance': {bp: 0, type: 'Fire'},
   'Hydro Steam': {
     bp: 80,
     type: 'Water',

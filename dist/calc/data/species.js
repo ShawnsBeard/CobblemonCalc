@@ -9385,7 +9385,8 @@ var SV_PATCH = {
         types: ['Rock', 'Dragon'],
         bs: { hp: 77, at: 109, df: 123, sa: 65, sd: 60, sp: 51 },
         weightkg: 164,
-        abilities: { 0: 'Rough Skin' }
+        abilities: { 0: 'Rough Skin' },
+        nfe: true
     },
     Dudunsparce: {
         types: ['Normal'],
@@ -10364,7 +10365,7 @@ var SV_PATCH = {
     'Ogerpon-Shadowcrest': {
         types: ['Grass', 'Ghost'],
         bs: { hp: 80, at: 120, df: 84, sa: 60, sd: 96, sp: 110 },
-        abilities: { 0: 'Defeatist' },
+        abilities: { 0: 'Cursed Body' },
         weightkg: 39.8,
         baseSpecies: 'Ogerpon'
     },
@@ -11172,12 +11173,40 @@ var SV_PATCH = {
         gender: 'N',
         abilities: { 0: 'Static' }
     },
+    'Zeraora-Delta': {
+        types: ['Fire'],
+        bs: { hp: 88, at: 123, df: 81, sa: 96, sd: 91, sp: 121 },
+        weightkg: 44.5,
+        gender: 'N',
+        abilities: { 0: 'Unburden' }
+    },
     Zorotales: {
         types: ['Normal', 'Fairy'],
         bs: { hp: 72, at: 80, df: 88, sa: 108, sd: 108, sp: 104 },
         weightkg: 20,
         gender: 'N',
         abilities: { 0: 'Snow Cloak' }
+    },
+    'Jirachi-Delta': {
+        types: ['Steel', 'Dark'],
+        bs: { hp: 100, at: 100, df: 100, sa: 100, sd: 100, sp: 100 },
+        weightkg: 1.1,
+        gender: 'N',
+        abilities: { 0: 'Wish Reaper' }
+    },
+    'Heatran-Delta': {
+        types: ['Water', 'Ground'],
+        bs: { hp: 91, at: 108, df: 103, sa: 134, sd: 96, sp: 69 },
+        weightkg: 310,
+        gender: 'N',
+        abilities: { 0: 'Steamforged' }
+    },
+    'Cresselia-Delta': {
+        types: ['Fire'],
+        bs: { hp: 120, at: 75, df: 70, sa: 120, sd: 110, sp: 85 },
+        weightkg: 70.6,
+        gender: 'N',
+        abilities: { 0: 'Serene Grace' }
     }
 };
 var SV = (0, util_1.extend)(true, {}, SS, SV_PATCH, PLA_PATCH);

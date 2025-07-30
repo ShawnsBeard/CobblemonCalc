@@ -386,6 +386,7 @@ var SV = SS.concat([
     'Sharpness',
     'Sheltered Slumber',
     'Spectre Onslaught',
+    'Steamforged',
     'Stoneheart',
     'Supersweet Syrup',
     'Supreme Overlord',
@@ -412,6 +413,7 @@ var SV = SS.concat([
     'Wind Power',
     'Wind Rider',
     'Winter Arbiter',
+    'Wish Reaper',
     'Zero to Hero',
 ]);
 exports.ABILITIES = [[], RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];

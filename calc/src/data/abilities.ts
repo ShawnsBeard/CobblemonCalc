@@ -354,6 +354,7 @@ const SV = SS.concat([
   'Sharpness',
   'Sheltered Slumber',
   'Spectre Onslaught',
+  'Steamforged',
   'Stoneheart',
   'Supersweet Syrup',
   'Supreme Overlord',
@@ -380,6 +381,7 @@ const SV = SS.concat([
   'Wind Power',
   'Wind Rider',
   'Winter Arbiter', // Ability effect may need altered to be an attack stage increase
+  'Wish Reaper', // effect not implemented
   'Zero to Hero',
 ]);
 
