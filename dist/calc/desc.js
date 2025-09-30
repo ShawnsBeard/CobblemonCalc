@@ -468,7 +468,7 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
     if (defender.hasStatus('psn')) {
         if (defender.hasAbility('Poison Heal') && field.hasTerrain('Corrosive')) {
             if (!healBlock) {
-                damage += Math.floor(defender.maxHP() / 6);
+                damage += Math.floor(defender.maxHP() / 8);
                 texts.push('Poison Heal');
             }
         }
@@ -486,7 +486,7 @@ function getEndOfTurn(gen, attacker, defender, move, field) {
     else if (defender.hasStatus('tox')) {
         if (defender.hasAbility('Poison Heal') && field.hasTerrain('Corrosive')) {
             if (!healBlock) {
-                damage += Math.floor(defender.maxHP() / 6);
+                damage += Math.floor(defender.maxHP() / 8);
                 texts.push('Poison Heal');
             }
         }

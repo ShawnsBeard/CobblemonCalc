@@ -191,7 +191,7 @@ export function calculateSMSSSV(
     'Sweet Veil', 'Tangled Feet', 'Telepathy', 'Tera Shell',
     'Thermal Exchange', 'Thick Fat', 'Unaware', 'Vital Spirit',
     'Volt Absorb', 'Water Absorb', 'Renegade', 'Evil\'s Bane', 'Water Bubble', 'Water Veil',
-    'Well-Baked Body', 'White Smoke', 'Wind Rider', 'Wonder Guard',
+    'Steamforged', 'Well-Baked Body', 'White Smoke', 'Wind Rider', 'Wonder Guard',
     'Wonder Skin'
   );
 
@@ -932,16 +932,6 @@ export function calculateBasePowerSMSSSV(
     break;
   case 'Dragon Energy':
   case 'Eruption':
-  case 'Ice Mace':
-    if (attacker.named('Greninja-Omega-BattleBond') && attacker.hasAbility('Battle Bond')) {
-      basePower = 100;
-      desc.moveBP = basePower;
-      break;
-    } else {
-      basePower = Math.max(1, Math.floor((140 * attacker.curHP()) / attacker.maxHP()));
-      desc.moveBP = basePower;
-      break;
-    }
   case 'Water Spout':
     basePower = Math.max(1, Math.floor((150 * attacker.curHP()) / attacker.maxHP()));
     desc.moveBP = basePower;
@@ -1141,7 +1131,7 @@ export function calculateBPModsSMSSSV(
     move.target = 'allAdjacentFoes';
     bpMods.push(6144);
     desc.moveBP = basePower * 1.5;
-  } else if ((move.named('Knock Off', 'Whisk Away') && !resistedKnockOffDamage) ||
+  } else if ((move.named('Knock Off', 'Whisk Away', 'Ice Mace') && !resistedKnockOffDamage) ||
     (move.named('Misty Explosion') && isGrounded(attacker, field) && field.hasTerrain('Misty')) ||
     (move.named('Grav Apple') && field.isGravity)
   ) {
@@ -1221,8 +1211,7 @@ export function calculateBPModsSMSSSV(
     (attacker.hasAbility('Strong Jaw') && move.flags.bite) ||
     (attacker.hasAbility('Steely Spirit') && move.hasType('Steel')) ||
     (attacker.hasAbility('Sharpness') && move.flags.slicing) ||
-    (attacker.hasAbility('Swordmaster') && move.flags.slicing) ||
-    (attacker.hasAbility('Toxic Boost') && field.hasTerrain('Corrosive'))
+    (attacker.hasAbility('Swordmaster') && move.flags.slicing)
   ) {
     bpMods.push(6144);
     desc.attackerAbility = attacker.ability;
@@ -1533,6 +1522,12 @@ export function calculateAtModsSMSSSV(
     atMods.push(2048);
     desc.defenderAbility = defender.ability;
   }
+
+  if (gen.num >= 9 && defender.hasAbility('Steamforged') && move.hasType('Water')) {
+    atMods.push(2048);
+    desc.defenderAbility = defender.ability;
+  }
+
   // Pokemon with "-of Ruin" Ability are immune to the opposing "-of Ruin" ability
   const isTabletsOfRuinActive = (defender.hasAbility('Tablets of Ruin') || field.isTabletsOfRuin) &&
     !attacker.hasAbility('Tablets of Ruin');

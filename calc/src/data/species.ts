@@ -9068,7 +9068,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   Archapult: {
     types: ['Dragon', 'Steel'],
-    bs: {hp: 72, at: 108, df: 108, sa: 116, sd: 60, sp: 96},
+    bs: {hp: 72, at: 116, df: 112, sa: 112, sd: 56, sp: 100},
     weightkg: 112,
     gender: 'N',
     abilities: {0: 'Stalwart'},
@@ -9109,7 +9109,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Azumarill-Delta': {
     types: ['Ice', 'Fairy'],
-    bs: {hp: 100, at: 90, df: 60, sa: 40, sd: 80, sp: 50},
+    bs: {hp: 90, at: 100, df: 60, sa: 40, sd: 80, sp: 50},
     weightkg: 25,
     gender: 'N',
     abilities: {0: 'Thick Fat'},
@@ -9309,7 +9309,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   Diancette: {
     types: ['Fairy', 'Rock'],
-    bs: {hp: 60, at: 100, df: 96, sa: 120, sd: 124, sp: 100},
+    bs: {hp: 60, at: 112, df: 76, sa: 120, sd: 132, sp: 100},
     weightkg: 280,
     abilities: {0: 'Diamond Grove'},
   },
@@ -9423,7 +9423,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   Energeist: {
     types: ['Electric', 'Ghost'],
-    bs: {hp: 65, at: 65, df: 86, sa: 114, sd: 85, sp: 93},
+    bs: {hp: 65, at: 76, df: 86, sa: 104, sd: 91, sp: 86},
     weightkg: 0.8,
     abilities: {0: 'Insomnia'},
   },
@@ -9565,7 +9565,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Gastrodon-Delta': {
     types: ['Water', 'Dragon'],
-    bs: {hp: 111, at: 63, df: 108, sa: 72, sd: 82, sp: 39},
+    bs: {hp: 111, at: 63, df: 98, sa: 82, sd: 72, sp: 49},
     weightkg: 26.6,
     abilities: {0: 'Gooey'},
   },
@@ -9636,7 +9636,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Glimmora-Delta': {
     types: ['Ice', 'Rock'],
-    bs: {hp: 81, at: 45, df: 134, sa: 115, sd: 60, sp: 90},
+    bs: {hp: 81, at: 45, df: 129, sa: 120, sd: 60, sp: 90},
     weightkg: 35,
     abilities: {0: 'Slush Rush'},
   },
@@ -9654,7 +9654,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Golurk-Delta': {
     types: ['Ghost', 'Rock'],
-    bs: {hp: 79, at: 134, df: 80, sa: 65, sd: 60, sp: 65},
+    bs: {hp: 79, at: 134, df: 80, sa: 75, sd: 60, sp: 55},
     weightkg: 31.2,
     abilities: {0: 'Klutz'},
   },
@@ -9711,21 +9711,21 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Greninja-Omega': {
     types: ['Ice', 'Fighting'],
-    bs: {hp: 75, at: 90, df: 80, sa: 101, sd: 75, sp: 107},
+    bs: {hp: 75, at: 100, df: 78, sa: 90, sd: 83, sp: 104},
     weightkg: 40,
     abilities: {0: 'Flurry'},
     otherFormes: ['Greninja-Omega-BattleBond'],
   },
   'Greninja-Omega-BattleBond': {
     types: ['Ice', 'Fighting'],
-    bs: {hp: 75, at: 140, df: 80, sa: 151, sd: 75, sp: 117},
+    bs: {hp: 75, at: 150, df: 84, sa: 140, sd: 83, sp: 114},
     weightkg: 40,
     abilities: {0: 'Battle Bond'},
     baseSpecies: 'Greninja-Omega',
   },
   'Grimmsnarl-Delta': {
     types: ['Ice', 'Fighting'],
-    bs: {hp: 95, at: 130, df: 65, sa: 65, sd: 85, sp: 70},
+    bs: {hp: 95, at: 140, df: 60, sa: 65, sd: 80, sp: 70},
     weightkg: 75,
     gender: 'N',
     abilities: {0: 'Winter Arbiter'},
@@ -9751,6 +9751,12 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   Hatteon: {
     types: ['Psychic', 'Fairy'],
     bs: {hp: 76, at: 76, df: 68, sa: 132, sd: 96, sp: 112},
+    weightkg: 24,
+    abilities: {0: 'Dawnbreak'},
+  },
+  Hattirage: {
+    types: ['Psychic', 'Fairy'],
+    bs: {hp: 66, at: 66, df: 66, sa: 142, sd: 99, sp: 71},
     weightkg: 24,
     abilities: {0: 'Dawnbreak'},
   },
@@ -10205,7 +10211,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Mesprit-Delta': {
     types: ['Poison', 'Fighting'],
-    bs: {hp: 80, at: 100, df: 100, sa: 100, sd: 100, sp: 100},
+    bs: {hp: 80, at: 105, df: 105, sa: 105, sd: 105, sp: 80},
     weightkg: 0.3,
     gender: 'N',
     abilities: {0: 'Levitate'},
@@ -10218,7 +10224,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   'Mewrai': {
     types: ['Psychic', 'Dark'],
-    bs: {hp: 100, at: 112, df: 80, sa: 112, sd: 96, sp: 100},
+    bs: {hp: 100, at: 120, df: 80, sa: 120, sd: 80, sp: 100},
     weightkg: 4,
     gender: 'N',
     abilities: {0: 'Feast or Famine'},
@@ -11147,7 +11153,7 @@ const SV_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
   Yanmellia: {
     types: ['Grass', 'Flying'],
-    bs: {hp: 98, at: 91, df: 71, sa: 70, sd: 110, sp: 75},
+    bs: {hp: 98, at: 91, df: 71, sa: 70, sd: 105, sp: 80},
     weightkg: 45.5,
     abilities: {0: 'Aerilate'},
   },

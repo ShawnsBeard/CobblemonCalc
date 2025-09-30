@@ -4606,11 +4606,11 @@ var SV_PATCH = {
         breaksProtect: true
     },
     'Ice Mace': {
-        bp: 140,
+        bp: 65,
         type: 'Ice',
         category: 'Physical',
-        zp: 200,
-        maxPower: 150,
+        zp: 120,
+        maxPower: 120,
         makesContact: true
     },
     'Ice Spinner': {
@@ -4619,6 +4619,14 @@ var SV_PATCH = {
         category: 'Physical',
         zp: 160,
         maxPower: 130,
+        makesContact: true
+    },
+    'Icicle Flail': {
+        bp: 150,
+        type: 'Ice',
+        category: 'Physical',
+        zp: 190,
+        maxPower: 138,
         makesContact: true
     },
     'Indigo Impact': {
@@ -4768,7 +4776,7 @@ var SV_PATCH = {
         secondaries: true
     },
     'New Moon': {
-        bp: 80,
+        bp: 90,
         type: 'Dark',
         category: 'Special',
         zp: 160,
@@ -4819,7 +4827,7 @@ var SV_PATCH = {
     },
     'Planet Demolition': {
         bp: 120,
-        type: 'Rock',
+        type: 'Ground',
         category: 'Physical',
         zp: 190,
         maxPower: 95,
@@ -4866,6 +4874,13 @@ var SV_PATCH = {
         bp: 0,
         type: 'Normal',
         category: 'Status'
+    },
+    'Primed Current': {
+        bp: 80,
+        type: 'Electric',
+        category: 'Special',
+        zp: 160,
+        maxPower: 130
     },
     Psyblade: {
         bp: 80,
