@@ -1,9 +1,10 @@
-# Pokémon Damage Calculator
+# Pokémon Damage Calculator for Cobblemon Delta
 
 ![Test Status](https://github.com/smogon/damage-calc/workflows/Tests/badge.svg)
 [![npm version](https://img.shields.io/npm/v/@smogon/calc.svg)](https://www.npmjs.com/package/@smogon/calc)&nbsp;
 
-Damage calculator for all generations of Pokémon battling.
+Damage calculator for all generations of Pokémon battling, including custom pokemon/moves/abilities/effects from Cobblemon Delta.
+Forked and extended from https://github.com/smogon/damage-calc in Summer 2025.
 
 If you are currently looking at [smogon/damage-calc][0] and not
 a fork, this is the official repository for the Pokémon Showdown! damage calculator:
